@@ -1,8 +1,19 @@
+# SRNet for digital zoom
 
+Code for paper: Self-supervised Residual-aware Network for Digital Zoom
+This paper proposes SRNet for digital zoom which takes advantage of self-supervised learning (SSL) and multi-task learning (MTL)
 
-## Data
+This code is based on:
 
-1.Download and Extract Dataset
+Python 3.7.3
+
+Pytorch 1.1.0
+
+Ubuntu16.04 LTS
+
+## Data Processing
+
+1). Download and Extract Dataset
 
 Problems in origin Image:
 1. train/00004 unable to align with the align code
@@ -19,7 +30,7 @@ bash ./scripts/run_wb.sh [TEST_PATH]
 After running these scripts, you can use the tform.txt and wb.txt inside each sequence during training.
 
 
-2.Align Data and Crop Patch
+2). Align Data and Crop Patch
 ```
 ## setting
 ## source data directory
@@ -37,25 +48,27 @@ python split_and_save_data.py --data_dir /store2/dataset/SR/train_data --source_
 
 
 directory tree of data:
+```
 data_dir
 ├── ARW
 ├── HR
 └── LR
+```
 
-
-3.Generate self-supervised labels,[Edge, Diff]
+3). Generate self-supervised labels,[Edge, Diff]
 ```
 ## setting
 traindataRootDir = "/store2/dataset/SR/train_data/SRRAW/X4/train"
 python generate_s_label.py
+```
 ```
 ├── ARW
 ├── Diff
 ├── Edge
 ├── HR
 └── LR
-
-4.Test SRRAW Dataset to generate bin file for png
+```
+4). Test SRRAW Dataset to generate bin file for png
 ```
 ## setting options.py
 parser.add_argument('--dir_data', type=str, default='/store2/dataset/SR/train_data',
@@ -70,6 +83,7 @@ parser.add_argument('--data_range', type=str, default='1-1300/1301-1312',
 ## bash run
 python debug_dataset.py
 ```
+```
 .
 ├── ARW
 ├── bin
@@ -77,3 +91,22 @@ python debug_dataset.py
 ├── Edge
 ├── HR
 └── LR
+```
+## Motivation
+
+![Motivation of SRNet](./img/motivation.png)
+
+Above figure shows  challenge of digital zoom task and its missing information. A high-resolution image xi in Figure(a), its corresponding low-resolution one, which has been resized by bicubic interpolation in Figure(b) and residual image in Figure(c). We calculate the proportion of residual image in high resolution image pixel by pixel and plot the histogram for the number of pixels according to different proportions in Figure(d). Most of the pixels have a high missing information in zoom task. Heatmap of residual image is also shown in Figure(e) and the missing information is mainly concentrated on edges and textures.
+## Network Architecture
+![Architecture of SRNet](./img/structure.png)
+
+## Attention Mechanism
+![Architecture of MPR-SA](./img/MPR-SA.png)
+
+
+## Training
+
+## Test
+
+## Compared with SR
+![Architecture of MPR-SA](./img/sr.png)
