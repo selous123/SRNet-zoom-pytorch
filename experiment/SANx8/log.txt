@@ -1,0 +1,6679 @@
+SAN 8X model
+SAN(
+  (sub_mean): MeanShift(3, 3, kernel_size=(1, 1), stride=(1, 1))
+  (RG): ModuleList(
+    (0): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (1): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (2): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (3): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (4): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (5): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (6): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (7): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (8): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+    (9): NLRG(
+      (rcab): ModuleList(
+        (0): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (1): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (2): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (3): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (4): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (5): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (6): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (7): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (8): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (9): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (10): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (11): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (12): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (13): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (14): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+        (15): RB(
+          (conv_first): Sequential(
+            (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (1): ReLU(inplace)
+            (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (soca): SOCA(
+        (avg_pool): AvgPool2d(kernel_size=2, stride=2, padding=0)
+        (conv_du): Sequential(
+          (0): Conv2d(64, 4, kernel_size=(1, 1), stride=(1, 1))
+          (1): ReLU(inplace)
+          (2): Conv2d(4, 64, kernel_size=(1, 1), stride=(1, 1))
+          (3): Sigmoid()
+        )
+      )
+      (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    )
+  )
+  (conv_last): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (add_mean): MeanShift(3, 3, kernel_size=(1, 1), stride=(1, 1))
+  (non_local): RLNL(
+    (non_local): NONLocalBlock2D(
+      (g): Sequential(
+        (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+        (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (W): Conv2d(16, 64, kernel_size=(1, 1), stride=(1, 1))
+      (theta): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+      (phi): Sequential(
+        (0): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1))
+        (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+    )
+    (sigmoid): Sigmoid()
+  )
+  (head): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+  (tail): Sequential(
+    (0): Upsampler(
+      (0): Conv2d(64, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): PixelShuffle(upscale_factor=2)
+      (2): Conv2d(64, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (3): PixelShuffle(upscale_factor=2)
+      (4): Conv2d(64, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (5): PixelShuffle(upscale_factor=2)
+    )
+    (1): Conv2d(64, 3, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+)
+[Epoch 1]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 28.2597]	28.6+84.3s
+[3200/15906]	[L1: 26.6311]	30.1+0.2s
+[4800/15906]	[L1: 25.6012]	30.6+0.3s
+[6400/15906]	[L1: 25.1314]	31.1+0.2s
+[8000/15906]	[L1: 24.7945]	30.9+0.2s
+[9600/15906]	[L1: 24.6949]	31.2+0.2s
+[11200/15906]	[L1: 24.4824]	31.1+0.3s
+[12800/15906]	[L1: 24.3467]	30.7+0.2s
+[14400/15906]	[L1: 24.2032]	30.8+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.098 (Best: 16.098 @epoch 1)
+Forward: 3.59s
+
+Saving...
+Total: 5.96s
+
+[Epoch 2]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 22.8131]	32.2+0.9s
+[3200/15906]	[L1: 23.1820]	30.9+0.2s
+[4800/15906]	[L1: 22.9426]	32.1+0.2s
+[6400/15906]	[L1: 22.8732]	31.7+0.2s
+[8000/15906]	[L1: 22.8824]	31.4+0.2s
+[9600/15906]	[L1: 22.9940]	31.7+0.3s
+[11200/15906]	[L1: 22.8886]	31.6+0.2s
+[12800/15906]	[L1: 22.8536]	31.7+0.2s
+[14400/15906]	[L1: 22.8393]	32.1+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 15.735 (Best: 16.098 @epoch 1)
+Forward: 1.50s
+
+Saving...
+Total: 3.78s
+
+[Epoch 3]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 22.5616]	32.0+0.9s
+[3200/15906]	[L1: 22.4865]	32.3+0.2s
+[4800/15906]	[L1: 22.7449]	31.8+0.2s
+[6400/15906]	[L1: 22.6273]	32.1+0.2s
+[8000/15906]	[L1: 22.6536]	31.6+0.2s
+[9600/15906]	[L1: 22.6613]	31.8+0.2s
+[11200/15906]	[L1: 22.5915]	32.1+0.2s
+[12800/15906]	[L1: 22.6315]	31.8+0.2s
+[14400/15906]	[L1: 22.5774]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.390 (Best: 16.390 @epoch 3)
+Forward: 1.69s
+
+Saving...
+Total: 5.13s
+
+[Epoch 4]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 22.4543]	31.0+0.9s
+[3200/15906]	[L1: 22.4842]	31.9+0.2s
+[4800/15906]	[L1: 22.3583]	31.8+0.3s
+[6400/15906]	[L1: 22.3570]	31.8+0.2s
+[8000/15906]	[L1: 22.3758]	32.1+0.2s
+[9600/15906]	[L1: 22.4472]	31.6+0.2s
+[11200/15906]	[L1: 22.4017]	31.8+0.2s
+[12800/15906]	[L1: 22.3891]	32.2+0.2s
+[14400/15906]	[L1: 22.3953]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.364 (Best: 16.390 @epoch 3)
+Forward: 1.65s
+
+Saving...
+Total: 4.00s
+
+[Epoch 5]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 22.4286]	32.1+1.2s
+[3200/15906]	[L1: 22.4725]	31.2+0.2s
+[4800/15906]	[L1: 22.2456]	31.7+0.2s
+[6400/15906]	[L1: 22.1882]	31.8+0.2s
+[8000/15906]	[L1: 22.2302]	31.1+0.2s
+[9600/15906]	[L1: 22.1798]	32.1+0.2s
+[11200/15906]	[L1: 22.1838]	31.9+0.2s
+[12800/15906]	[L1: 22.0596]	31.6+0.2s
+[14400/15906]	[L1: 22.0195]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.538 (Best: 16.538 @epoch 5)
+Forward: 1.68s
+
+Saving...
+Total: 5.05s
+
+[Epoch 6]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 21.9155]	32.7+0.9s
+[3200/15906]	[L1: 21.9085]	31.7+0.2s
+[4800/15906]	[L1: 21.9184]	31.7+0.2s
+[6400/15906]	[L1: 21.9161]	32.1+0.2s
+[8000/15906]	[L1: 21.9659]	31.6+0.2s
+[9600/15906]	[L1: 21.8903]	31.5+0.2s
+[11200/15906]	[L1: 21.9671]	31.9+0.2s
+[12800/15906]	[L1: 22.0363]	31.5+0.2s
+[14400/15906]	[L1: 21.9883]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.462 (Best: 16.538 @epoch 5)
+Forward: 1.60s
+
+Saving...
+Total: 4.90s
+
+[Epoch 7]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 22.4780]	31.4+1.0s
+[3200/15906]	[L1: 22.5281]	31.7+0.2s
+[4800/15906]	[L1: 22.3174]	32.3+0.2s
+[6400/15906]	[L1: 22.1894]	32.1+0.2s
+[8000/15906]	[L1: 22.1498]	32.5+0.2s
+[9600/15906]	[L1: 22.0885]	31.7+0.2s
+[11200/15906]	[L1: 22.0560]	32.6+0.2s
+[12800/15906]	[L1: 21.9424]	31.3+0.2s
+[14400/15906]	[L1: 21.9155]	31.9+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 15.988 (Best: 16.538 @epoch 5)
+Forward: 1.58s
+
+Saving...
+Total: 4.91s
+
+[Epoch 8]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 21.9564]	32.1+1.0s
+[3200/15906]	[L1: 22.0806]	31.6+0.2s
+[4800/15906]	[L1: 22.0656]	32.0+0.2s
+[6400/15906]	[L1: 21.8813]	31.9+0.2s
+[8000/15906]	[L1: 21.8518]	31.8+0.2s
+[9600/15906]	[L1: 21.8560]	32.5+0.2s
+[11200/15906]	[L1: 21.9256]	31.7+0.3s
+[12800/15906]	[L1: 21.9132]	31.7+0.2s
+[14400/15906]	[L1: 21.9578]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.709 (Best: 16.709 @epoch 8)
+Forward: 1.54s
+
+Saving...
+Total: 4.89s
+
+[Epoch 9]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 21.5953]	31.6+1.0s
+[3200/15906]	[L1: 21.9119]	31.7+0.2s
+[4800/15906]	[L1: 21.7334]	31.8+0.2s
+[6400/15906]	[L1: 21.6353]	31.8+0.2s
+[8000/15906]	[L1: 21.6463]	31.4+0.2s
+[9600/15906]	[L1: 21.6646]	32.3+0.2s
+[11200/15906]	[L1: 21.7516]	31.5+0.2s
+[12800/15906]	[L1: 21.8130]	32.0+0.2s
+[14400/15906]	[L1: 21.8286]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.258 (Best: 16.709 @epoch 8)
+Forward: 1.62s
+
+Saving...
+Total: 4.94s
+
+[Epoch 10]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 21.3927]	32.1+0.9s
+[3200/15906]	[L1: 21.6255]	31.5+0.2s
+[4800/15906]	[L1: 21.4714]	31.8+0.2s
+[6400/15906]	[L1: 21.4257]	31.9+0.2s
+[8000/15906]	[L1: 21.5616]	31.8+0.2s
+[9600/15906]	[L1: 21.5024]	31.5+0.2s
+[11200/15906]	[L1: 21.4891]	31.7+0.2s
+[12800/15906]	[L1: 21.4665]	31.5+0.2s
+[14400/15906]	[L1: 21.4267]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 15.839 (Best: 16.709 @epoch 8)
+Forward: 1.82s
+
+Saving...
+Total: 5.11s
+
+[Epoch 11]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 21.2970]	31.9+0.9s
+[3200/15906]	[L1: 21.4212]	31.5+0.2s
+[4800/15906]	[L1: 21.5227]	31.7+0.2s
+[6400/15906]	[L1: 21.5208]	31.9+0.2s
+[8000/15906]	[L1: 21.4091]	31.5+0.3s
+[9600/15906]	[L1: 21.4369]	32.3+0.2s
+[11200/15906]	[L1: 21.4892]	31.8+0.2s
+[12800/15906]	[L1: 21.5361]	31.8+0.2s
+[14400/15906]	[L1: 21.4965]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.391 (Best: 16.709 @epoch 8)
+Forward: 1.52s
+
+Saving...
+Total: 4.84s
+
+[Epoch 12]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 21.1677]	32.5+1.1s
+[3200/15906]	[L1: 21.0301]	31.4+0.2s
+[4800/15906]	[L1: 20.9766]	32.0+0.2s
+[6400/15906]	[L1: 21.0236]	32.1+0.2s
+[8000/15906]	[L1: 21.0493]	31.7+0.2s
+[9600/15906]	[L1: 21.1346]	32.4+0.2s
+[11200/15906]	[L1: 21.1357]	31.4+0.2s
+[12800/15906]	[L1: 21.1417]	32.7+0.2s
+[14400/15906]	[L1: 21.2162]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.439 (Best: 16.709 @epoch 8)
+Forward: 1.46s
+
+Saving...
+Total: 4.83s
+
+[Epoch 13]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 22.0897]	31.4+1.1s
+[3200/15906]	[L1: 21.6769]	31.3+0.2s
+[4800/15906]	[L1: 21.6476]	32.1+0.2s
+[6400/15906]	[L1: 21.4656]	32.2+0.3s
+[8000/15906]	[L1: 21.5293]	32.2+0.2s
+[9600/15906]	[L1: 21.4152]	32.2+0.2s
+[11200/15906]	[L1: 21.3387]	32.2+0.2s
+[12800/15906]	[L1: 21.3175]	31.5+0.2s
+[14400/15906]	[L1: 21.3359]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.601 (Best: 16.709 @epoch 8)
+Forward: 1.70s
+
+Saving...
+Total: 6.01s
+
+[Epoch 14]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 21.7930]	31.6+0.9s
+[3200/15906]	[L1: 21.5090]	31.4+0.2s
+[4800/15906]	[L1: 21.4456]	32.2+0.3s
+[6400/15906]	[L1: 21.2463]	32.2+0.2s
+[8000/15906]	[L1: 21.2946]	31.6+0.2s
+[9600/15906]	[L1: 21.2589]	32.1+0.2s
+[11200/15906]	[L1: 21.2334]	32.0+0.2s
+[12800/15906]	[L1: 21.2390]	31.6+0.2s
+[14400/15906]	[L1: 21.2394]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 15.993 (Best: 16.709 @epoch 8)
+Forward: 1.54s
+
+Saving...
+Total: 5.92s
+
+[Epoch 15]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 21.2168]	32.2+1.0s
+[3200/15906]	[L1: 21.3074]	31.9+0.2s
+[4800/15906]	[L1: 21.0749]	31.6+0.2s
+[6400/15906]	[L1: 21.2197]	31.1+0.2s
+[8000/15906]	[L1: 21.0723]	32.0+0.2s
+[9600/15906]	[L1: 20.9577]	32.1+0.1s
+[11200/15906]	[L1: 20.9580]	31.5+0.2s
+[12800/15906]	[L1: 20.9154]	31.5+0.2s
+[14400/15906]	[L1: 20.9058]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.422 (Best: 16.709 @epoch 8)
+Forward: 1.69s
+
+Saving...
+Total: 6.03s
+
+[Epoch 16]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 20.7146]	31.9+0.9s
+[3200/15906]	[L1: 20.9412]	31.5+0.2s
+[4800/15906]	[L1: 21.0512]	32.5+0.2s
+[6400/15906]	[L1: 20.9220]	32.1+0.2s
+[8000/15906]	[L1: 20.8694]	32.0+0.3s
+[9600/15906]	[L1: 20.8696]	32.4+0.2s
+[11200/15906]	[L1: 20.9092]	32.1+0.2s
+[12800/15906]	[L1: 20.8774]	32.2+0.2s
+[14400/15906]	[L1: 20.9255]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.087 (Best: 16.709 @epoch 8)
+Forward: 1.86s
+
+Saving...
+Total: 6.17s
+
+[Epoch 17]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 21.1820]	31.8+0.9s
+[3200/15906]	[L1: 20.9820]	31.8+0.2s
+[4800/15906]	[L1: 20.7379]	31.7+0.2s
+[6400/15906]	[L1: 20.8228]	32.0+0.2s
+[8000/15906]	[L1: 20.7969]	31.7+0.2s
+[9600/15906]	[L1: 20.7078]	32.0+0.2s
+[11200/15906]	[L1: 20.7465]	31.4+0.2s
+[12800/15906]	[L1: 20.7959]	31.5+0.2s
+[14400/15906]	[L1: 20.7193]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.354 (Best: 16.709 @epoch 8)
+Forward: 1.56s
+
+Saving...
+Total: 5.93s
+
+[Epoch 18]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 20.6311]	31.2+0.9s
+[3200/15906]	[L1: 20.8351]	31.7+0.2s
+[4800/15906]	[L1: 20.5798]	31.3+0.2s
+[6400/15906]	[L1: 20.6609]	31.7+0.2s
+[8000/15906]	[L1: 20.6299]	31.4+0.2s
+[9600/15906]	[L1: 20.7092]	31.0+0.2s
+[11200/15906]	[L1: 20.6801]	31.5+0.2s
+[12800/15906]	[L1: 20.6638]	31.2+0.2s
+[14400/15906]	[L1: 20.6977]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.245 (Best: 16.709 @epoch 8)
+Forward: 1.63s
+
+Saving...
+Total: 5.99s
+
+[Epoch 19]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 20.8200]	31.6+1.0s
+[3200/15906]	[L1: 20.7529]	31.5+0.2s
+[4800/15906]	[L1: 20.6416]	31.9+0.2s
+[6400/15906]	[L1: 20.5323]	31.7+0.1s
+[8000/15906]	[L1: 20.5837]	31.7+0.2s
+[9600/15906]	[L1: 20.6184]	32.4+0.3s
+[11200/15906]	[L1: 20.6614]	31.8+0.2s
+[12800/15906]	[L1: 20.5991]	31.4+0.3s
+[14400/15906]	[L1: 20.5505]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.683 (Best: 16.709 @epoch 8)
+Forward: 1.54s
+
+Saving...
+Total: 5.87s
+
+[Epoch 20]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 20.9475]	31.9+0.9s
+[3200/15906]	[L1: 20.8508]	31.8+0.2s
+[4800/15906]	[L1: 20.7568]	31.7+0.2s
+[6400/15906]	[L1: 20.7183]	31.6+0.2s
+[8000/15906]	[L1: 20.7605]	31.5+0.2s
+[9600/15906]	[L1: 20.7334]	32.8+0.2s
+[11200/15906]	[L1: 20.6979]	31.2+0.2s
+[12800/15906]	[L1: 20.6652]	32.2+0.2s
+[14400/15906]	[L1: 20.6167]	31.8+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.739 (Best: 16.739 @epoch 20)
+Forward: 1.52s
+
+Saving...
+Total: 5.96s
+
+[Epoch 21]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 20.7991]	31.6+1.1s
+[3200/15906]	[L1: 20.6109]	31.4+0.2s
+[4800/15906]	[L1: 20.4931]	32.3+0.2s
+[6400/15906]	[L1: 20.4262]	32.1+0.2s
+[8000/15906]	[L1: 20.4510]	31.8+0.2s
+[9600/15906]	[L1: 20.4572]	31.8+0.2s
+[11200/15906]	[L1: 20.4360]	31.3+0.2s
+[12800/15906]	[L1: 20.4909]	32.7+0.2s
+[14400/15906]	[L1: 20.4610]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.480 (Best: 16.739 @epoch 20)
+Forward: 1.54s
+
+Saving...
+Total: 5.92s
+
+[Epoch 22]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.6625]	31.0+0.9s
+[3200/15906]	[L1: 19.8704]	32.4+0.2s
+[4800/15906]	[L1: 19.7450]	31.2+0.3s
+[6400/15906]	[L1: 19.8644]	32.1+0.2s
+[8000/15906]	[L1: 19.9022]	31.6+0.2s
+[9600/15906]	[L1: 19.9960]	31.7+0.2s
+[11200/15906]	[L1: 20.1047]	31.1+0.2s
+[12800/15906]	[L1: 20.1143]	31.7+0.2s
+[14400/15906]	[L1: 20.1044]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.033 (Best: 16.739 @epoch 20)
+Forward: 2.00s
+
+Saving...
+Total: 7.34s
+
+[Epoch 23]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 20.5573]	32.4+0.8s
+[3200/15906]	[L1: 20.1049]	31.2+0.1s
+[4800/15906]	[L1: 20.0857]	31.5+0.2s
+[6400/15906]	[L1: 20.1228]	31.7+0.1s
+[8000/15906]	[L1: 20.1723]	31.6+0.2s
+[9600/15906]	[L1: 20.0611]	32.3+0.2s
+[11200/15906]	[L1: 20.0864]	31.3+0.2s
+[12800/15906]	[L1: 20.0091]	31.9+0.2s
+[14400/15906]	[L1: 20.0251]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.546 (Best: 16.739 @epoch 20)
+Forward: 1.66s
+
+Saving...
+Total: 6.06s
+
+[Epoch 24]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.6797]	31.5+1.0s
+[3200/15906]	[L1: 19.6596]	31.7+0.2s
+[4800/15906]	[L1: 19.9408]	31.8+0.1s
+[6400/15906]	[L1: 20.0976]	31.9+0.2s
+[8000/15906]	[L1: 20.2180]	31.5+0.2s
+[9600/15906]	[L1: 20.2278]	31.3+0.2s
+[11200/15906]	[L1: 20.2297]	32.2+0.2s
+[12800/15906]	[L1: 20.2396]	32.1+0.2s
+[14400/15906]	[L1: 20.1881]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.288 (Best: 16.739 @epoch 20)
+Forward: 1.57s
+
+Saving...
+Total: 5.91s
+
+[Epoch 25]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.9501]	32.3+1.1s
+[3200/15906]	[L1: 19.6531]	31.4+0.2s
+[4800/15906]	[L1: 19.6480]	32.0+0.3s
+[6400/15906]	[L1: 19.8022]	31.8+0.2s
+[8000/15906]	[L1: 19.9068]	31.6+0.2s
+[9600/15906]	[L1: 19.9353]	31.9+0.2s
+[11200/15906]	[L1: 19.8749]	31.6+0.2s
+[12800/15906]	[L1: 19.8657]	31.1+0.2s
+[14400/15906]	[L1: 19.9169]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.647 (Best: 16.739 @epoch 20)
+Forward: 1.48s
+
+Saving...
+Total: 5.81s
+
+[Epoch 26]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 20.0071]	31.9+1.1s
+[3200/15906]	[L1: 20.0174]	32.1+0.2s
+[4800/15906]	[L1: 19.9239]	32.0+0.2s
+[6400/15906]	[L1: 19.9283]	31.5+0.2s
+[8000/15906]	[L1: 19.9592]	32.2+0.2s
+[9600/15906]	[L1: 20.0014]	31.0+0.2s
+[11200/15906]	[L1: 19.9840]	31.6+0.2s
+[12800/15906]	[L1: 20.0781]	31.9+0.2s
+[14400/15906]	[L1: 20.0623]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.911 (Best: 16.911 @epoch 26)
+Forward: 1.58s
+
+Saving...
+Total: 5.97s
+
+[Epoch 27]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.7561]	31.8+0.8s
+[3200/15906]	[L1: 20.0697]	30.9+0.2s
+[4800/15906]	[L1: 19.9625]	31.8+0.2s
+[6400/15906]	[L1: 19.9970]	31.9+0.2s
+[8000/15906]	[L1: 20.0236]	31.8+0.2s
+[9600/15906]	[L1: 19.9184]	31.6+0.2s
+[11200/15906]	[L1: 19.9881]	32.4+0.3s
+[12800/15906]	[L1: 19.9752]	32.3+0.2s
+[14400/15906]	[L1: 19.9497]	31.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.531 (Best: 16.911 @epoch 26)
+Forward: 1.61s
+
+Saving...
+Total: 5.96s
+
+[Epoch 28]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 20.3567]	31.4+1.2s
+[3200/15906]	[L1: 20.2365]	32.4+0.2s
+[4800/15906]	[L1: 19.9394]	32.0+0.2s
+[6400/15906]	[L1: 19.8523]	31.8+0.2s
+[8000/15906]	[L1: 19.9274]	32.4+0.2s
+[9600/15906]	[L1: 19.9047]	32.0+0.3s
+[11200/15906]	[L1: 19.9027]	31.7+0.2s
+[12800/15906]	[L1: 19.9397]	32.2+0.2s
+[14400/15906]	[L1: 19.8955]	31.6+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.537 (Best: 16.911 @epoch 26)
+Forward: 1.65s
+
+Saving...
+Total: 6.99s
+
+[Epoch 29]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.5014]	31.6+1.0s
+[3200/15906]	[L1: 19.8914]	31.5+0.2s
+[4800/15906]	[L1: 19.8456]	31.7+0.1s
+[6400/15906]	[L1: 19.6900]	31.3+0.2s
+[8000/15906]	[L1: 19.7317]	31.5+0.2s
+[9600/15906]	[L1: 19.7484]	32.0+0.2s
+[11200/15906]	[L1: 19.7490]	31.1+0.2s
+[12800/15906]	[L1: 19.7621]	31.2+0.2s
+[14400/15906]	[L1: 19.8099]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.217 (Best: 16.911 @epoch 26)
+Forward: 1.79s
+
+Saving...
+Total: 7.16s
+
+[Epoch 30]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.6388]	32.5+1.1s
+[3200/15906]	[L1: 19.7929]	32.0+0.2s
+[4800/15906]	[L1: 19.7528]	31.0+0.2s
+[6400/15906]	[L1: 19.7447]	32.3+0.2s
+[8000/15906]	[L1: 19.7412]	31.9+0.2s
+[9600/15906]	[L1: 19.6940]	31.3+0.2s
+[11200/15906]	[L1: 19.6394]	31.8+0.2s
+[12800/15906]	[L1: 19.6284]	32.3+0.2s
+[14400/15906]	[L1: 19.6571]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.471 (Best: 16.911 @epoch 26)
+Forward: 1.85s
+
+Saving...
+Total: 7.16s
+
+[Epoch 31]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.8300]	32.1+0.9s
+[3200/15906]	[L1: 19.8529]	31.4+0.2s
+[4800/15906]	[L1: 19.8912]	31.7+0.1s
+[6400/15906]	[L1: 19.8513]	32.4+0.2s
+[8000/15906]	[L1: 19.8680]	32.1+0.2s
+[9600/15906]	[L1: 19.8586]	32.1+0.2s
+[11200/15906]	[L1: 19.7763]	31.5+0.3s
+[12800/15906]	[L1: 19.7075]	31.6+0.2s
+[14400/15906]	[L1: 19.7398]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.437 (Best: 16.911 @epoch 26)
+Forward: 1.70s
+
+Saving...
+Total: 5.05s
+
+[Epoch 32]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.7538]	32.5+1.0s
+[3200/15906]	[L1: 19.6556]	31.3+0.2s
+[4800/15906]	[L1: 19.4612]	32.0+0.2s
+[6400/15906]	[L1: 19.4062]	31.7+0.2s
+[8000/15906]	[L1: 19.5360]	32.4+0.2s
+[9600/15906]	[L1: 19.6080]	31.9+0.2s
+[11200/15906]	[L1: 19.5971]	31.3+0.3s
+[12800/15906]	[L1: 19.5394]	31.7+0.2s
+[14400/15906]	[L1: 19.6496]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.438 (Best: 16.911 @epoch 26)
+Forward: 1.45s
+
+Saving...
+Total: 5.86s
+
+[Epoch 33]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.3660]	32.1+1.1s
+[3200/15906]	[L1: 19.5536]	31.4+0.3s
+[4800/15906]	[L1: 19.4258]	31.2+0.2s
+[6400/15906]	[L1: 19.4392]	32.2+0.3s
+[8000/15906]	[L1: 19.3351]	31.2+0.2s
+[9600/15906]	[L1: 19.4212]	32.1+0.3s
+[11200/15906]	[L1: 19.4248]	31.7+0.2s
+[12800/15906]	[L1: 19.4005]	31.8+0.2s
+[14400/15906]	[L1: 19.4385]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.879 (Best: 16.911 @epoch 26)
+Forward: 1.48s
+
+Saving...
+Total: 5.86s
+
+[Epoch 34]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.4952]	31.8+1.0s
+[3200/15906]	[L1: 19.5224]	31.9+0.2s
+[4800/15906]	[L1: 19.4404]	32.4+0.2s
+[6400/15906]	[L1: 19.6779]	31.8+0.2s
+[8000/15906]	[L1: 19.6900]	32.0+0.2s
+[9600/15906]	[L1: 19.5758]	31.3+0.2s
+[11200/15906]	[L1: 19.5851]	31.5+0.2s
+[12800/15906]	[L1: 19.5199]	31.3+0.2s
+[14400/15906]	[L1: 19.4944]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 15.970 (Best: 16.911 @epoch 26)
+Forward: 1.49s
+
+Saving...
+Total: 5.90s
+
+[Epoch 35]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.3375]	31.9+1.0s
+[3200/15906]	[L1: 19.0828]	32.3+0.2s
+[4800/15906]	[L1: 19.2090]	32.2+0.2s
+[6400/15906]	[L1: 19.1449]	32.2+0.2s
+[8000/15906]	[L1: 19.1119]	32.0+0.2s
+[9600/15906]	[L1: 19.1067]	31.5+0.2s
+[11200/15906]	[L1: 19.1926]	31.9+0.2s
+[12800/15906]	[L1: 19.1556]	31.7+0.2s
+[14400/15906]	[L1: 19.2246]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.671 (Best: 16.911 @epoch 26)
+Forward: 1.75s
+
+Saving...
+Total: 6.09s
+
+[Epoch 36]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.1494]	32.5+1.0s
+[3200/15906]	[L1: 19.4095]	31.5+0.2s
+[4800/15906]	[L1: 19.4586]	31.6+0.2s
+[6400/15906]	[L1: 19.5416]	32.4+0.2s
+[8000/15906]	[L1: 19.5213]	32.2+0.2s
+[9600/15906]	[L1: 19.5210]	31.7+0.2s
+[11200/15906]	[L1: 19.4755]	31.2+0.2s
+[12800/15906]	[L1: 19.5366]	31.2+0.2s
+[14400/15906]	[L1: 19.5597]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.599 (Best: 16.911 @epoch 26)
+Forward: 1.72s
+
+Saving...
+Total: 6.09s
+
+[Epoch 37]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.8212]	31.8+1.3s
+[3200/15906]	[L1: 19.5133]	32.2+0.1s
+[4800/15906]	[L1: 19.4670]	31.9+0.3s
+[6400/15906]	[L1: 19.2651]	30.9+0.2s
+[8000/15906]	[L1: 19.2252]	32.0+0.3s
+[9600/15906]	[L1: 19.1906]	32.2+0.2s
+[11200/15906]	[L1: 19.2010]	31.7+0.2s
+[12800/15906]	[L1: 19.1584]	31.4+0.2s
+[14400/15906]	[L1: 19.1316]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.523 (Best: 16.911 @epoch 26)
+Forward: 1.53s
+
+Saving...
+Total: 5.87s
+
+[Epoch 38]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.6325]	31.8+1.1s
+[3200/15906]	[L1: 19.7447]	31.4+0.2s
+[4800/15906]	[L1: 19.7075]	31.7+0.2s
+[6400/15906]	[L1: 19.6948]	32.7+0.2s
+[8000/15906]	[L1: 19.6429]	32.6+0.1s
+[9600/15906]	[L1: 19.6208]	32.1+0.2s
+[11200/15906]	[L1: 19.5559]	31.4+0.2s
+[12800/15906]	[L1: 19.5042]	32.0+0.3s
+[14400/15906]	[L1: 19.5289]	32.1+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.156 (Best: 17.156 @epoch 38)
+Forward: 1.62s
+
+Saving...
+Total: 5.09s
+
+[Epoch 39]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.6362]	32.4+1.0s
+[3200/15906]	[L1: 19.2699]	31.9+0.2s
+[4800/15906]	[L1: 19.4870]	31.9+0.2s
+[6400/15906]	[L1: 19.3227]	31.9+0.2s
+[8000/15906]	[L1: 19.2144]	32.3+0.2s
+[9600/15906]	[L1: 19.2160]	32.2+0.2s
+[11200/15906]	[L1: 19.2435]	32.1+0.2s
+[12800/15906]	[L1: 19.2151]	32.4+0.2s
+[14400/15906]	[L1: 19.2256]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.302 (Best: 17.156 @epoch 38)
+Forward: 1.61s
+
+Saving...
+Total: 5.99s
+
+[Epoch 40]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.6125]	32.4+0.8s
+[3200/15906]	[L1: 19.0300]	32.1+0.2s
+[4800/15906]	[L1: 19.0613]	32.8+0.3s
+[6400/15906]	[L1: 19.1472]	32.0+0.2s
+[8000/15906]	[L1: 19.0280]	31.9+0.2s
+[9600/15906]	[L1: 19.0627]	31.8+0.2s
+[11200/15906]	[L1: 19.1325]	31.9+0.2s
+[12800/15906]	[L1: 19.1028]	31.6+0.2s
+[14400/15906]	[L1: 19.1436]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.727 (Best: 17.156 @epoch 38)
+Forward: 1.49s
+
+Saving...
+Total: 5.90s
+
+[Epoch 41]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.2120]	31.6+1.0s
+[3200/15906]	[L1: 19.2003]	31.7+0.3s
+[4800/15906]	[L1: 18.9904]	32.2+0.2s
+[6400/15906]	[L1: 19.0839]	32.3+0.2s
+[8000/15906]	[L1: 19.0826]	31.7+0.2s
+[9600/15906]	[L1: 19.0799]	32.2+0.2s
+[11200/15906]	[L1: 19.0985]	32.2+0.2s
+[12800/15906]	[L1: 19.1422]	32.2+0.2s
+[14400/15906]	[L1: 19.0891]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.789 (Best: 17.156 @epoch 38)
+Forward: 1.76s
+
+Saving...
+Total: 6.12s
+
+[Epoch 42]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 19.2602]	32.5+0.9s
+[3200/15906]	[L1: 19.1611]	31.9+0.2s
+[4800/15906]	[L1: 19.0957]	31.7+0.2s
+[6400/15906]	[L1: 19.0078]	32.1+0.2s
+[8000/15906]	[L1: 19.1974]	32.4+0.2s
+[9600/15906]	[L1: 19.2214]	32.0+0.2s
+[11200/15906]	[L1: 19.2536]	32.7+0.2s
+[12800/15906]	[L1: 19.2297]	31.9+0.2s
+[14400/15906]	[L1: 19.2181]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.644 (Best: 17.156 @epoch 38)
+Forward: 1.68s
+
+Saving...
+Total: 6.01s
+
+[Epoch 43]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 18.6619]	31.6+1.2s
+[3200/15906]	[L1: 18.7083]	32.0+0.2s
+[4800/15906]	[L1: 18.8270]	31.6+0.2s
+[6400/15906]	[L1: 18.8975]	31.3+0.2s
+[8000/15906]	[L1: 18.9037]	31.7+0.2s
+[9600/15906]	[L1: 18.9126]	32.1+0.2s
+[11200/15906]	[L1: 18.8562]	32.4+0.2s
+[12800/15906]	[L1: 18.8820]	32.0+0.2s
+[14400/15906]	[L1: 18.8771]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.426 (Best: 17.156 @epoch 38)
+Forward: 1.58s
+
+Saving...
+Total: 5.95s
+
+[Epoch 44]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 18.6619]	31.9+0.9s
+[3200/15906]	[L1: 18.6502]	32.3+0.2s
+[4800/15906]	[L1: 18.5568]	32.1+0.2s
+[6400/15906]	[L1: 18.6672]	32.1+0.2s
+[8000/15906]	[L1: 18.7901]	32.3+0.2s
+[9600/15906]	[L1: 18.7808]	32.0+0.2s
+[11200/15906]	[L1: 18.8121]	32.0+0.2s
+[12800/15906]	[L1: 18.8420]	31.7+0.3s
+[14400/15906]	[L1: 18.8970]	32.2+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.704 (Best: 17.156 @epoch 38)
+Forward: 1.68s
+
+Saving...
+Total: 5.98s
+
+[Epoch 45]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 18.6525]	32.5+1.0s
+[3200/15906]	[L1: 18.7016]	32.0+0.2s
+[4800/15906]	[L1: 18.8244]	32.2+0.2s
+[6400/15906]	[L1: 18.9839]	31.8+0.2s
+[8000/15906]	[L1: 18.9951]	32.0+0.2s
+[9600/15906]	[L1: 19.0096]	32.4+0.2s
+[11200/15906]	[L1: 18.9479]	32.0+0.2s
+[12800/15906]	[L1: 18.9663]	31.9+0.1s
+[14400/15906]	[L1: 18.9515]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.811 (Best: 17.156 @epoch 38)
+Forward: 1.68s
+
+Saving...
+Total: 5.98s
+
+[Epoch 46]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 18.8947]	32.1+1.1s
+[3200/15906]	[L1: 18.6074]	32.0+0.2s
+[4800/15906]	[L1: 18.6138]	32.7+0.2s
+[6400/15906]	[L1: 18.6398]	32.3+0.2s
+[8000/15906]	[L1: 18.8319]	31.5+0.2s
+[9600/15906]	[L1: 18.8893]	31.8+0.2s
+[11200/15906]	[L1: 18.7907]	31.8+0.2s
+[12800/15906]	[L1: 18.7674]	32.0+0.2s
+[14400/15906]	[L1: 18.7876]	32.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.112 (Best: 17.156 @epoch 38)
+Forward: 1.66s
+
+Saving...
+Total: 6.96s
+
+[Epoch 47]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 18.4620]	31.7+1.0s
+[3200/15906]	[L1: 18.4979]	32.5+0.2s
+[4800/15906]	[L1: 18.6386]	32.1+0.2s
+[6400/15906]	[L1: 18.7913]	32.5+0.2s
+[8000/15906]	[L1: 18.7772]	31.8+0.3s
+[9600/15906]	[L1: 18.7543]	31.5+0.2s
+[11200/15906]	[L1: 18.8156]	32.0+0.2s
+[12800/15906]	[L1: 18.8861]	31.4+0.2s
+[14400/15906]	[L1: 18.8939]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.599 (Best: 17.156 @epoch 38)
+Forward: 2.07s
+
+Saving...
+Total: 7.40s
+
+[Epoch 48]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 18.7477]	32.2+1.0s
+[3200/15906]	[L1: 18.8640]	31.7+0.2s
+[4800/15906]	[L1: 18.8777]	32.5+0.2s
+[6400/15906]	[L1: 18.9765]	32.1+0.2s
+[8000/15906]	[L1: 18.8844]	32.3+0.2s
+[9600/15906]	[L1: 18.9745]	31.9+0.2s
+[11200/15906]	[L1: 18.8884]	31.8+0.2s
+[12800/15906]	[L1: 18.8469]	32.1+0.2s
+[14400/15906]	[L1: 18.7544]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.712 (Best: 17.156 @epoch 38)
+Forward: 1.65s
+
+Saving...
+Total: 5.96s
+
+[Epoch 49]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 18.7565]	32.5+1.1s
+[3200/15906]	[L1: 19.2183]	32.4+0.2s
+[4800/15906]	[L1: 18.9519]	32.2+0.3s
+[6400/15906]	[L1: 19.1209]	32.2+0.2s
+[8000/15906]	[L1: 18.9687]	32.5+0.2s
+[9600/15906]	[L1: 18.8886]	32.5+0.2s
+[11200/15906]	[L1: 18.8487]	31.6+0.2s
+[12800/15906]	[L1: 18.8918]	31.7+0.2s
+[14400/15906]	[L1: 18.8781]	32.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 15.947 (Best: 17.156 @epoch 38)
+Forward: 2.18s
+
+Saving...
+Total: 7.49s
+
+[Epoch 50]	Learning rate: 1.00e-4
+[1600/15906]	[L1: 18.6382]	32.4+1.0s
+[3200/15906]	[L1: 18.4859]	32.3+0.2s
+[4800/15906]	[L1: 18.6936]	32.3+0.2s
+[6400/15906]	[L1: 18.9088]	32.1+0.2s
+[8000/15906]	[L1: 18.8721]	32.1+0.2s
+[9600/15906]	[L1: 18.8517]	32.2+0.2s
+[11200/15906]	[L1: 18.8298]	32.3+0.2s
+[12800/15906]	[L1: 18.8142]	32.7+0.2s
+[14400/15906]	[L1: 18.8039]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 15.665 (Best: 17.156 @epoch 38)
+Forward: 1.71s
+
+Saving...
+Total: 6.02s
+
+[Epoch 51]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 18.5476]	31.9+1.1s
+[3200/15906]	[L1: 18.3138]	31.8+0.2s
+[4800/15906]	[L1: 18.4065]	31.9+0.2s
+[6400/15906]	[L1: 18.2254]	32.1+0.2s
+[8000/15906]	[L1: 18.1021]	32.2+0.2s
+[9600/15906]	[L1: 18.0679]	31.5+0.2s
+[11200/15906]	[L1: 18.0004]	31.8+0.2s
+[12800/15906]	[L1: 18.0207]	32.8+0.2s
+[14400/15906]	[L1: 18.0261]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.721 (Best: 17.156 @epoch 38)
+Forward: 1.53s
+
+Saving...
+Total: 5.87s
+
+[Epoch 52]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 18.0351]	32.4+1.0s
+[3200/15906]	[L1: 17.7270]	31.3+0.1s
+[4800/15906]	[L1: 17.7845]	31.7+0.2s
+[6400/15906]	[L1: 17.7941]	31.8+0.2s
+[8000/15906]	[L1: 17.7543]	32.1+0.2s
+[9600/15906]	[L1: 17.8534]	32.5+0.2s
+[11200/15906]	[L1: 17.9291]	31.7+0.2s
+[12800/15906]	[L1: 17.9314]	31.9+0.2s
+[14400/15906]	[L1: 17.9490]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.615 (Best: 17.156 @epoch 38)
+Forward: 1.77s
+
+Saving...
+Total: 6.08s
+
+[Epoch 53]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.7320]	32.3+1.0s
+[3200/15906]	[L1: 17.7497]	32.6+0.3s
+[4800/15906]	[L1: 17.8896]	32.3+0.2s
+[6400/15906]	[L1: 17.9269]	31.9+0.2s
+[8000/15906]	[L1: 17.7403]	32.0+0.2s
+[9600/15906]	[L1: 17.7486]	31.9+0.2s
+[11200/15906]	[L1: 17.7042]	31.9+0.2s
+[12800/15906]	[L1: 17.7928]	31.5+0.2s
+[14400/15906]	[L1: 17.8086]	32.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.121 (Best: 17.156 @epoch 38)
+Forward: 1.61s
+
+Saving...
+Total: 5.92s
+
+[Epoch 54]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.0756]	31.5+1.1s
+[3200/15906]	[L1: 17.5509]	32.2+0.2s
+[4800/15906]	[L1: 17.4912]	31.6+0.2s
+[6400/15906]	[L1: 17.5544]	32.1+0.2s
+[8000/15906]	[L1: 17.6272]	32.1+0.2s
+[9600/15906]	[L1: 17.6228]	31.9+0.2s
+[11200/15906]	[L1: 17.6162]	32.4+0.2s
+[12800/15906]	[L1: 17.6266]	31.8+0.2s
+[14400/15906]	[L1: 17.6332]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.617 (Best: 17.156 @epoch 38)
+Forward: 1.58s
+
+Saving...
+Total: 5.92s
+
+[Epoch 55]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.5734]	32.8+0.9s
+[3200/15906]	[L1: 17.5540]	31.4+0.2s
+[4800/15906]	[L1: 17.6469]	32.0+0.2s
+[6400/15906]	[L1: 17.5892]	31.8+0.2s
+[8000/15906]	[L1: 17.6081]	31.8+0.2s
+[9600/15906]	[L1: 17.5761]	31.5+0.2s
+[11200/15906]	[L1: 17.4966]	31.8+0.2s
+[12800/15906]	[L1: 17.5289]	32.8+0.2s
+[14400/15906]	[L1: 17.5766]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.184 (Best: 17.184 @epoch 55)
+Forward: 1.80s
+
+Saving...
+Total: 6.17s
+
+[Epoch 56]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.7726]	32.3+0.9s
+[3200/15906]	[L1: 17.7910]	32.1+0.2s
+[4800/15906]	[L1: 17.6800]	31.8+0.2s
+[6400/15906]	[L1: 17.5526]	32.0+0.2s
+[8000/15906]	[L1: 17.5120]	32.0+0.3s
+[9600/15906]	[L1: 17.5362]	32.1+0.2s
+[11200/15906]	[L1: 17.5849]	32.2+0.3s
+[12800/15906]	[L1: 17.6118]	32.6+0.2s
+[14400/15906]	[L1: 17.5634]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.137 (Best: 17.184 @epoch 55)
+Forward: 1.67s
+
+Saving...
+Total: 5.98s
+
+[Epoch 57]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.6273]	32.1+1.0s
+[3200/15906]	[L1: 17.8690]	32.6+0.2s
+[4800/15906]	[L1: 17.7567]	32.5+0.2s
+[6400/15906]	[L1: 17.6690]	31.7+0.2s
+[8000/15906]	[L1: 17.6162]	32.4+0.1s
+[9600/15906]	[L1: 17.5932]	32.2+0.2s
+[11200/15906]	[L1: 17.6296]	32.0+0.2s
+[12800/15906]	[L1: 17.5971]	32.1+0.2s
+[14400/15906]	[L1: 17.5474]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.763 (Best: 17.184 @epoch 55)
+Forward: 1.53s
+
+Saving...
+Total: 5.85s
+
+[Epoch 58]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.7527]	32.8+1.1s
+[3200/15906]	[L1: 17.1251]	32.4+0.2s
+[4800/15906]	[L1: 17.1339]	32.3+0.2s
+[6400/15906]	[L1: 17.1456]	32.0+0.2s
+[8000/15906]	[L1: 17.1634]	32.1+0.2s
+[9600/15906]	[L1: 17.2017]	32.1+0.2s
+[11200/15906]	[L1: 17.2916]	32.5+0.2s
+[12800/15906]	[L1: 17.2909]	32.2+0.3s
+[14400/15906]	[L1: 17.3203]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.621 (Best: 17.184 @epoch 55)
+Forward: 1.60s
+
+Saving...
+Total: 5.95s
+
+[Epoch 59]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.1112]	32.2+1.0s
+[3200/15906]	[L1: 17.2931]	32.8+0.2s
+[4800/15906]	[L1: 17.1882]	32.1+0.2s
+[6400/15906]	[L1: 17.3611]	32.1+0.2s
+[8000/15906]	[L1: 17.3157]	32.8+0.2s
+[9600/15906]	[L1: 17.3525]	32.0+0.2s
+[11200/15906]	[L1: 17.3135]	32.7+0.2s
+[12800/15906]	[L1: 17.3036]	31.8+0.2s
+[14400/15906]	[L1: 17.2525]	32.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.246 (Best: 17.246 @epoch 59)
+Forward: 1.59s
+
+Saving...
+Total: 5.96s
+
+[Epoch 60]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.4366]	31.5+1.1s
+[3200/15906]	[L1: 17.7285]	32.9+0.2s
+[4800/15906]	[L1: 17.4414]	31.5+0.2s
+[6400/15906]	[L1: 17.4551]	31.6+0.2s
+[8000/15906]	[L1: 17.3391]	31.5+0.2s
+[9600/15906]	[L1: 17.3021]	31.9+0.2s
+[11200/15906]	[L1: 17.2845]	32.3+0.2s
+[12800/15906]	[L1: 17.2277]	32.0+0.2s
+[14400/15906]	[L1: 17.1749]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.687 (Best: 17.246 @epoch 59)
+Forward: 1.57s
+
+Saving...
+Total: 5.90s
+
+[Epoch 61]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 18.0037]	32.1+0.9s
+[3200/15906]	[L1: 17.5011]	32.1+0.2s
+[4800/15906]	[L1: 17.4960]	32.0+0.2s
+[6400/15906]	[L1: 17.4475]	32.0+0.2s
+[8000/15906]	[L1: 17.3682]	31.8+0.2s
+[9600/15906]	[L1: 17.3783]	32.3+0.2s
+[11200/15906]	[L1: 17.3760]	32.8+0.2s
+[12800/15906]	[L1: 17.3501]	32.4+0.2s
+[14400/15906]	[L1: 17.3723]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.391 (Best: 17.246 @epoch 59)
+Forward: 1.81s
+
+Saving...
+Total: 6.17s
+
+[Epoch 62]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.4047]	32.8+1.1s
+[3200/15906]	[L1: 17.3083]	31.8+0.2s
+[4800/15906]	[L1: 17.2039]	31.9+0.2s
+[6400/15906]	[L1: 17.2332]	32.1+0.2s
+[8000/15906]	[L1: 17.3421]	32.5+0.2s
+[9600/15906]	[L1: 17.4255]	31.9+0.2s
+[11200/15906]	[L1: 17.3654]	32.2+0.2s
+[12800/15906]	[L1: 17.3189]	31.8+0.2s
+[14400/15906]	[L1: 17.3094]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.431 (Best: 17.431 @epoch 62)
+Forward: 1.59s
+
+Saving...
+Total: 5.97s
+
+[Epoch 63]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.3820]	31.6+1.1s
+[3200/15906]	[L1: 17.1000]	32.1+0.2s
+[4800/15906]	[L1: 17.1757]	32.0+0.2s
+[6400/15906]	[L1: 17.0770]	32.2+0.2s
+[8000/15906]	[L1: 17.1040]	32.4+0.2s
+[9600/15906]	[L1: 17.0626]	32.1+0.3s
+[11200/15906]	[L1: 17.0827]	32.0+0.2s
+[12800/15906]	[L1: 17.1181]	32.1+0.2s
+[14400/15906]	[L1: 17.1325]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.118 (Best: 17.431 @epoch 62)
+Forward: 1.83s
+
+Saving...
+Total: 6.15s
+
+[Epoch 64]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.2881]	32.3+1.1s
+[3200/15906]	[L1: 17.2331]	31.9+0.2s
+[4800/15906]	[L1: 17.3012]	31.8+0.2s
+[6400/15906]	[L1: 17.2405]	31.9+0.2s
+[8000/15906]	[L1: 17.2798]	32.0+0.1s
+[9600/15906]	[L1: 17.2530]	32.1+0.3s
+[11200/15906]	[L1: 17.2788]	31.7+0.2s
+[12800/15906]	[L1: 17.2665]	32.3+0.2s
+[14400/15906]	[L1: 17.2538]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.394 (Best: 17.431 @epoch 62)
+Forward: 1.80s
+
+Saving...
+Total: 6.12s
+
+[Epoch 65]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.2236]	32.0+0.9s
+[3200/15906]	[L1: 17.2268]	31.8+0.2s
+[4800/15906]	[L1: 17.1921]	32.2+0.2s
+[6400/15906]	[L1: 17.0711]	32.2+0.1s
+[8000/15906]	[L1: 17.0628]	31.6+0.2s
+[9600/15906]	[L1: 17.1085]	32.0+0.2s
+[11200/15906]	[L1: 17.1796]	31.6+0.2s
+[12800/15906]	[L1: 17.1126]	31.3+0.2s
+[14400/15906]	[L1: 17.1201]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.858 (Best: 17.431 @epoch 62)
+Forward: 1.75s
+
+Saving...
+Total: 6.10s
+
+[Epoch 66]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.1573]	32.0+0.9s
+[3200/15906]	[L1: 17.1918]	32.1+0.2s
+[4800/15906]	[L1: 17.2052]	32.3+0.2s
+[6400/15906]	[L1: 17.1604]	32.2+0.3s
+[8000/15906]	[L1: 17.1601]	31.7+0.2s
+[9600/15906]	[L1: 17.1910]	32.6+0.2s
+[11200/15906]	[L1: 17.1041]	32.1+0.2s
+[12800/15906]	[L1: 17.1240]	31.5+0.2s
+[14400/15906]	[L1: 17.0908]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.650 (Best: 17.431 @epoch 62)
+Forward: 1.65s
+
+Saving...
+Total: 5.96s
+
+[Epoch 67]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.3705]	32.1+0.9s
+[3200/15906]	[L1: 17.2759]	32.1+0.2s
+[4800/15906]	[L1: 17.2005]	32.5+0.2s
+[6400/15906]	[L1: 17.1190]	32.2+0.2s
+[8000/15906]	[L1: 17.0068]	31.7+0.3s
+[9600/15906]	[L1: 16.9561]	32.1+0.2s
+[11200/15906]	[L1: 16.9673]	31.7+0.2s
+[12800/15906]	[L1: 16.9992]	32.2+0.2s
+[14400/15906]	[L1: 17.0122]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.017 (Best: 17.431 @epoch 62)
+Forward: 1.56s
+
+Saving...
+Total: 5.88s
+
+[Epoch 68]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.8925]	31.5+1.2s
+[3200/15906]	[L1: 16.9659]	31.9+0.2s
+[4800/15906]	[L1: 17.0161]	32.0+0.2s
+[6400/15906]	[L1: 17.0891]	32.4+0.2s
+[8000/15906]	[L1: 16.9463]	32.3+0.2s
+[9600/15906]	[L1: 16.9159]	31.8+0.2s
+[11200/15906]	[L1: 16.9601]	31.6+0.2s
+[12800/15906]	[L1: 17.0354]	32.3+0.2s
+[14400/15906]	[L1: 16.9528]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.653 (Best: 17.431 @epoch 62)
+Forward: 1.52s
+
+Saving...
+Total: 5.86s
+
+[Epoch 69]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.0365]	32.3+0.9s
+[3200/15906]	[L1: 17.0888]	32.1+0.2s
+[4800/15906]	[L1: 17.1884]	32.3+0.2s
+[6400/15906]	[L1: 17.1650]	31.8+0.2s
+[8000/15906]	[L1: 17.0982]	32.6+0.2s
+[9600/15906]	[L1: 17.0890]	32.4+0.2s
+[11200/15906]	[L1: 17.0482]	31.6+0.2s
+[12800/15906]	[L1: 17.0631]	32.4+0.2s
+[14400/15906]	[L1: 17.0652]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.554 (Best: 17.431 @epoch 62)
+Forward: 1.83s
+
+Saving...
+Total: 6.15s
+
+[Epoch 70]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.1604]	32.1+1.2s
+[3200/15906]	[L1: 17.2278]	31.6+0.2s
+[4800/15906]	[L1: 17.0340]	32.3+0.2s
+[6400/15906]	[L1: 17.0247]	31.8+0.2s
+[8000/15906]	[L1: 17.2302]	33.6+0.2s
+[9600/15906]	[L1: 17.1759]	32.3+0.2s
+[11200/15906]	[L1: 17.1435]	32.0+0.3s
+[12800/15906]	[L1: 17.1361]	32.3+0.2s
+[14400/15906]	[L1: 17.1194]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.979 (Best: 17.431 @epoch 62)
+Forward: 1.92s
+
+Saving...
+Total: 6.24s
+
+[Epoch 71]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.2051]	33.0+1.0s
+[3200/15906]	[L1: 17.1851]	31.8+0.2s
+[4800/15906]	[L1: 17.0944]	31.8+0.2s
+[6400/15906]	[L1: 17.0285]	32.2+0.2s
+[8000/15906]	[L1: 16.9804]	32.6+0.2s
+[9600/15906]	[L1: 16.9018]	31.8+0.2s
+[11200/15906]	[L1: 16.9154]	31.8+0.2s
+[12800/15906]	[L1: 16.9816]	32.1+0.1s
+[14400/15906]	[L1: 16.9877]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.558 (Best: 17.431 @epoch 62)
+Forward: 1.83s
+
+Saving...
+Total: 6.16s
+
+[Epoch 72]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.3433]	32.4+1.1s
+[3200/15906]	[L1: 16.8643]	32.0+0.2s
+[4800/15906]	[L1: 16.8650]	32.0+0.2s
+[6400/15906]	[L1: 17.0079]	32.1+0.2s
+[8000/15906]	[L1: 17.0532]	31.7+0.2s
+[9600/15906]	[L1: 16.9403]	32.4+0.2s
+[11200/15906]	[L1: 16.9236]	31.9+0.3s
+[12800/15906]	[L1: 16.9822]	32.3+0.2s
+[14400/15906]	[L1: 16.9720]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.272 (Best: 17.431 @epoch 62)
+Forward: 1.55s
+
+Saving...
+Total: 5.90s
+
+[Epoch 73]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.3943]	32.0+1.1s
+[3200/15906]	[L1: 16.7035]	32.5+0.2s
+[4800/15906]	[L1: 16.8906]	32.1+0.1s
+[6400/15906]	[L1: 17.0040]	31.8+0.2s
+[8000/15906]	[L1: 16.9856]	31.7+0.2s
+[9600/15906]	[L1: 16.9903]	32.2+0.2s
+[11200/15906]	[L1: 16.9245]	32.2+0.2s
+[12800/15906]	[L1: 16.9057]	31.8+0.2s
+[14400/15906]	[L1: 16.8628]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.840 (Best: 17.431 @epoch 62)
+Forward: 1.62s
+
+Saving...
+Total: 5.94s
+
+[Epoch 74]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.6787]	31.6+1.0s
+[3200/15906]	[L1: 16.6795]	32.4+0.2s
+[4800/15906]	[L1: 16.7684]	32.3+0.2s
+[6400/15906]	[L1: 16.6787]	31.8+0.2s
+[8000/15906]	[L1: 16.6961]	32.4+0.2s
+[9600/15906]	[L1: 16.6725]	31.9+0.2s
+[11200/15906]	[L1: 16.7138]	31.6+0.1s
+[12800/15906]	[L1: 16.7562]	32.6+0.2s
+[14400/15906]	[L1: 16.8041]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.258 (Best: 17.431 @epoch 62)
+Forward: 1.62s
+
+Saving...
+Total: 5.98s
+
+[Epoch 75]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.2354]	32.2+1.0s
+[3200/15906]	[L1: 17.3397]	32.5+0.2s
+[4800/15906]	[L1: 17.1126]	32.2+0.3s
+[6400/15906]	[L1: 17.0235]	32.4+0.2s
+[8000/15906]	[L1: 16.8954]	32.0+0.3s
+[9600/15906]	[L1: 16.8071]	32.2+0.2s
+[11200/15906]	[L1: 16.7665]	32.3+0.2s
+[12800/15906]	[L1: 16.7449]	32.4+0.2s
+[14400/15906]	[L1: 16.7776]	32.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.088 (Best: 17.431 @epoch 62)
+Forward: 1.53s
+
+Saving...
+Total: 5.91s
+
+[Epoch 76]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.8606]	32.8+1.0s
+[3200/15906]	[L1: 16.9493]	32.0+0.2s
+[4800/15906]	[L1: 16.6713]	32.1+0.2s
+[6400/15906]	[L1: 16.7589]	31.9+0.2s
+[8000/15906]	[L1: 16.7161]	31.9+0.2s
+[9600/15906]	[L1: 16.7089]	32.4+0.2s
+[11200/15906]	[L1: 16.6869]	32.3+0.2s
+[12800/15906]	[L1: 16.6835]	32.1+0.2s
+[14400/15906]	[L1: 16.6674]	32.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.272 (Best: 17.431 @epoch 62)
+Forward: 1.53s
+
+Saving...
+Total: 5.88s
+
+[Epoch 77]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.0214]	32.8+1.0s
+[3200/15906]	[L1: 16.9253]	31.6+0.3s
+[4800/15906]	[L1: 16.8957]	31.8+0.2s
+[6400/15906]	[L1: 16.7691]	31.6+0.2s
+[8000/15906]	[L1: 16.6795]	31.7+0.2s
+[9600/15906]	[L1: 16.5847]	31.9+0.3s
+[11200/15906]	[L1: 16.6100]	32.2+0.2s
+[12800/15906]	[L1: 16.6570]	32.4+0.3s
+[14400/15906]	[L1: 16.6841]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.941 (Best: 17.431 @epoch 62)
+Forward: 1.60s
+
+Saving...
+Total: 5.93s
+
+[Epoch 78]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.9537]	32.2+0.9s
+[3200/15906]	[L1: 16.8107]	31.6+0.2s
+[4800/15906]	[L1: 16.9310]	32.6+0.2s
+[6400/15906]	[L1: 16.7998]	32.2+0.3s
+[8000/15906]	[L1: 16.7935]	32.3+0.2s
+[9600/15906]	[L1: 16.8644]	31.5+0.2s
+[11200/15906]	[L1: 16.7895]	32.8+0.3s
+[12800/15906]	[L1: 16.7641]	32.4+0.2s
+[14400/15906]	[L1: 16.7654]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.213 (Best: 17.431 @epoch 62)
+Forward: 1.49s
+
+Saving...
+Total: 5.81s
+
+[Epoch 79]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.5133]	32.6+0.9s
+[3200/15906]	[L1: 16.6063]	32.2+0.2s
+[4800/15906]	[L1: 16.5596]	31.9+0.2s
+[6400/15906]	[L1: 16.7521]	31.8+0.2s
+[8000/15906]	[L1: 16.8071]	32.1+0.2s
+[9600/15906]	[L1: 16.8654]	32.7+0.2s
+[11200/15906]	[L1: 16.7507]	31.9+0.2s
+[12800/15906]	[L1: 16.7357]	32.4+0.2s
+[14400/15906]	[L1: 16.7285]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.659 (Best: 17.431 @epoch 62)
+Forward: 1.54s
+
+Saving...
+Total: 5.89s
+
+[Epoch 80]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.8094]	32.3+1.0s
+[3200/15906]	[L1: 16.8239]	32.4+0.2s
+[4800/15906]	[L1: 16.7521]	32.1+0.2s
+[6400/15906]	[L1: 16.9129]	32.6+0.2s
+[8000/15906]	[L1: 16.8186]	32.2+0.3s
+[9600/15906]	[L1: 16.7790]	31.8+0.1s
+[11200/15906]	[L1: 16.7305]	32.2+0.3s
+[12800/15906]	[L1: 16.7823]	32.1+0.2s
+[14400/15906]	[L1: 16.7521]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.347 (Best: 17.431 @epoch 62)
+Forward: 1.88s
+
+Saving...
+Total: 6.21s
+
+[Epoch 81]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 17.1988]	32.2+1.2s
+[3200/15906]	[L1: 16.8310]	32.4+0.2s
+[4800/15906]	[L1: 16.5671]	32.3+0.2s
+[6400/15906]	[L1: 16.5142]	32.3+0.2s
+[8000/15906]	[L1: 16.5114]	32.1+0.2s
+[9600/15906]	[L1: 16.5291]	31.9+0.2s
+[11200/15906]	[L1: 16.5423]	32.3+0.2s
+[12800/15906]	[L1: 16.6403]	32.1+0.2s
+[14400/15906]	[L1: 16.6549]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.884 (Best: 17.431 @epoch 62)
+Forward: 1.78s
+
+Saving...
+Total: 6.10s
+
+[Epoch 82]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.9988]	31.7+1.0s
+[3200/15906]	[L1: 16.6683]	32.2+0.2s
+[4800/15906]	[L1: 16.6824]	31.9+0.2s
+[6400/15906]	[L1: 16.6578]	32.3+0.2s
+[8000/15906]	[L1: 16.6897]	32.9+0.2s
+[9600/15906]	[L1: 16.6492]	32.1+0.2s
+[11200/15906]	[L1: 16.6429]	31.9+0.3s
+[12800/15906]	[L1: 16.6155]	31.9+0.3s
+[14400/15906]	[L1: 16.5824]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.161 (Best: 17.431 @epoch 62)
+Forward: 1.66s
+
+Saving...
+Total: 6.01s
+
+[Epoch 83]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.8038]	32.4+1.1s
+[3200/15906]	[L1: 16.6909]	31.6+0.2s
+[4800/15906]	[L1: 16.6391]	32.5+0.2s
+[6400/15906]	[L1: 16.6842]	32.2+0.2s
+[8000/15906]	[L1: 16.6296]	32.3+0.2s
+[9600/15906]	[L1: 16.6013]	32.2+0.2s
+[11200/15906]	[L1: 16.5519]	32.1+0.2s
+[12800/15906]	[L1: 16.4747]	32.1+0.2s
+[14400/15906]	[L1: 16.4762]	32.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.200 (Best: 17.431 @epoch 62)
+Forward: 1.48s
+
+Saving...
+Total: 5.79s
+
+[Epoch 84]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.7191]	32.4+1.0s
+[3200/15906]	[L1: 16.6510]	32.0+0.2s
+[4800/15906]	[L1: 16.5761]	33.4+0.2s
+[6400/15906]	[L1: 16.4541]	32.4+0.2s
+[8000/15906]	[L1: 16.4975]	31.9+0.2s
+[9600/15906]	[L1: 16.5685]	32.6+0.2s
+[11200/15906]	[L1: 16.5071]	32.2+0.2s
+[12800/15906]	[L1: 16.5465]	32.8+0.2s
+[14400/15906]	[L1: 16.6267]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.546 (Best: 17.546 @epoch 84)
+Forward: 1.53s
+
+Saving...
+Total: 5.89s
+
+[Epoch 85]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.6172]	31.8+0.9s
+[3200/15906]	[L1: 16.5890]	32.6+0.2s
+[4800/15906]	[L1: 16.6700]	32.3+0.2s
+[6400/15906]	[L1: 16.6072]	32.0+0.2s
+[8000/15906]	[L1: 16.6311]	32.5+0.2s
+[9600/15906]	[L1: 16.5918]	32.2+0.2s
+[11200/15906]	[L1: 16.6000]	32.3+0.2s
+[12800/15906]	[L1: 16.5956]	31.9+0.2s
+[14400/15906]	[L1: 16.5496]	31.8+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.142 (Best: 17.546 @epoch 84)
+Forward: 1.67s
+
+Saving...
+Total: 5.99s
+
+[Epoch 86]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.5275]	32.0+0.9s
+[3200/15906]	[L1: 16.3451]	31.7+0.2s
+[4800/15906]	[L1: 16.3881]	32.1+0.2s
+[6400/15906]	[L1: 16.4470]	31.5+0.2s
+[8000/15906]	[L1: 16.5590]	32.7+0.2s
+[9600/15906]	[L1: 16.4903]	31.9+0.2s
+[11200/15906]	[L1: 16.5007]	31.6+0.2s
+[12800/15906]	[L1: 16.4890]	32.1+0.2s
+[14400/15906]	[L1: 16.5081]	31.8+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.586 (Best: 17.586 @epoch 86)
+Forward: 1.67s
+
+Saving...
+Total: 6.07s
+
+[Epoch 87]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.6893]	32.6+1.0s
+[3200/15906]	[L1: 16.6626]	32.1+0.2s
+[4800/15906]	[L1: 16.5401]	32.1+0.2s
+[6400/15906]	[L1: 16.6161]	32.2+0.2s
+[8000/15906]	[L1: 16.5479]	33.0+0.2s
+[9600/15906]	[L1: 16.4813]	32.1+0.2s
+[11200/15906]	[L1: 16.4979]	32.3+0.2s
+[12800/15906]	[L1: 16.5135]	32.2+0.2s
+[14400/15906]	[L1: 16.4830]	33.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.844 (Best: 17.586 @epoch 86)
+Forward: 1.77s
+
+Saving...
+Total: 6.08s
+
+[Epoch 88]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.7226]	32.5+0.8s
+[3200/15906]	[L1: 16.7011]	32.5+0.2s
+[4800/15906]	[L1: 16.5912]	32.7+0.2s
+[6400/15906]	[L1: 16.6089]	32.6+0.3s
+[8000/15906]	[L1: 16.5217]	31.9+0.1s
+[9600/15906]	[L1: 16.5598]	32.5+0.3s
+[11200/15906]	[L1: 16.5829]	31.9+0.2s
+[12800/15906]	[L1: 16.5154]	32.1+0.2s
+[14400/15906]	[L1: 16.5787]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.092 (Best: 17.586 @epoch 86)
+Forward: 1.59s
+
+Saving...
+Total: 5.90s
+
+[Epoch 89]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.9502]	31.8+1.1s
+[3200/15906]	[L1: 16.9781]	31.9+0.2s
+[4800/15906]	[L1: 16.9024]	32.4+0.2s
+[6400/15906]	[L1: 16.7380]	32.3+0.2s
+[8000/15906]	[L1: 16.5773]	32.1+0.2s
+[9600/15906]	[L1: 16.4957]	32.5+0.1s
+[11200/15906]	[L1: 16.4450]	32.0+0.2s
+[12800/15906]	[L1: 16.4546]	32.1+0.2s
+[14400/15906]	[L1: 16.4957]	32.3+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.698 (Best: 17.586 @epoch 86)
+Forward: 1.59s
+
+Saving...
+Total: 5.92s
+
+[Epoch 90]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.2386]	31.8+1.1s
+[3200/15906]	[L1: 16.5115]	32.0+0.1s
+[4800/15906]	[L1: 16.5292]	32.5+0.2s
+[6400/15906]	[L1: 16.4951]	32.2+0.1s
+[8000/15906]	[L1: 16.4473]	32.4+0.2s
+[9600/15906]	[L1: 16.4760]	32.5+0.2s
+[11200/15906]	[L1: 16.4684]	31.9+0.3s
+[12800/15906]	[L1: 16.5014]	32.2+0.2s
+[14400/15906]	[L1: 16.5191]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.420 (Best: 17.586 @epoch 86)
+Forward: 1.86s
+
+Saving...
+Total: 6.17s
+
+[Epoch 91]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.6411]	33.1+0.8s
+[3200/15906]	[L1: 16.3602]	31.9+0.2s
+[4800/15906]	[L1: 16.3004]	31.8+0.2s
+[6400/15906]	[L1: 16.2615]	31.8+0.2s
+[8000/15906]	[L1: 16.3007]	32.0+0.2s
+[9600/15906]	[L1: 16.3158]	32.0+0.3s
+[11200/15906]	[L1: 16.2891]	32.6+0.3s
+[12800/15906]	[L1: 16.3197]	32.7+0.2s
+[14400/15906]	[L1: 16.3183]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.721 (Best: 17.586 @epoch 86)
+Forward: 1.78s
+
+Saving...
+Total: 6.09s
+
+[Epoch 92]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.4500]	32.0+1.0s
+[3200/15906]	[L1: 16.4865]	32.7+0.3s
+[4800/15906]	[L1: 16.4282]	32.0+0.2s
+[6400/15906]	[L1: 16.3021]	32.1+0.3s
+[8000/15906]	[L1: 16.4441]	32.1+0.3s
+[9600/15906]	[L1: 16.4262]	32.7+0.2s
+[11200/15906]	[L1: 16.4802]	32.5+0.2s
+[12800/15906]	[L1: 16.5615]	32.2+0.1s
+[14400/15906]	[L1: 16.5090]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.448 (Best: 17.586 @epoch 86)
+Forward: 1.74s
+
+Saving...
+Total: 6.05s
+
+[Epoch 93]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.3697]	32.5+1.2s
+[3200/15906]	[L1: 16.1675]	32.5+0.2s
+[4800/15906]	[L1: 16.2440]	32.3+0.2s
+[6400/15906]	[L1: 16.3201]	32.2+0.2s
+[8000/15906]	[L1: 16.3582]	32.3+0.3s
+[9600/15906]	[L1: 16.3662]	32.6+0.2s
+[11200/15906]	[L1: 16.4103]	32.1+0.2s
+[12800/15906]	[L1: 16.3930]	32.0+0.2s
+[14400/15906]	[L1: 16.4026]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.139 (Best: 17.586 @epoch 86)
+Forward: 1.76s
+
+Saving...
+Total: 6.10s
+
+[Epoch 94]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.2543]	32.6+0.9s
+[3200/15906]	[L1: 16.0709]	31.8+0.3s
+[4800/15906]	[L1: 16.2047]	32.4+0.2s
+[6400/15906]	[L1: 16.2803]	32.3+0.2s
+[8000/15906]	[L1: 16.3761]	32.3+0.2s
+[9600/15906]	[L1: 16.3156]	32.0+0.2s
+[11200/15906]	[L1: 16.3013]	32.1+0.2s
+[12800/15906]	[L1: 16.2906]	32.0+0.2s
+[14400/15906]	[L1: 16.3110]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.306 (Best: 17.586 @epoch 86)
+Forward: 1.75s
+
+Saving...
+Total: 6.06s
+
+[Epoch 95]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.1971]	32.9+1.1s
+[3200/15906]	[L1: 16.2402]	32.5+0.1s
+[4800/15906]	[L1: 16.3242]	32.3+0.2s
+[6400/15906]	[L1: 16.3567]	32.8+0.2s
+[8000/15906]	[L1: 16.3736]	31.9+0.2s
+[9600/15906]	[L1: 16.3752]	32.5+0.2s
+[11200/15906]	[L1: 16.3620]	32.4+0.2s
+[12800/15906]	[L1: 16.3543]	32.2+0.2s
+[14400/15906]	[L1: 16.3372]	32.4+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.181 (Best: 17.586 @epoch 86)
+Forward: 1.52s
+
+Saving...
+Total: 5.83s
+
+[Epoch 96]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.5033]	32.3+1.0s
+[3200/15906]	[L1: 16.3579]	32.0+0.1s
+[4800/15906]	[L1: 16.6039]	33.1+0.2s
+[6400/15906]	[L1: 16.5955]	32.3+0.2s
+[8000/15906]	[L1: 16.4815]	32.9+0.3s
+[9600/15906]	[L1: 16.5202]	31.8+0.2s
+[11200/15906]	[L1: 16.4230]	32.5+0.2s
+[12800/15906]	[L1: 16.3315]	32.3+0.2s
+[14400/15906]	[L1: 16.3783]	32.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.929 (Best: 17.586 @epoch 86)
+Forward: 1.36s
+
+Saving...
+Total: 5.73s
+
+[Epoch 97]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.7059]	32.1+0.9s
+[3200/15906]	[L1: 16.5045]	32.2+0.1s
+[4800/15906]	[L1: 16.3606]	32.5+0.2s
+[6400/15906]	[L1: 16.1662]	31.8+0.3s
+[8000/15906]	[L1: 16.2371]	32.2+0.2s
+[9600/15906]	[L1: 16.2439]	32.2+0.2s
+[11200/15906]	[L1: 16.2253]	32.0+0.2s
+[12800/15906]	[L1: 16.2829]	32.7+0.2s
+[14400/15906]	[L1: 16.3049]	32.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.743 (Best: 17.586 @epoch 86)
+Forward: 1.68s
+
+Saving...
+Total: 5.99s
+
+[Epoch 98]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.3666]	32.6+1.0s
+[3200/15906]	[L1: 16.3587]	31.7+0.2s
+[4800/15906]	[L1: 16.1316]	31.8+0.2s
+[6400/15906]	[L1: 16.0671]	32.1+0.3s
+[8000/15906]	[L1: 16.0894]	32.3+0.2s
+[9600/15906]	[L1: 16.0732]	31.7+0.2s
+[11200/15906]	[L1: 16.1581]	32.2+0.2s
+[12800/15906]	[L1: 16.1472]	32.7+0.2s
+[14400/15906]	[L1: 16.1437]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.934 (Best: 17.586 @epoch 86)
+Forward: 1.56s
+
+Saving...
+Total: 5.87s
+
+[Epoch 99]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 15.9750]	32.1+1.2s
+[3200/15906]	[L1: 16.0610]	32.0+0.2s
+[4800/15906]	[L1: 16.0966]	32.3+0.2s
+[6400/15906]	[L1: 16.0812]	32.3+0.2s
+[8000/15906]	[L1: 16.2122]	32.4+0.2s
+[9600/15906]	[L1: 16.2195]	32.0+0.2s
+[11200/15906]	[L1: 16.2588]	32.6+0.2s
+[12800/15906]	[L1: 16.2480]	32.0+0.2s
+[14400/15906]	[L1: 16.2320]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.140 (Best: 17.586 @epoch 86)
+Forward: 1.85s
+
+Saving...
+Total: 6.20s
+
+[Epoch 100]	Learning rate: 5.00e-5
+[1600/15906]	[L1: 16.3436]	31.7+1.1s
+[3200/15906]	[L1: 16.4559]	31.8+0.2s
+[4800/15906]	[L1: 16.3850]	32.0+0.2s
+[6400/15906]	[L1: 16.4135]	32.6+0.2s
+[8000/15906]	[L1: 16.2645]	32.7+0.2s
+[9600/15906]	[L1: 16.2037]	31.3+0.2s
+[11200/15906]	[L1: 16.2212]	31.5+0.2s
+[12800/15906]	[L1: 16.2572]	32.5+0.2s
+[14400/15906]	[L1: 16.2726]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.001 (Best: 17.586 @epoch 86)
+Forward: 1.71s
+
+Saving...
+Total: 6.05s
+
+[Epoch 101]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 16.2498]	32.1+1.1s
+[3200/15906]	[L1: 16.0944]	32.4+0.2s
+[4800/15906]	[L1: 15.9979]	31.7+0.2s
+[6400/15906]	[L1: 15.9721]	32.5+0.2s
+[8000/15906]	[L1: 15.8191]	32.6+0.2s
+[9600/15906]	[L1: 15.7650]	32.3+0.2s
+[11200/15906]	[L1: 15.7057]	32.7+0.3s
+[12800/15906]	[L1: 15.6758]	31.9+0.3s
+[14400/15906]	[L1: 15.6550]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.200 (Best: 17.586 @epoch 86)
+Forward: 1.73s
+
+Saving...
+Total: 6.03s
+
+[Epoch 102]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.6198]	32.7+1.2s
+[3200/15906]	[L1: 15.6792]	32.5+0.2s
+[4800/15906]	[L1: 15.6117]	32.7+0.2s
+[6400/15906]	[L1: 15.6391]	32.0+0.3s
+[8000/15906]	[L1: 15.5067]	32.1+0.2s
+[9600/15906]	[L1: 15.5319]	31.8+0.2s
+[11200/15906]	[L1: 15.5695]	32.1+0.2s
+[12800/15906]	[L1: 15.5973]	32.2+0.2s
+[14400/15906]	[L1: 15.5751]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.830 (Best: 17.586 @epoch 86)
+Forward: 1.96s
+
+Saving...
+Total: 6.29s
+
+[Epoch 103]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.7033]	32.9+1.0s
+[3200/15906]	[L1: 15.6796]	32.2+0.2s
+[4800/15906]	[L1: 15.5746]	32.9+0.3s
+[6400/15906]	[L1: 15.5828]	32.0+0.3s
+[8000/15906]	[L1: 15.5252]	33.4+0.2s
+[9600/15906]	[L1: 15.6252]	31.7+0.2s
+[11200/15906]	[L1: 15.6369]	32.3+0.2s
+[12800/15906]	[L1: 15.6071]	32.2+0.2s
+[14400/15906]	[L1: 15.6168]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.300 (Best: 17.586 @epoch 86)
+Forward: 1.78s
+
+Saving...
+Total: 6.12s
+
+[Epoch 104]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.4965]	32.4+1.0s
+[3200/15906]	[L1: 15.3565]	31.7+0.2s
+[4800/15906]	[L1: 15.4521]	31.9+0.2s
+[6400/15906]	[L1: 15.3299]	32.1+0.2s
+[8000/15906]	[L1: 15.4199]	32.4+0.1s
+[9600/15906]	[L1: 15.4200]	32.0+0.2s
+[11200/15906]	[L1: 15.4393]	32.6+0.2s
+[12800/15906]	[L1: 15.4174]	32.1+0.3s
+[14400/15906]	[L1: 15.4184]	32.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.108 (Best: 17.586 @epoch 86)
+Forward: 1.71s
+
+Saving...
+Total: 6.02s
+
+[Epoch 105]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.5241]	32.4+0.9s
+[3200/15906]	[L1: 15.4441]	33.0+0.2s
+[4800/15906]	[L1: 15.4924]	32.5+0.2s
+[6400/15906]	[L1: 15.4416]	32.4+0.2s
+[8000/15906]	[L1: 15.4331]	32.3+0.2s
+[9600/15906]	[L1: 15.4154]	32.6+0.2s
+[11200/15906]	[L1: 15.4477]	32.1+0.2s
+[12800/15906]	[L1: 15.4328]	31.7+0.2s
+[14400/15906]	[L1: 15.4529]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.744 (Best: 17.586 @epoch 86)
+Forward: 1.54s
+
+Saving...
+Total: 5.86s
+
+[Epoch 106]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.1618]	32.3+0.9s
+[3200/15906]	[L1: 15.4048]	32.2+0.2s
+[4800/15906]	[L1: 15.4168]	32.0+0.3s
+[6400/15906]	[L1: 15.3610]	32.0+0.2s
+[8000/15906]	[L1: 15.3366]	32.4+0.2s
+[9600/15906]	[L1: 15.2671]	32.3+0.2s
+[11200/15906]	[L1: 15.2443]	32.5+0.1s
+[12800/15906]	[L1: 15.2682]	32.4+0.2s
+[14400/15906]	[L1: 15.2706]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.976 (Best: 17.586 @epoch 86)
+Forward: 1.72s
+
+Saving...
+Total: 6.03s
+
+[Epoch 107]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.3369]	32.4+1.0s
+[3200/15906]	[L1: 15.3443]	32.3+0.2s
+[4800/15906]	[L1: 15.3796]	32.5+0.2s
+[6400/15906]	[L1: 15.3536]	32.1+0.2s
+[8000/15906]	[L1: 15.3728]	32.0+0.2s
+[9600/15906]	[L1: 15.3286]	32.8+0.2s
+[11200/15906]	[L1: 15.3273]	32.6+0.2s
+[12800/15906]	[L1: 15.2710]	32.8+0.2s
+[14400/15906]	[L1: 15.2539]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.006 (Best: 17.586 @epoch 86)
+Forward: 1.55s
+
+Saving...
+Total: 5.89s
+
+[Epoch 108]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.2049]	32.4+1.0s
+[3200/15906]	[L1: 15.1639]	32.5+0.2s
+[4800/15906]	[L1: 15.1679]	32.0+0.2s
+[6400/15906]	[L1: 15.1832]	32.7+0.2s
+[8000/15906]	[L1: 15.1640]	32.5+0.2s
+[9600/15906]	[L1: 15.1787]	32.6+0.2s
+[11200/15906]	[L1: 15.1583]	32.0+0.2s
+[12800/15906]	[L1: 15.2160]	32.0+0.2s
+[14400/15906]	[L1: 15.2571]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.221 (Best: 17.586 @epoch 86)
+Forward: 1.61s
+
+Saving...
+Total: 5.92s
+
+[Epoch 109]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.3548]	32.5+0.9s
+[3200/15906]	[L1: 15.2430]	31.9+0.2s
+[4800/15906]	[L1: 15.2769]	31.8+0.2s
+[6400/15906]	[L1: 15.4055]	32.9+0.2s
+[8000/15906]	[L1: 15.4064]	32.4+0.2s
+[9600/15906]	[L1: 15.3964]	32.7+0.2s
+[11200/15906]	[L1: 15.3594]	32.4+0.2s
+[12800/15906]	[L1: 15.3734]	32.7+0.2s
+[14400/15906]	[L1: 15.4175]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.549 (Best: 17.586 @epoch 86)
+Forward: 1.87s
+
+Saving...
+Total: 6.18s
+
+[Epoch 110]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.2518]	33.1+0.9s
+[3200/15906]	[L1: 15.1285]	31.7+0.2s
+[4800/15906]	[L1: 15.3506]	32.1+0.2s
+[6400/15906]	[L1: 15.3662]	32.5+0.2s
+[8000/15906]	[L1: 15.3688]	32.5+0.2s
+[9600/15906]	[L1: 15.3688]	32.9+0.2s
+[11200/15906]	[L1: 15.3601]	32.5+0.2s
+[12800/15906]	[L1: 15.3172]	32.1+0.2s
+[14400/15906]	[L1: 15.3504]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.641 (Best: 17.641 @epoch 110)
+Forward: 1.60s
+
+Saving...
+Total: 5.96s
+
+[Epoch 111]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.5802]	32.2+1.3s
+[3200/15906]	[L1: 14.6296]	32.6+0.2s
+[4800/15906]	[L1: 14.8003]	31.7+0.2s
+[6400/15906]	[L1: 14.9470]	32.6+0.2s
+[8000/15906]	[L1: 15.0608]	32.7+0.2s
+[9600/15906]	[L1: 15.0392]	32.3+0.1s
+[11200/15906]	[L1: 15.0631]	32.5+0.1s
+[12800/15906]	[L1: 15.1145]	32.2+0.2s
+[14400/15906]	[L1: 15.1604]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.738 (Best: 17.738 @epoch 111)
+Forward: 1.57s
+
+Saving...
+Total: 6.01s
+
+[Epoch 112]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.1887]	32.9+1.0s
+[3200/15906]	[L1: 15.3116]	31.8+0.2s
+[4800/15906]	[L1: 15.3249]	31.9+0.2s
+[6400/15906]	[L1: 15.2533]	31.8+0.2s
+[8000/15906]	[L1: 15.3019]	32.3+0.2s
+[9600/15906]	[L1: 15.2764]	32.4+0.2s
+[11200/15906]	[L1: 15.2358]	32.4+0.2s
+[12800/15906]	[L1: 15.2203]	32.2+0.2s
+[14400/15906]	[L1: 15.1950]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.750 (Best: 17.750 @epoch 112)
+Forward: 1.58s
+
+Saving...
+Total: 5.94s
+
+[Epoch 113]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.6008]	32.7+1.3s
+[3200/15906]	[L1: 15.0513]	31.7+0.2s
+[4800/15906]	[L1: 15.0776]	33.0+0.2s
+[6400/15906]	[L1: 14.9997]	32.8+0.2s
+[8000/15906]	[L1: 15.0259]	32.8+0.2s
+[9600/15906]	[L1: 15.0264]	32.0+0.2s
+[11200/15906]	[L1: 15.1250]	31.9+0.2s
+[12800/15906]	[L1: 15.1324]	32.3+0.2s
+[14400/15906]	[L1: 15.1212]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.366 (Best: 17.750 @epoch 112)
+Forward: 2.08s
+
+Saving...
+Total: 6.38s
+
+[Epoch 114]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.4216]	33.4+1.1s
+[3200/15906]	[L1: 15.2657]	32.3+0.2s
+[4800/15906]	[L1: 15.1600]	33.0+0.2s
+[6400/15906]	[L1: 15.0200]	32.5+0.2s
+[8000/15906]	[L1: 15.0058]	32.3+0.2s
+[9600/15906]	[L1: 15.0463]	31.8+0.3s
+[11200/15906]	[L1: 15.0818]	31.9+0.2s
+[12800/15906]	[L1: 15.1452]	31.7+0.2s
+[14400/15906]	[L1: 15.1542]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.918 (Best: 17.750 @epoch 112)
+Forward: 1.63s
+
+Saving...
+Total: 4.93s
+
+[Epoch 115]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.9756]	32.0+1.1s
+[3200/15906]	[L1: 15.3197]	31.9+0.2s
+[4800/15906]	[L1: 15.2142]	32.0+0.2s
+[6400/15906]	[L1: 15.2363]	32.2+0.2s
+[8000/15906]	[L1: 15.3101]	32.1+0.2s
+[9600/15906]	[L1: 15.2748]	32.3+0.3s
+[11200/15906]	[L1: 15.2603]	32.3+0.2s
+[12800/15906]	[L1: 15.2208]	32.0+0.2s
+[14400/15906]	[L1: 15.1793]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.973 (Best: 17.750 @epoch 112)
+Forward: 1.69s
+
+Saving...
+Total: 6.03s
+
+[Epoch 116]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.2337]	32.4+0.9s
+[3200/15906]	[L1: 15.2229]	31.6+0.2s
+[4800/15906]	[L1: 15.1486]	32.4+0.2s
+[6400/15906]	[L1: 15.0959]	32.1+0.2s
+[8000/15906]	[L1: 15.1575]	32.0+0.2s
+[9600/15906]	[L1: 15.2462]	32.6+0.2s
+[11200/15906]	[L1: 15.2391]	32.4+0.2s
+[12800/15906]	[L1: 15.2148]	32.6+0.2s
+[14400/15906]	[L1: 15.1425]	32.8+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.399 (Best: 17.750 @epoch 112)
+Forward: 1.78s
+
+Saving...
+Total: 6.09s
+
+[Epoch 117]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.8810]	32.9+0.8s
+[3200/15906]	[L1: 15.0357]	32.3+0.2s
+[4800/15906]	[L1: 14.8961]	32.4+0.2s
+[6400/15906]	[L1: 14.8433]	32.4+0.2s
+[8000/15906]	[L1: 14.8055]	32.3+0.2s
+[9600/15906]	[L1: 14.9079]	32.5+0.2s
+[11200/15906]	[L1: 14.9402]	31.9+0.2s
+[12800/15906]	[L1: 14.9416]	31.7+0.2s
+[14400/15906]	[L1: 15.0240]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.994 (Best: 17.750 @epoch 112)
+Forward: 1.52s
+
+Saving...
+Total: 5.82s
+
+[Epoch 118]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.3111]	32.6+1.0s
+[3200/15906]	[L1: 15.3505]	31.5+0.2s
+[4800/15906]	[L1: 15.2692]	32.1+0.2s
+[6400/15906]	[L1: 15.2656]	32.7+0.2s
+[8000/15906]	[L1: 15.2740]	32.4+0.2s
+[9600/15906]	[L1: 15.2316]	32.4+0.2s
+[11200/15906]	[L1: 15.2580]	32.6+0.2s
+[12800/15906]	[L1: 15.1913]	32.7+0.3s
+[14400/15906]	[L1: 15.1611]	32.3+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.262 (Best: 17.750 @epoch 112)
+Forward: 1.71s
+
+Saving...
+Total: 6.02s
+
+[Epoch 119]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.1000]	32.0+1.0s
+[3200/15906]	[L1: 15.1019]	32.3+0.2s
+[4800/15906]	[L1: 14.9878]	32.0+0.2s
+[6400/15906]	[L1: 15.0997]	32.4+0.2s
+[8000/15906]	[L1: 15.1160]	32.1+0.2s
+[9600/15906]	[L1: 15.1171]	32.9+0.2s
+[11200/15906]	[L1: 15.1101]	32.3+0.2s
+[12800/15906]	[L1: 15.0820]	32.0+0.2s
+[14400/15906]	[L1: 15.0859]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.600 (Best: 17.750 @epoch 112)
+Forward: 1.60s
+
+Saving...
+Total: 5.94s
+
+[Epoch 120]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.9877]	33.2+0.8s
+[3200/15906]	[L1: 14.9281]	32.5+0.2s
+[4800/15906]	[L1: 14.8094]	32.5+0.2s
+[6400/15906]	[L1: 14.8399]	32.7+0.2s
+[8000/15906]	[L1: 14.7841]	32.5+0.2s
+[9600/15906]	[L1: 14.8777]	31.7+0.3s
+[11200/15906]	[L1: 14.8718]	32.4+0.3s
+[12800/15906]	[L1: 14.8855]	32.4+0.2s
+[14400/15906]	[L1: 14.9010]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.429 (Best: 17.750 @epoch 112)
+Forward: 1.53s
+
+Saving...
+Total: 5.84s
+
+[Epoch 121]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.9646]	31.8+1.2s
+[3200/15906]	[L1: 14.9122]	32.6+0.2s
+[4800/15906]	[L1: 15.0153]	32.2+0.2s
+[6400/15906]	[L1: 15.0788]	32.5+0.2s
+[8000/15906]	[L1: 15.0555]	32.3+0.2s
+[9600/15906]	[L1: 15.0050]	32.5+0.2s
+[11200/15906]	[L1: 15.0299]	32.4+0.2s
+[12800/15906]	[L1: 14.9755]	32.9+0.2s
+[14400/15906]	[L1: 15.0290]	32.4+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.208 (Best: 17.750 @epoch 112)
+Forward: 1.61s
+
+Saving...
+Total: 5.91s
+
+[Epoch 122]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.5158]	32.4+0.9s
+[3200/15906]	[L1: 15.2622]	32.0+0.2s
+[4800/15906]	[L1: 15.2506]	32.4+0.2s
+[6400/15906]	[L1: 15.1880]	32.1+0.2s
+[8000/15906]	[L1: 15.1059]	32.5+0.1s
+[9600/15906]	[L1: 15.1146]	32.4+0.2s
+[11200/15906]	[L1: 15.1234]	32.0+0.3s
+[12800/15906]	[L1: 15.0472]	32.7+0.2s
+[14400/15906]	[L1: 15.0575]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.178 (Best: 17.750 @epoch 112)
+Forward: 1.41s
+
+Saving...
+Total: 5.75s
+
+[Epoch 123]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.0833]	31.7+0.9s
+[3200/15906]	[L1: 15.0661]	32.5+0.2s
+[4800/15906]	[L1: 14.9887]	32.2+0.2s
+[6400/15906]	[L1: 14.9776]	32.3+0.1s
+[8000/15906]	[L1: 14.8990]	32.1+0.2s
+[9600/15906]	[L1: 14.8926]	32.0+0.2s
+[11200/15906]	[L1: 14.8641]	32.8+0.2s
+[12800/15906]	[L1: 14.9458]	32.1+0.2s
+[14400/15906]	[L1: 14.9419]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.553 (Best: 17.750 @epoch 112)
+Forward: 1.71s
+
+Saving...
+Total: 5.05s
+
+[Epoch 124]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.9594]	31.5+0.9s
+[3200/15906]	[L1: 15.1018]	32.4+0.2s
+[4800/15906]	[L1: 15.0086]	32.0+0.2s
+[6400/15906]	[L1: 15.0503]	32.3+0.2s
+[8000/15906]	[L1: 14.9573]	32.3+0.2s
+[9600/15906]	[L1: 14.9308]	32.1+0.2s
+[11200/15906]	[L1: 14.9604]	32.3+0.2s
+[12800/15906]	[L1: 14.9270]	32.5+0.2s
+[14400/15906]	[L1: 14.9131]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.786 (Best: 17.786 @epoch 124)
+Forward: 1.50s
+
+Saving...
+Total: 5.86s
+
+[Epoch 125]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.4082]	32.4+1.0s
+[3200/15906]	[L1: 15.2134]	32.6+0.2s
+[4800/15906]	[L1: 15.3083]	32.5+0.3s
+[6400/15906]	[L1: 15.2385]	32.6+0.2s
+[8000/15906]	[L1: 15.2151]	32.6+0.2s
+[9600/15906]	[L1: 15.1619]	32.0+0.2s
+[11200/15906]	[L1: 15.1474]	32.4+0.2s
+[12800/15906]	[L1: 15.0636]	32.4+0.2s
+[14400/15906]	[L1: 15.0637]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.369 (Best: 17.786 @epoch 124)
+Forward: 1.59s
+
+Saving...
+Total: 5.90s
+
+[Epoch 126]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.9738]	32.7+1.0s
+[3200/15906]	[L1: 14.9169]	32.3+0.2s
+[4800/15906]	[L1: 14.9648]	31.6+0.2s
+[6400/15906]	[L1: 14.9939]	32.1+0.3s
+[8000/15906]	[L1: 14.9874]	32.3+0.2s
+[9600/15906]	[L1: 14.9627]	32.1+0.2s
+[11200/15906]	[L1: 14.9128]	32.6+0.2s
+[12800/15906]	[L1: 14.9535]	32.8+0.3s
+[14400/15906]	[L1: 14.9274]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.112 (Best: 17.786 @epoch 124)
+Forward: 1.59s
+
+Saving...
+Total: 5.90s
+
+[Epoch 127]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.1634]	32.3+1.1s
+[3200/15906]	[L1: 14.9610]	32.2+0.2s
+[4800/15906]	[L1: 14.9091]	32.4+0.2s
+[6400/15906]	[L1: 14.9588]	32.6+0.2s
+[8000/15906]	[L1: 14.9491]	32.6+0.2s
+[9600/15906]	[L1: 14.8219]	32.0+0.3s
+[11200/15906]	[L1: 14.8302]	32.6+0.2s
+[12800/15906]	[L1: 14.7623]	32.0+0.2s
+[14400/15906]	[L1: 14.7572]	31.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.987 (Best: 17.786 @epoch 124)
+Forward: 1.64s
+
+Saving...
+Total: 5.98s
+
+[Epoch 128]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.3264]	32.5+0.9s
+[3200/15906]	[L1: 15.1849]	32.1+0.2s
+[4800/15906]	[L1: 15.0583]	33.2+0.2s
+[6400/15906]	[L1: 14.9322]	32.3+0.2s
+[8000/15906]	[L1: 14.9990]	32.4+0.2s
+[9600/15906]	[L1: 15.0500]	32.3+0.2s
+[11200/15906]	[L1: 15.0287]	31.9+0.2s
+[12800/15906]	[L1: 15.0339]	32.0+0.2s
+[14400/15906]	[L1: 15.0046]	32.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.524 (Best: 17.786 @epoch 124)
+Forward: 1.53s
+
+Saving...
+Total: 5.84s
+
+[Epoch 129]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.4087]	32.3+1.1s
+[3200/15906]	[L1: 15.3230]	32.2+0.1s
+[4800/15906]	[L1: 15.0713]	32.4+0.2s
+[6400/15906]	[L1: 15.0916]	32.6+0.2s
+[8000/15906]	[L1: 15.0160]	32.8+0.2s
+[9600/15906]	[L1: 15.0110]	32.4+0.2s
+[11200/15906]	[L1: 14.9851]	32.1+0.2s
+[12800/15906]	[L1: 14.9308]	32.7+0.2s
+[14400/15906]	[L1: 14.8536]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.400 (Best: 17.786 @epoch 124)
+Forward: 1.82s
+
+Saving...
+Total: 6.13s
+
+[Epoch 130]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.9558]	31.6+1.0s
+[3200/15906]	[L1: 14.9086]	32.3+0.2s
+[4800/15906]	[L1: 14.9316]	32.3+0.2s
+[6400/15906]	[L1: 14.9825]	32.0+0.2s
+[8000/15906]	[L1: 14.9516]	32.4+0.2s
+[9600/15906]	[L1: 14.9554]	31.8+0.2s
+[11200/15906]	[L1: 15.0017]	32.5+0.2s
+[12800/15906]	[L1: 14.9434]	32.5+0.3s
+[14400/15906]	[L1: 14.9442]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.437 (Best: 17.786 @epoch 124)
+Forward: 1.83s
+
+Saving...
+Total: 6.14s
+
+[Epoch 131]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.0731]	32.3+1.0s
+[3200/15906]	[L1: 14.8503]	32.0+0.2s
+[4800/15906]	[L1: 14.9203]	32.4+0.2s
+[6400/15906]	[L1: 15.0082]	31.9+0.2s
+[8000/15906]	[L1: 14.9728]	31.5+0.2s
+[9600/15906]	[L1: 15.0130]	32.2+0.2s
+[11200/15906]	[L1: 14.9253]	32.2+0.2s
+[12800/15906]	[L1: 14.8961]	31.6+0.1s
+[14400/15906]	[L1: 14.8521]	32.3+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 16.876 (Best: 17.786 @epoch 124)
+Forward: 1.64s
+
+Saving...
+Total: 4.97s
+
+[Epoch 132]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.8648]	31.5+0.9s
+[3200/15906]	[L1: 14.6757]	32.3+0.3s
+[4800/15906]	[L1: 14.7557]	32.5+0.2s
+[6400/15906]	[L1: 14.8141]	32.1+0.2s
+[8000/15906]	[L1: 14.8249]	32.2+0.2s
+[9600/15906]	[L1: 14.8455]	32.0+0.2s
+[11200/15906]	[L1: 14.8823]	32.5+0.2s
+[12800/15906]	[L1: 14.8866]	32.5+0.2s
+[14400/15906]	[L1: 14.8553]	31.9+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.264 (Best: 17.786 @epoch 124)
+Forward: 1.67s
+
+Saving...
+Total: 5.98s
+
+[Epoch 133]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.6415]	31.8+1.1s
+[3200/15906]	[L1: 14.7139]	31.6+0.3s
+[4800/15906]	[L1: 14.7762]	31.9+0.2s
+[6400/15906]	[L1: 14.8767]	31.6+0.1s
+[8000/15906]	[L1: 14.9046]	32.2+0.2s
+[9600/15906]	[L1: 14.8534]	32.1+0.2s
+[11200/15906]	[L1: 14.8617]	32.3+0.2s
+[12800/15906]	[L1: 14.7926]	31.8+0.2s
+[14400/15906]	[L1: 14.7849]	31.0+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.880 (Best: 17.880 @epoch 133)
+Forward: 1.63s
+
+Saving...
+Total: 5.99s
+
+[Epoch 134]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.3950]	32.3+1.0s
+[3200/15906]	[L1: 15.0394]	31.6+0.2s
+[4800/15906]	[L1: 15.0125]	31.3+0.2s
+[6400/15906]	[L1: 15.0430]	31.7+0.2s
+[8000/15906]	[L1: 15.0932]	31.7+0.2s
+[9600/15906]	[L1: 15.0466]	32.4+0.1s
+[11200/15906]	[L1: 15.0727]	31.3+0.1s
+[12800/15906]	[L1: 14.9771]	32.0+0.2s
+[14400/15906]	[L1: 14.9235]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.803 (Best: 17.880 @epoch 133)
+Forward: 1.64s
+
+Saving...
+Total: 5.95s
+
+[Epoch 135]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.9011]	31.7+0.8s
+[3200/15906]	[L1: 14.7340]	31.7+0.2s
+[4800/15906]	[L1: 14.8728]	32.9+0.3s
+[6400/15906]	[L1: 14.8949]	32.5+0.2s
+[8000/15906]	[L1: 14.8565]	32.5+0.2s
+[9600/15906]	[L1: 14.8640]	31.3+0.2s
+[11200/15906]	[L1: 14.8432]	31.6+0.3s
+[12800/15906]	[L1: 14.8176]	32.4+0.3s
+[14400/15906]	[L1: 14.8064]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.851 (Best: 17.880 @epoch 133)
+Forward: 1.70s
+
+Saving...
+Total: 6.04s
+
+[Epoch 136]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.7085]	31.8+1.0s
+[3200/15906]	[L1: 14.7293]	31.7+0.2s
+[4800/15906]	[L1: 14.5704]	32.0+0.2s
+[6400/15906]	[L1: 14.6741]	32.5+0.2s
+[8000/15906]	[L1: 14.7144]	32.0+0.2s
+[9600/15906]	[L1: 14.7442]	31.9+0.2s
+[11200/15906]	[L1: 14.6910]	32.1+0.2s
+[12800/15906]	[L1: 14.7390]	31.7+0.2s
+[14400/15906]	[L1: 14.7404]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.735 (Best: 17.880 @epoch 133)
+Forward: 1.61s
+
+Saving...
+Total: 5.91s
+
+[Epoch 137]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.8316]	32.3+1.0s
+[3200/15906]	[L1: 14.8051]	31.9+0.2s
+[4800/15906]	[L1: 14.7686]	32.0+0.2s
+[6400/15906]	[L1: 14.6947]	31.1+0.2s
+[8000/15906]	[L1: 14.7644]	32.1+0.2s
+[9600/15906]	[L1: 14.7123]	32.5+0.3s
+[11200/15906]	[L1: 14.7505]	31.7+0.2s
+[12800/15906]	[L1: 14.7438]	31.7+0.3s
+[14400/15906]	[L1: 14.7198]	31.7+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.740 (Best: 17.880 @epoch 133)
+Forward: 1.54s
+
+Saving...
+Total: 4.84s
+
+[Epoch 138]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.8326]	31.7+1.1s
+[3200/15906]	[L1: 14.8875]	32.8+0.3s
+[4800/15906]	[L1: 14.7924]	31.5+0.2s
+[6400/15906]	[L1: 14.8065]	32.0+0.2s
+[8000/15906]	[L1: 14.8489]	31.9+0.3s
+[9600/15906]	[L1: 14.7700]	32.5+0.2s
+[11200/15906]	[L1: 14.7142]	31.6+0.2s
+[12800/15906]	[L1: 14.7432]	32.4+0.2s
+[14400/15906]	[L1: 14.7139]	31.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.373 (Best: 17.880 @epoch 133)
+Forward: 1.65s
+
+Saving...
+Total: 5.97s
+
+[Epoch 139]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.6445]	32.4+1.0s
+[3200/15906]	[L1: 14.6975]	31.7+0.2s
+[4800/15906]	[L1: 14.6434]	32.1+0.3s
+[6400/15906]	[L1: 14.6652]	31.9+0.2s
+[8000/15906]	[L1: 14.6556]	31.7+0.2s
+[9600/15906]	[L1: 14.6240]	32.2+0.2s
+[11200/15906]	[L1: 14.6625]	32.1+0.2s
+[12800/15906]	[L1: 14.6756]	31.9+0.2s
+[14400/15906]	[L1: 14.7242]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.567 (Best: 17.880 @epoch 133)
+Forward: 1.60s
+
+Saving...
+Total: 4.95s
+
+[Epoch 140]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.2163]	30.9+1.0s
+[3200/15906]	[L1: 15.0840]	32.1+0.2s
+[4800/15906]	[L1: 14.7965]	32.0+0.2s
+[6400/15906]	[L1: 14.7758]	31.5+0.2s
+[8000/15906]	[L1: 14.8050]	32.1+0.2s
+[9600/15906]	[L1: 14.7940]	31.9+0.2s
+[11200/15906]	[L1: 14.7263]	32.1+0.2s
+[12800/15906]	[L1: 14.7301]	31.9+0.2s
+[14400/15906]	[L1: 14.7170]	31.5+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.403 (Best: 17.880 @epoch 133)
+Forward: 1.87s
+
+Saving...
+Total: 6.18s
+
+[Epoch 141]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.2510]	31.4+1.0s
+[3200/15906]	[L1: 14.4472]	31.8+0.2s
+[4800/15906]	[L1: 14.5549]	31.6+0.2s
+[6400/15906]	[L1: 14.5543]	31.5+0.2s
+[8000/15906]	[L1: 14.5483]	31.9+0.2s
+[9600/15906]	[L1: 14.6056]	31.4+0.2s
+[11200/15906]	[L1: 14.6239]	31.8+0.2s
+[12800/15906]	[L1: 14.6982]	31.6+0.3s
+[14400/15906]	[L1: 14.6631]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.025 (Best: 17.880 @epoch 133)
+Forward: 1.53s
+
+Saving...
+Total: 5.84s
+
+[Epoch 142]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.8742]	31.8+0.8s
+[3200/15906]	[L1: 14.8257]	31.9+0.1s
+[4800/15906]	[L1: 14.8465]	31.7+0.2s
+[6400/15906]	[L1: 14.7695]	31.8+0.2s
+[8000/15906]	[L1: 14.6932]	31.9+0.2s
+[9600/15906]	[L1: 14.6566]	32.1+0.3s
+[11200/15906]	[L1: 14.6138]	31.4+0.3s
+[12800/15906]	[L1: 14.6471]	31.7+0.2s
+[14400/15906]	[L1: 14.6067]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.516 (Best: 17.880 @epoch 133)
+Forward: 1.66s
+
+Saving...
+Total: 5.96s
+
+[Epoch 143]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.6230]	32.5+0.9s
+[3200/15906]	[L1: 14.8427]	32.1+0.2s
+[4800/15906]	[L1: 14.7439]	31.6+0.3s
+[6400/15906]	[L1: 14.7641]	31.6+0.2s
+[8000/15906]	[L1: 14.7230]	31.0+0.2s
+[9600/15906]	[L1: 14.7644]	31.5+0.2s
+[11200/15906]	[L1: 14.7633]	31.7+0.2s
+[12800/15906]	[L1: 14.7945]	31.1+0.2s
+[14400/15906]	[L1: 14.7727]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.924 (Best: 17.924 @epoch 143)
+Forward: 1.52s
+
+Saving...
+Total: 5.92s
+
+[Epoch 144]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 15.0240]	31.6+1.0s
+[3200/15906]	[L1: 14.8137]	32.0+0.2s
+[4800/15906]	[L1: 14.8296]	31.4+0.2s
+[6400/15906]	[L1: 14.7906]	31.6+0.2s
+[8000/15906]	[L1: 14.7507]	31.9+0.2s
+[9600/15906]	[L1: 14.8060]	31.5+0.2s
+[11200/15906]	[L1: 14.7289]	31.5+0.2s
+[12800/15906]	[L1: 14.6791]	32.0+0.3s
+[14400/15906]	[L1: 14.6684]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.159 (Best: 17.924 @epoch 143)
+Forward: 1.49s
+
+Saving...
+Total: 5.81s
+
+[Epoch 145]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.9599]	31.4+1.1s
+[3200/15906]	[L1: 14.7619]	31.3+0.2s
+[4800/15906]	[L1: 14.7788]	32.0+0.2s
+[6400/15906]	[L1: 14.6689]	31.7+0.2s
+[8000/15906]	[L1: 14.5960]	31.7+0.2s
+[9600/15906]	[L1: 14.6210]	31.4+0.2s
+[11200/15906]	[L1: 14.6808]	31.2+0.2s
+[12800/15906]	[L1: 14.6618]	31.9+0.2s
+[14400/15906]	[L1: 14.6178]	31.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.429 (Best: 17.924 @epoch 143)
+Forward: 1.56s
+
+Saving...
+Total: 5.88s
+
+[Epoch 146]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.5610]	31.9+0.9s
+[3200/15906]	[L1: 14.5539]	30.9+0.2s
+[4800/15906]	[L1: 14.5181]	31.4+0.2s
+[6400/15906]	[L1: 14.4646]	31.2+0.2s
+[8000/15906]	[L1: 14.5580]	31.4+0.2s
+[9600/15906]	[L1: 14.6223]	31.8+0.2s
+[11200/15906]	[L1: 14.6684]	30.9+0.2s
+[12800/15906]	[L1: 14.6025]	32.5+0.2s
+[14400/15906]	[L1: 14.6270]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.467 (Best: 17.924 @epoch 143)
+Forward: 1.50s
+
+Saving...
+Total: 5.81s
+
+[Epoch 147]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.6223]	32.0+0.9s
+[3200/15906]	[L1: 14.4872]	31.8+0.2s
+[4800/15906]	[L1: 14.5154]	31.9+0.2s
+[6400/15906]	[L1: 14.4429]	31.8+0.2s
+[8000/15906]	[L1: 14.4375]	31.5+0.2s
+[9600/15906]	[L1: 14.4388]	31.6+0.2s
+[11200/15906]	[L1: 14.5006]	31.7+0.2s
+[12800/15906]	[L1: 14.5482]	32.1+0.2s
+[14400/15906]	[L1: 14.5463]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.334 (Best: 17.924 @epoch 143)
+Forward: 1.66s
+
+Saving...
+Total: 5.01s
+
+[Epoch 148]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.4111]	31.8+1.1s
+[3200/15906]	[L1: 14.6389]	31.7+0.2s
+[4800/15906]	[L1: 14.5332]	31.8+0.2s
+[6400/15906]	[L1: 14.5319]	31.8+0.2s
+[8000/15906]	[L1: 14.5722]	31.8+0.2s
+[9600/15906]	[L1: 14.5924]	31.4+0.2s
+[11200/15906]	[L1: 14.5674]	31.1+0.2s
+[12800/15906]	[L1: 14.5599]	31.2+0.2s
+[14400/15906]	[L1: 14.5827]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.363 (Best: 17.924 @epoch 143)
+Forward: 1.59s
+
+Saving...
+Total: 5.91s
+
+[Epoch 149]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 13.8894]	30.9+0.9s
+[3200/15906]	[L1: 13.9957]	31.9+0.2s
+[4800/15906]	[L1: 14.1296]	32.0+0.2s
+[6400/15906]	[L1: 14.2425]	32.1+0.2s
+[8000/15906]	[L1: 14.2508]	31.8+0.2s
+[9600/15906]	[L1: 14.3367]	32.4+0.2s
+[11200/15906]	[L1: 14.4388]	32.3+0.2s
+[12800/15906]	[L1: 14.4656]	31.4+0.2s
+[14400/15906]	[L1: 14.4286]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.361 (Best: 17.924 @epoch 143)
+Forward: 1.60s
+
+Saving...
+Total: 4.92s
+
+[Epoch 150]	Learning rate: 2.50e-5
+[1600/15906]	[L1: 14.4025]	31.2+1.1s
+[3200/15906]	[L1: 14.5846]	32.1+0.2s
+[4800/15906]	[L1: 14.5780]	31.4+0.2s
+[6400/15906]	[L1: 14.6733]	31.3+0.2s
+[8000/15906]	[L1: 14.6837]	31.3+0.2s
+[9600/15906]	[L1: 14.6813]	31.7+0.2s
+[11200/15906]	[L1: 14.6713]	30.8+0.2s
+[12800/15906]	[L1: 14.7130]	31.9+0.2s
+[14400/15906]	[L1: 14.7222]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.050 (Best: 17.924 @epoch 143)
+Forward: 1.72s
+
+Saving...
+Total: 5.05s
+
+[Epoch 151]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 14.2235]	31.9+1.0s
+[3200/15906]	[L1: 14.6599]	31.3+0.2s
+[4800/15906]	[L1: 14.5273]	31.4+0.2s
+[6400/15906]	[L1: 14.5249]	32.1+0.3s
+[8000/15906]	[L1: 14.5111]	31.8+0.3s
+[9600/15906]	[L1: 14.4748]	31.7+0.2s
+[11200/15906]	[L1: 14.4540]	31.9+0.2s
+[12800/15906]	[L1: 14.3799]	31.2+0.2s
+[14400/15906]	[L1: 14.3145]	31.7+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.531 (Best: 17.924 @epoch 143)
+Forward: 1.42s
+
+Saving...
+Total: 4.77s
+
+[Epoch 152]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.6534]	31.7+1.1s
+[3200/15906]	[L1: 14.5599]	32.2+0.1s
+[4800/15906]	[L1: 14.3698]	32.4+0.2s
+[6400/15906]	[L1: 14.3526]	31.7+0.2s
+[8000/15906]	[L1: 14.2856]	31.1+0.2s
+[9600/15906]	[L1: 14.2908]	31.6+0.2s
+[11200/15906]	[L1: 14.3076]	32.0+0.2s
+[12800/15906]	[L1: 14.3067]	32.1+0.2s
+[14400/15906]	[L1: 14.2773]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.746 (Best: 17.924 @epoch 143)
+Forward: 1.53s
+
+Saving...
+Total: 4.85s
+
+[Epoch 153]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.9655]	31.6+1.2s
+[3200/15906]	[L1: 14.0960]	31.5+0.2s
+[4800/15906]	[L1: 14.1991]	32.0+0.2s
+[6400/15906]	[L1: 14.1753]	32.1+0.2s
+[8000/15906]	[L1: 14.1911]	32.0+0.2s
+[9600/15906]	[L1: 14.1420]	32.3+0.3s
+[11200/15906]	[L1: 14.0985]	31.9+0.2s
+[12800/15906]	[L1: 14.0947]	31.9+0.2s
+[14400/15906]	[L1: 14.0919]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.715 (Best: 17.924 @epoch 143)
+Forward: 1.51s
+
+Saving...
+Total: 4.83s
+
+[Epoch 154]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.2920]	31.6+0.9s
+[3200/15906]	[L1: 14.1616]	31.5+0.2s
+[4800/15906]	[L1: 14.2350]	31.3+0.2s
+[6400/15906]	[L1: 14.1844]	32.3+0.2s
+[8000/15906]	[L1: 14.1685]	32.3+0.2s
+[9600/15906]	[L1: 14.1489]	32.5+0.2s
+[11200/15906]	[L1: 14.1390]	31.2+0.2s
+[12800/15906]	[L1: 14.1283]	31.0+0.2s
+[14400/15906]	[L1: 14.1380]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.789 (Best: 17.924 @epoch 143)
+Forward: 1.66s
+
+Saving...
+Total: 5.02s
+
+[Epoch 155]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.9425]	31.3+1.0s
+[3200/15906]	[L1: 14.2392]	31.7+0.2s
+[4800/15906]	[L1: 14.0759]	31.8+0.2s
+[6400/15906]	[L1: 14.0636]	31.7+0.3s
+[8000/15906]	[L1: 13.9985]	31.6+0.3s
+[9600/15906]	[L1: 14.0482]	31.6+0.2s
+[11200/15906]	[L1: 14.0861]	31.9+0.1s
+[12800/15906]	[L1: 14.0910]	31.5+0.2s
+[14400/15906]	[L1: 14.1169]	31.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.896 (Best: 17.924 @epoch 143)
+Forward: 1.47s
+
+Saving...
+Total: 5.80s
+
+[Epoch 156]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.0244]	31.2+0.9s
+[3200/15906]	[L1: 14.1115]	31.5+0.2s
+[4800/15906]	[L1: 14.1108]	31.9+0.2s
+[6400/15906]	[L1: 14.0140]	31.6+0.2s
+[8000/15906]	[L1: 13.9726]	32.2+0.2s
+[9600/15906]	[L1: 14.0133]	31.7+0.2s
+[11200/15906]	[L1: 14.0267]	31.0+0.2s
+[12800/15906]	[L1: 14.0160]	31.3+0.2s
+[14400/15906]	[L1: 14.0592]	31.7+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 18.084 (Best: 18.084 @epoch 156)
+Forward: 1.64s
+
+Saving...
+Total: 5.02s
+
+[Epoch 157]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.0060]	31.4+0.9s
+[3200/15906]	[L1: 14.0279]	31.4+0.2s
+[4800/15906]	[L1: 14.0333]	31.7+0.2s
+[6400/15906]	[L1: 14.0490]	32.1+0.2s
+[8000/15906]	[L1: 14.0039]	31.4+0.2s
+[9600/15906]	[L1: 14.0420]	31.4+0.2s
+[11200/15906]	[L1: 14.0865]	31.5+0.2s
+[12800/15906]	[L1: 14.0279]	31.7+0.3s
+[14400/15906]	[L1: 14.0467]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.478 (Best: 18.084 @epoch 156)
+Forward: 1.52s
+
+Saving...
+Total: 4.85s
+
+[Epoch 158]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.3137]	32.2+0.9s
+[3200/15906]	[L1: 14.2217]	31.6+0.2s
+[4800/15906]	[L1: 14.0227]	31.6+0.2s
+[6400/15906]	[L1: 14.1253]	31.9+0.3s
+[8000/15906]	[L1: 14.1527]	31.6+0.3s
+[9600/15906]	[L1: 14.1207]	30.8+0.2s
+[11200/15906]	[L1: 14.1149]	31.8+0.3s
+[12800/15906]	[L1: 14.1634]	31.1+0.2s
+[14400/15906]	[L1: 14.1673]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.520 (Best: 18.084 @epoch 156)
+Forward: 1.63s
+
+Saving...
+Total: 4.97s
+
+[Epoch 159]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.2872]	31.6+1.1s
+[3200/15906]	[L1: 14.1179]	31.6+0.2s
+[4800/15906]	[L1: 13.9131]	31.5+0.2s
+[6400/15906]	[L1: 13.9364]	31.5+0.2s
+[8000/15906]	[L1: 13.9800]	32.0+0.1s
+[9600/15906]	[L1: 13.9725]	32.1+0.2s
+[11200/15906]	[L1: 13.9093]	31.6+0.2s
+[12800/15906]	[L1: 13.9912]	32.5+0.2s
+[14400/15906]	[L1: 13.9629]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.445 (Best: 18.084 @epoch 156)
+Forward: 1.67s
+
+Saving...
+Total: 6.00s
+
+[Epoch 160]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.2692]	31.1+0.8s
+[3200/15906]	[L1: 14.1681]	31.0+0.2s
+[4800/15906]	[L1: 14.1098]	31.8+0.2s
+[6400/15906]	[L1: 14.0601]	31.6+0.2s
+[8000/15906]	[L1: 14.1007]	32.0+0.2s
+[9600/15906]	[L1: 14.0891]	32.4+0.2s
+[11200/15906]	[L1: 14.0837]	32.0+0.3s
+[12800/15906]	[L1: 14.0999]	31.5+0.2s
+[14400/15906]	[L1: 14.1140]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.293 (Best: 18.084 @epoch 156)
+Forward: 1.73s
+
+Saving...
+Total: 5.05s
+
+[Epoch 161]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.8922]	31.3+1.1s
+[3200/15906]	[L1: 14.0920]	32.0+0.2s
+[4800/15906]	[L1: 13.9307]	32.1+0.2s
+[6400/15906]	[L1: 13.9551]	31.6+0.2s
+[8000/15906]	[L1: 13.9522]	31.2+0.1s
+[9600/15906]	[L1: 13.9763]	31.2+0.2s
+[11200/15906]	[L1: 14.0070]	31.8+0.2s
+[12800/15906]	[L1: 14.0356]	31.9+0.2s
+[14400/15906]	[L1: 14.0661]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.706 (Best: 18.084 @epoch 156)
+Forward: 1.61s
+
+Saving...
+Total: 4.96s
+
+[Epoch 162]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.0233]	31.7+1.1s
+[3200/15906]	[L1: 14.1397]	31.6+0.3s
+[4800/15906]	[L1: 13.9276]	31.4+0.2s
+[6400/15906]	[L1: 14.0214]	31.6+0.2s
+[8000/15906]	[L1: 14.0263]	31.9+0.3s
+[9600/15906]	[L1: 14.0254]	31.3+0.2s
+[11200/15906]	[L1: 14.0114]	31.8+0.2s
+[12800/15906]	[L1: 13.9770]	31.5+0.2s
+[14400/15906]	[L1: 13.9605]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.152 (Best: 18.084 @epoch 156)
+Forward: 1.62s
+
+Saving...
+Total: 5.97s
+
+[Epoch 163]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.9939]	31.9+1.0s
+[3200/15906]	[L1: 13.8425]	32.2+0.2s
+[4800/15906]	[L1: 13.8222]	31.8+0.3s
+[6400/15906]	[L1: 13.8676]	32.5+0.2s
+[8000/15906]	[L1: 13.8103]	31.8+0.2s
+[9600/15906]	[L1: 13.8279]	32.2+0.2s
+[11200/15906]	[L1: 13.8782]	30.8+0.2s
+[12800/15906]	[L1: 13.9001]	32.0+0.2s
+[14400/15906]	[L1: 13.8959]	31.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.346 (Best: 18.084 @epoch 156)
+Forward: 1.53s
+
+Saving...
+Total: 4.87s
+
+[Epoch 164]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.3483]	32.3+1.0s
+[3200/15906]	[L1: 14.1966]	32.9+0.3s
+[4800/15906]	[L1: 14.1283]	32.5+0.2s
+[6400/15906]	[L1: 14.1687]	33.0+0.2s
+[8000/15906]	[L1: 14.2365]	32.8+0.1s
+[9600/15906]	[L1: 14.2583]	32.3+0.2s
+[11200/15906]	[L1: 14.2000]	31.9+0.2s
+[12800/15906]	[L1: 14.1752]	31.8+0.3s
+[14400/15906]	[L1: 14.1464]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.351 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 4.87s
+
+[Epoch 165]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.8569]	31.4+1.0s
+[3200/15906]	[L1: 13.8009]	31.3+0.2s
+[4800/15906]	[L1: 13.6522]	32.1+0.2s
+[6400/15906]	[L1: 13.7623]	32.3+0.2s
+[8000/15906]	[L1: 13.7130]	31.7+0.3s
+[9600/15906]	[L1: 13.7283]	31.7+0.2s
+[11200/15906]	[L1: 13.6813]	31.4+0.2s
+[12800/15906]	[L1: 13.7371]	31.2+0.2s
+[14400/15906]	[L1: 13.7181]	31.4+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.337 (Best: 18.084 @epoch 156)
+Forward: 1.54s
+
+Saving...
+Total: 4.88s
+
+[Epoch 166]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.7547]	31.3+1.0s
+[3200/15906]	[L1: 13.9362]	31.4+0.3s
+[4800/15906]	[L1: 13.8470]	31.5+0.2s
+[6400/15906]	[L1: 13.7556]	31.8+0.2s
+[8000/15906]	[L1: 13.7781]	31.8+0.2s
+[9600/15906]	[L1: 13.7744]	31.5+0.2s
+[11200/15906]	[L1: 13.8035]	32.6+0.2s
+[12800/15906]	[L1: 13.8131]	31.6+0.1s
+[14400/15906]	[L1: 13.8240]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.243 (Best: 18.084 @epoch 156)
+Forward: 1.59s
+
+Saving...
+Total: 4.91s
+
+[Epoch 167]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.6448]	31.5+1.1s
+[3200/15906]	[L1: 13.9340]	32.0+0.2s
+[4800/15906]	[L1: 14.0915]	31.7+0.2s
+[6400/15906]	[L1: 13.9375]	30.8+0.2s
+[8000/15906]	[L1: 13.9285]	31.6+0.2s
+[9600/15906]	[L1: 13.9468]	31.0+0.2s
+[11200/15906]	[L1: 13.9459]	31.1+0.1s
+[12800/15906]	[L1: 13.9167]	31.4+0.2s
+[14400/15906]	[L1: 13.9360]	31.5+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.068 (Best: 18.084 @epoch 156)
+Forward: 1.49s
+
+Saving...
+Total: 4.80s
+
+[Epoch 168]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.4846]	31.3+1.1s
+[3200/15906]	[L1: 13.9054]	31.9+0.2s
+[4800/15906]	[L1: 13.9605]	32.0+0.2s
+[6400/15906]	[L1: 13.9137]	31.8+0.2s
+[8000/15906]	[L1: 13.8771]	31.2+0.3s
+[9600/15906]	[L1: 13.8508]	31.4+0.2s
+[11200/15906]	[L1: 13.8262]	31.0+0.2s
+[12800/15906]	[L1: 13.8365]	31.6+0.2s
+[14400/15906]	[L1: 13.8114]	31.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.401 (Best: 18.084 @epoch 156)
+Forward: 1.58s
+
+Saving...
+Total: 4.92s
+
+[Epoch 169]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.5311]	32.1+1.0s
+[3200/15906]	[L1: 13.3624]	31.8+0.3s
+[4800/15906]	[L1: 13.5129]	31.8+0.2s
+[6400/15906]	[L1: 13.7261]	31.5+0.2s
+[8000/15906]	[L1: 13.7620]	31.3+0.2s
+[9600/15906]	[L1: 13.7921]	31.0+0.2s
+[11200/15906]	[L1: 13.7919]	31.8+0.2s
+[12800/15906]	[L1: 13.7834]	31.5+0.2s
+[14400/15906]	[L1: 13.7656]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.358 (Best: 18.084 @epoch 156)
+Forward: 1.66s
+
+Saving...
+Total: 4.97s
+
+[Epoch 170]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.0651]	31.6+1.1s
+[3200/15906]	[L1: 14.0494]	31.8+0.3s
+[4800/15906]	[L1: 13.9409]	32.1+0.2s
+[6400/15906]	[L1: 13.8917]	31.5+0.2s
+[8000/15906]	[L1: 13.9618]	30.9+0.2s
+[9600/15906]	[L1: 13.9280]	32.1+0.2s
+[11200/15906]	[L1: 13.8623]	31.1+0.2s
+[12800/15906]	[L1: 13.8241]	31.7+0.1s
+[14400/15906]	[L1: 13.8379]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.681 (Best: 18.084 @epoch 156)
+Forward: 1.64s
+
+Saving...
+Total: 5.96s
+
+[Epoch 171]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.1179]	31.9+1.2s
+[3200/15906]	[L1: 13.7133]	31.1+0.1s
+[4800/15906]	[L1: 13.8182]	32.3+0.3s
+[6400/15906]	[L1: 13.7580]	32.0+0.2s
+[8000/15906]	[L1: 13.6908]	32.3+0.2s
+[9600/15906]	[L1: 13.6654]	31.1+0.2s
+[11200/15906]	[L1: 13.7138]	32.3+0.2s
+[12800/15906]	[L1: 13.7534]	31.5+0.2s
+[14400/15906]	[L1: 13.8162]	31.5+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.824 (Best: 18.084 @epoch 156)
+Forward: 1.35s
+
+Saving...
+Total: 5.70s
+
+[Epoch 172]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.7729]	31.1+1.0s
+[3200/15906]	[L1: 13.8797]	31.2+0.2s
+[4800/15906]	[L1: 13.8460]	32.1+0.2s
+[6400/15906]	[L1: 13.9217]	31.9+0.2s
+[8000/15906]	[L1: 13.9685]	31.5+0.2s
+[9600/15906]	[L1: 13.9892]	31.1+0.2s
+[11200/15906]	[L1: 13.9325]	31.4+0.2s
+[12800/15906]	[L1: 13.9130]	31.4+0.2s
+[14400/15906]	[L1: 13.8939]	31.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.456 (Best: 18.084 @epoch 156)
+Forward: 1.46s
+
+Saving...
+Total: 4.80s
+
+[Epoch 173]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.8116]	31.4+1.0s
+[3200/15906]	[L1: 13.7177]	31.8+0.2s
+[4800/15906]	[L1: 13.8944]	31.2+0.2s
+[6400/15906]	[L1: 13.7980]	31.5+0.1s
+[8000/15906]	[L1: 13.8460]	31.1+0.2s
+[9600/15906]	[L1: 13.7466]	31.4+0.2s
+[11200/15906]	[L1: 13.7483]	31.6+0.2s
+[12800/15906]	[L1: 13.7537]	31.9+0.2s
+[14400/15906]	[L1: 13.7464]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.469 (Best: 18.084 @epoch 156)
+Forward: 1.59s
+
+Saving...
+Total: 4.90s
+
+[Epoch 174]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.8159]	31.1+1.2s
+[3200/15906]	[L1: 13.8243]	31.4+0.2s
+[4800/15906]	[L1: 13.8598]	31.6+0.2s
+[6400/15906]	[L1: 13.9201]	31.2+0.2s
+[8000/15906]	[L1: 13.9008]	31.5+0.2s
+[9600/15906]	[L1: 13.8548]	31.5+0.2s
+[11200/15906]	[L1: 13.8507]	31.5+0.2s
+[12800/15906]	[L1: 13.7895]	31.4+0.2s
+[14400/15906]	[L1: 13.8376]	30.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.177 (Best: 18.084 @epoch 156)
+Forward: 1.63s
+
+Saving...
+Total: 5.94s
+
+[Epoch 175]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.7042]	31.3+0.9s
+[3200/15906]	[L1: 13.6609]	31.5+0.2s
+[4800/15906]	[L1: 13.7225]	31.6+0.2s
+[6400/15906]	[L1: 13.8081]	32.0+0.2s
+[8000/15906]	[L1: 13.7541]	31.2+0.2s
+[9600/15906]	[L1: 13.8360]	31.6+0.2s
+[11200/15906]	[L1: 13.8235]	31.5+0.2s
+[12800/15906]	[L1: 13.8440]	31.4+0.2s
+[14400/15906]	[L1: 13.8319]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.230 (Best: 18.084 @epoch 156)
+Forward: 1.69s
+
+Saving...
+Total: 5.06s
+
+[Epoch 176]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.5412]	32.1+1.1s
+[3200/15906]	[L1: 13.4949]	31.5+0.2s
+[4800/15906]	[L1: 13.5375]	31.2+0.2s
+[6400/15906]	[L1: 13.5483]	31.4+0.2s
+[8000/15906]	[L1: 13.5622]	31.4+0.2s
+[9600/15906]	[L1: 13.5895]	31.4+0.3s
+[11200/15906]	[L1: 13.6401]	31.2+0.2s
+[12800/15906]	[L1: 13.6512]	31.4+0.2s
+[14400/15906]	[L1: 13.6526]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.236 (Best: 18.084 @epoch 156)
+Forward: 1.69s
+
+Saving...
+Total: 5.01s
+
+[Epoch 177]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.5119]	32.0+1.1s
+[3200/15906]	[L1: 13.6557]	31.3+0.2s
+[4800/15906]	[L1: 13.6187]	31.4+0.2s
+[6400/15906]	[L1: 13.7076]	31.4+0.2s
+[8000/15906]	[L1: 13.7303]	31.4+0.2s
+[9600/15906]	[L1: 13.7778]	31.5+0.3s
+[11200/15906]	[L1: 13.7840]	32.1+0.2s
+[12800/15906]	[L1: 13.7811]	31.3+0.2s
+[14400/15906]	[L1: 13.7925]	31.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.355 (Best: 18.084 @epoch 156)
+Forward: 1.46s
+
+Saving...
+Total: 5.78s
+
+[Epoch 178]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.3676]	31.1+1.0s
+[3200/15906]	[L1: 13.5321]	31.1+0.2s
+[4800/15906]	[L1: 13.5694]	31.3+0.3s
+[6400/15906]	[L1: 13.5370]	31.7+0.2s
+[8000/15906]	[L1: 13.5472]	31.6+0.2s
+[9600/15906]	[L1: 13.6487]	32.1+0.2s
+[11200/15906]	[L1: 13.6682]	32.5+0.2s
+[12800/15906]	[L1: 13.6609]	31.5+0.1s
+[14400/15906]	[L1: 13.6524]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.492 (Best: 18.084 @epoch 156)
+Forward: 1.76s
+
+Saving...
+Total: 5.06s
+
+[Epoch 179]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.1231]	31.8+1.0s
+[3200/15906]	[L1: 13.9735]	31.7+0.2s
+[4800/15906]	[L1: 13.8303]	31.5+0.2s
+[6400/15906]	[L1: 13.8214]	31.0+0.2s
+[8000/15906]	[L1: 13.7764]	31.2+0.2s
+[9600/15906]	[L1: 13.8300]	31.5+0.2s
+[11200/15906]	[L1: 13.8006]	31.8+0.2s
+[12800/15906]	[L1: 13.7704]	32.1+0.2s
+[14400/15906]	[L1: 13.7440]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.678 (Best: 18.084 @epoch 156)
+Forward: 1.37s
+
+Saving...
+Total: 5.76s
+
+[Epoch 180]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.7007]	30.9+1.0s
+[3200/15906]	[L1: 13.8094]	31.5+0.2s
+[4800/15906]	[L1: 13.8303]	31.3+0.2s
+[6400/15906]	[L1: 13.7661]	31.3+0.2s
+[8000/15906]	[L1: 13.8288]	31.8+0.2s
+[9600/15906]	[L1: 13.8209]	31.5+0.2s
+[11200/15906]	[L1: 13.8401]	31.6+0.2s
+[12800/15906]	[L1: 13.8238]	31.5+0.2s
+[14400/15906]	[L1: 13.8300]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.592 (Best: 18.084 @epoch 156)
+Forward: 1.65s
+
+Saving...
+Total: 5.97s
+
+[Epoch 181]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.8159]	31.3+0.9s
+[3200/15906]	[L1: 13.8961]	31.3+0.3s
+[4800/15906]	[L1: 13.8931]	31.5+0.2s
+[6400/15906]	[L1: 13.8762]	31.4+0.2s
+[8000/15906]	[L1: 13.8876]	31.3+0.2s
+[9600/15906]	[L1: 13.8737]	31.5+0.2s
+[11200/15906]	[L1: 13.8061]	31.7+0.2s
+[12800/15906]	[L1: 13.7531]	32.1+0.2s
+[14400/15906]	[L1: 13.7539]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.293 (Best: 18.084 @epoch 156)
+Forward: 1.60s
+
+Saving...
+Total: 4.92s
+
+[Epoch 182]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.2527]	31.6+1.0s
+[3200/15906]	[L1: 14.1843]	31.5+0.3s
+[4800/15906]	[L1: 14.0493]	31.7+0.3s
+[6400/15906]	[L1: 13.9607]	31.6+0.2s
+[8000/15906]	[L1: 13.9125]	31.8+0.2s
+[9600/15906]	[L1: 13.9308]	31.7+0.2s
+[11200/15906]	[L1: 13.9472]	31.0+0.2s
+[12800/15906]	[L1: 13.9039]	31.7+0.2s
+[14400/15906]	[L1: 13.8477]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.745 (Best: 18.084 @epoch 156)
+Forward: 1.50s
+
+Saving...
+Total: 4.82s
+
+[Epoch 183]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.9858]	31.2+1.1s
+[3200/15906]	[L1: 13.8308]	31.0+0.2s
+[4800/15906]	[L1: 13.8549]	31.6+0.1s
+[6400/15906]	[L1: 13.7450]	30.9+0.2s
+[8000/15906]	[L1: 13.7580]	32.3+0.2s
+[9600/15906]	[L1: 13.7426]	31.8+0.1s
+[11200/15906]	[L1: 13.7050]	30.9+0.1s
+[12800/15906]	[L1: 13.7177]	32.0+0.2s
+[14400/15906]	[L1: 13.7267]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.546 (Best: 18.084 @epoch 156)
+Forward: 1.59s
+
+Saving...
+Total: 5.93s
+
+[Epoch 184]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.7096]	31.5+0.9s
+[3200/15906]	[L1: 13.8058]	31.2+0.1s
+[4800/15906]	[L1: 13.7864]	31.5+0.2s
+[6400/15906]	[L1: 13.7343]	31.5+0.3s
+[8000/15906]	[L1: 13.6820]	31.6+0.1s
+[9600/15906]	[L1: 13.7119]	30.7+0.2s
+[11200/15906]	[L1: 13.7853]	31.0+0.2s
+[12800/15906]	[L1: 13.7347]	31.0+0.2s
+[14400/15906]	[L1: 13.7280]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.567 (Best: 18.084 @epoch 156)
+Forward: 1.54s
+
+Saving...
+Total: 5.85s
+
+[Epoch 185]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.5453]	32.0+0.9s
+[3200/15906]	[L1: 13.5709]	31.8+0.2s
+[4800/15906]	[L1: 13.6457]	31.5+0.2s
+[6400/15906]	[L1: 13.6608]	31.8+0.2s
+[8000/15906]	[L1: 13.6572]	31.4+0.2s
+[9600/15906]	[L1: 13.6107]	31.9+0.1s
+[11200/15906]	[L1: 13.6168]	31.1+0.2s
+[12800/15906]	[L1: 13.6735]	31.9+0.2s
+[14400/15906]	[L1: 13.6831]	31.8+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.932 (Best: 18.084 @epoch 156)
+Forward: 1.53s
+
+Saving...
+Total: 4.85s
+
+[Epoch 186]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.6546]	31.2+1.0s
+[3200/15906]	[L1: 13.7133]	32.0+0.2s
+[4800/15906]	[L1: 13.6470]	31.6+0.2s
+[6400/15906]	[L1: 13.6602]	31.2+0.2s
+[8000/15906]	[L1: 13.6978]	32.4+0.2s
+[9600/15906]	[L1: 13.6579]	31.7+0.2s
+[11200/15906]	[L1: 13.6753]	31.4+0.2s
+[12800/15906]	[L1: 13.6392]	31.9+0.2s
+[14400/15906]	[L1: 13.6141]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.472 (Best: 18.084 @epoch 156)
+Forward: 1.46s
+
+Saving...
+Total: 5.78s
+
+[Epoch 187]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.6052]	31.3+1.1s
+[3200/15906]	[L1: 13.7418]	31.5+0.2s
+[4800/15906]	[L1: 13.7054]	31.4+0.2s
+[6400/15906]	[L1: 13.6694]	30.5+0.2s
+[8000/15906]	[L1: 13.6942]	31.7+0.2s
+[9600/15906]	[L1: 13.7430]	31.5+0.2s
+[11200/15906]	[L1: 13.7527]	31.7+0.2s
+[12800/15906]	[L1: 13.8201]	31.4+0.2s
+[14400/15906]	[L1: 13.7910]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.414 (Best: 18.084 @epoch 156)
+Forward: 1.71s
+
+Saving...
+Total: 5.07s
+
+[Epoch 188]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.0748]	31.4+1.0s
+[3200/15906]	[L1: 13.9282]	30.9+0.2s
+[4800/15906]	[L1: 13.7264]	31.0+0.2s
+[6400/15906]	[L1: 13.7202]	30.7+0.2s
+[8000/15906]	[L1: 13.7896]	32.0+0.2s
+[9600/15906]	[L1: 13.7229]	31.2+0.2s
+[11200/15906]	[L1: 13.6841]	31.3+0.2s
+[12800/15906]	[L1: 13.6705]	31.4+0.2s
+[14400/15906]	[L1: 13.6507]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.568 (Best: 18.084 @epoch 156)
+Forward: 1.85s
+
+Saving...
+Total: 6.17s
+
+[Epoch 189]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 14.1094]	32.8+1.1s
+[3200/15906]	[L1: 13.7986]	31.4+0.2s
+[4800/15906]	[L1: 13.8032]	31.6+0.2s
+[6400/15906]	[L1: 13.6100]	31.4+0.2s
+[8000/15906]	[L1: 13.6007]	31.6+0.2s
+[9600/15906]	[L1: 13.6753]	31.4+0.2s
+[11200/15906]	[L1: 13.6808]	31.5+0.3s
+[12800/15906]	[L1: 13.6927]	31.7+0.2s
+[14400/15906]	[L1: 13.6941]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.598 (Best: 18.084 @epoch 156)
+Forward: 1.41s
+
+Saving...
+Total: 4.73s
+
+[Epoch 190]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.6853]	31.7+0.9s
+[3200/15906]	[L1: 13.4334]	31.8+0.2s
+[4800/15906]	[L1: 13.5355]	31.3+0.2s
+[6400/15906]	[L1: 13.5895]	31.0+0.2s
+[8000/15906]	[L1: 13.6943]	31.8+0.2s
+[9600/15906]	[L1: 13.6298]	31.4+0.2s
+[11200/15906]	[L1: 13.6415]	31.3+0.2s
+[12800/15906]	[L1: 13.6801]	32.1+0.2s
+[14400/15906]	[L1: 13.7336]	31.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.387 (Best: 18.084 @epoch 156)
+Forward: 1.58s
+
+Saving...
+Total: 4.93s
+
+[Epoch 191]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.6517]	31.8+1.0s
+[3200/15906]	[L1: 13.6037]	31.5+0.2s
+[4800/15906]	[L1: 13.5776]	31.3+0.2s
+[6400/15906]	[L1: 13.5707]	31.7+0.3s
+[8000/15906]	[L1: 13.6566]	31.5+0.2s
+[9600/15906]	[L1: 13.6656]	31.4+0.3s
+[11200/15906]	[L1: 13.6541]	30.7+0.2s
+[12800/15906]	[L1: 13.6253]	31.8+0.2s
+[14400/15906]	[L1: 13.6359]	31.7+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.508 (Best: 18.084 @epoch 156)
+Forward: 1.52s
+
+Saving...
+Total: 4.86s
+
+[Epoch 192]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.5919]	31.9+1.0s
+[3200/15906]	[L1: 13.7007]	31.5+0.2s
+[4800/15906]	[L1: 13.7418]	32.1+0.2s
+[6400/15906]	[L1: 13.7928]	31.9+0.3s
+[8000/15906]	[L1: 13.7949]	30.8+0.2s
+[9600/15906]	[L1: 13.8783]	31.7+0.3s
+[11200/15906]	[L1: 13.7785]	30.8+0.2s
+[12800/15906]	[L1: 13.7765]	32.2+0.2s
+[14400/15906]	[L1: 13.7083]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.302 (Best: 18.084 @epoch 156)
+Forward: 1.68s
+
+Saving...
+Total: 5.99s
+
+[Epoch 193]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.6111]	31.7+0.9s
+[3200/15906]	[L1: 13.7707]	30.5+0.2s
+[4800/15906]	[L1: 13.6358]	32.2+0.2s
+[6400/15906]	[L1: 13.6949]	31.5+0.2s
+[8000/15906]	[L1: 13.7022]	31.4+0.2s
+[9600/15906]	[L1: 13.6501]	31.4+0.2s
+[11200/15906]	[L1: 13.6489]	31.4+0.2s
+[12800/15906]	[L1: 13.6413]	32.0+0.2s
+[14400/15906]	[L1: 13.6545]	31.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.413 (Best: 18.084 @epoch 156)
+Forward: 1.51s
+
+Saving...
+Total: 4.83s
+
+[Epoch 194]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.2702]	30.7+1.1s
+[3200/15906]	[L1: 13.4206]	31.1+0.2s
+[4800/15906]	[L1: 13.4298]	31.4+0.2s
+[6400/15906]	[L1: 13.4825]	32.2+0.3s
+[8000/15906]	[L1: 13.5418]	31.7+0.2s
+[9600/15906]	[L1: 13.5956]	31.5+0.3s
+[11200/15906]	[L1: 13.5560]	31.2+0.2s
+[12800/15906]	[L1: 13.5399]	30.9+0.2s
+[14400/15906]	[L1: 13.5494]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.388 (Best: 18.084 @epoch 156)
+Forward: 1.73s
+
+Saving...
+Total: 6.08s
+
+[Epoch 195]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.4939]	31.0+1.0s
+[3200/15906]	[L1: 13.7184]	31.5+0.2s
+[4800/15906]	[L1: 13.7181]	31.7+0.2s
+[6400/15906]	[L1: 13.7732]	31.9+0.3s
+[8000/15906]	[L1: 13.7676]	31.9+0.2s
+[9600/15906]	[L1: 13.6637]	31.8+0.3s
+[11200/15906]	[L1: 13.6284]	31.4+0.2s
+[12800/15906]	[L1: 13.6200]	31.5+0.2s
+[14400/15906]	[L1: 13.5783]	31.5+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.470 (Best: 18.084 @epoch 156)
+Forward: 1.52s
+
+Saving...
+Total: 4.84s
+
+[Epoch 196]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.5569]	31.4+1.1s
+[3200/15906]	[L1: 13.4586]	31.1+0.3s
+[4800/15906]	[L1: 13.4606]	31.3+0.2s
+[6400/15906]	[L1: 13.4387]	31.1+0.2s
+[8000/15906]	[L1: 13.4340]	31.9+0.3s
+[9600/15906]	[L1: 13.4973]	32.0+0.2s
+[11200/15906]	[L1: 13.5119]	31.4+0.1s
+[12800/15906]	[L1: 13.5017]	31.4+0.2s
+[14400/15906]	[L1: 13.5407]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.839 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 4.87s
+
+[Epoch 197]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.5111]	31.7+1.0s
+[3200/15906]	[L1: 13.6789]	31.4+0.2s
+[4800/15906]	[L1: 13.7815]	31.5+0.2s
+[6400/15906]	[L1: 13.7226]	32.2+0.2s
+[8000/15906]	[L1: 13.6611]	32.4+0.2s
+[9600/15906]	[L1: 13.7213]	31.2+0.2s
+[11200/15906]	[L1: 13.6814]	30.8+0.2s
+[12800/15906]	[L1: 13.6540]	31.1+0.2s
+[14400/15906]	[L1: 13.6283]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.402 (Best: 18.084 @epoch 156)
+Forward: 1.39s
+
+Saving...
+Total: 4.71s
+
+[Epoch 198]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 12.9842]	31.5+1.1s
+[3200/15906]	[L1: 13.2444]	31.3+0.2s
+[4800/15906]	[L1: 13.3829]	32.1+0.2s
+[6400/15906]	[L1: 13.5583]	31.4+0.2s
+[8000/15906]	[L1: 13.5583]	32.0+0.2s
+[9600/15906]	[L1: 13.6215]	31.5+0.3s
+[11200/15906]	[L1: 13.5946]	31.3+0.2s
+[12800/15906]	[L1: 13.5984]	31.6+0.2s
+[14400/15906]	[L1: 13.6184]	31.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.374 (Best: 18.084 @epoch 156)
+Forward: 1.46s
+
+Saving...
+Total: 5.81s
+
+[Epoch 199]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.9358]	31.6+1.0s
+[3200/15906]	[L1: 13.7923]	31.9+0.2s
+[4800/15906]	[L1: 13.8527]	31.0+0.2s
+[6400/15906]	[L1: 13.8602]	32.0+0.2s
+[8000/15906]	[L1: 13.7887]	32.2+0.2s
+[9600/15906]	[L1: 13.7571]	31.2+0.3s
+[11200/15906]	[L1: 13.7346]	31.4+0.2s
+[12800/15906]	[L1: 13.7489]	31.2+0.2s
+[14400/15906]	[L1: 13.7094]	31.5+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.383 (Best: 18.084 @epoch 156)
+Forward: 1.62s
+
+Saving...
+Total: 4.93s
+
+[Epoch 200]	Learning rate: 1.25e-5
+[1600/15906]	[L1: 13.5452]	31.6+1.0s
+[3200/15906]	[L1: 13.6575]	31.1+0.2s
+[4800/15906]	[L1: 13.6507]	31.6+0.2s
+[6400/15906]	[L1: 13.6373]	31.0+0.2s
+[8000/15906]	[L1: 13.6334]	31.9+0.2s
+[9600/15906]	[L1: 13.6230]	31.6+0.2s
+[11200/15906]	[L1: 13.6923]	31.5+0.2s
+[12800/15906]	[L1: 13.6285]	32.2+0.2s
+[14400/15906]	[L1: 13.6254]	31.7+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.349 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 4.90s
+
+[Epoch 201]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.5230]	31.5+0.9s
+[3200/15906]	[L1: 13.8392]	32.1+0.2s
+[4800/15906]	[L1: 13.6429]	31.8+0.2s
+[6400/15906]	[L1: 13.6430]	32.3+0.2s
+[8000/15906]	[L1: 13.6118]	31.2+0.2s
+[9600/15906]	[L1: 13.5562]	31.9+0.2s
+[11200/15906]	[L1: 13.5106]	31.7+0.2s
+[12800/15906]	[L1: 13.5094]	32.1+0.2s
+[14400/15906]	[L1: 13.5157]	32.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.404 (Best: 18.084 @epoch 156)
+Forward: 1.63s
+
+Saving...
+Total: 5.01s
+
+[Epoch 202]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.1475]	31.9+1.1s
+[3200/15906]	[L1: 13.6192]	31.7+0.3s
+[4800/15906]	[L1: 13.5969]	31.7+0.2s
+[6400/15906]	[L1: 13.6046]	32.1+0.2s
+[8000/15906]	[L1: 13.5711]	31.8+0.3s
+[9600/15906]	[L1: 13.5535]	31.5+0.2s
+[11200/15906]	[L1: 13.5211]	31.8+0.2s
+[12800/15906]	[L1: 13.4623]	31.7+0.2s
+[14400/15906]	[L1: 13.4417]	31.6+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.255 (Best: 18.084 @epoch 156)
+Forward: 1.42s
+
+Saving...
+Total: 4.74s
+
+[Epoch 203]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.3843]	32.1+1.1s
+[3200/15906]	[L1: 13.4392]	32.0+0.2s
+[4800/15906]	[L1: 13.3711]	31.9+0.2s
+[6400/15906]	[L1: 13.4043]	31.7+0.2s
+[8000/15906]	[L1: 13.3759]	31.3+0.2s
+[9600/15906]	[L1: 13.3398]	31.7+0.2s
+[11200/15906]	[L1: 13.3494]	32.3+0.1s
+[12800/15906]	[L1: 13.3588]	32.3+0.2s
+[14400/15906]	[L1: 13.3387]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.271 (Best: 18.084 @epoch 156)
+Forward: 1.59s
+
+Saving...
+Total: 4.91s
+
+[Epoch 204]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.2611]	31.7+0.9s
+[3200/15906]	[L1: 13.3322]	31.9+0.2s
+[4800/15906]	[L1: 13.3393]	31.9+0.3s
+[6400/15906]	[L1: 13.2905]	32.0+0.2s
+[8000/15906]	[L1: 13.3625]	31.8+0.2s
+[9600/15906]	[L1: 13.3907]	31.4+0.2s
+[11200/15906]	[L1: 13.3803]	32.2+0.2s
+[12800/15906]	[L1: 13.4179]	31.9+0.2s
+[14400/15906]	[L1: 13.4599]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.369 (Best: 18.084 @epoch 156)
+Forward: 1.74s
+
+Saving...
+Total: 5.06s
+
+[Epoch 205]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.6180]	31.4+1.1s
+[3200/15906]	[L1: 13.4016]	31.9+0.2s
+[4800/15906]	[L1: 13.4192]	32.3+0.2s
+[6400/15906]	[L1: 13.4173]	32.1+0.2s
+[8000/15906]	[L1: 13.4161]	32.0+0.2s
+[9600/15906]	[L1: 13.4437]	31.6+0.2s
+[11200/15906]	[L1: 13.3983]	32.0+0.2s
+[12800/15906]	[L1: 13.3747]	32.2+0.2s
+[14400/15906]	[L1: 13.4337]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.403 (Best: 18.084 @epoch 156)
+Forward: 1.62s
+
+Saving...
+Total: 5.96s
+
+[Epoch 206]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.3725]	31.6+0.8s
+[3200/15906]	[L1: 13.3562]	31.9+0.2s
+[4800/15906]	[L1: 13.5932]	32.3+0.2s
+[6400/15906]	[L1: 13.5413]	32.0+0.2s
+[8000/15906]	[L1: 13.5508]	32.8+0.2s
+[9600/15906]	[L1: 13.5247]	31.9+0.2s
+[11200/15906]	[L1: 13.4629]	31.5+0.2s
+[12800/15906]	[L1: 13.4377]	32.4+0.2s
+[14400/15906]	[L1: 13.4204]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.453 (Best: 18.084 @epoch 156)
+Forward: 1.53s
+
+Saving...
+Total: 4.84s
+
+[Epoch 207]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.1005]	31.9+1.1s
+[3200/15906]	[L1: 13.3176]	31.4+0.2s
+[4800/15906]	[L1: 13.2741]	32.0+0.2s
+[6400/15906]	[L1: 13.2661]	31.8+0.3s
+[8000/15906]	[L1: 13.3418]	31.8+0.2s
+[9600/15906]	[L1: 13.3984]	31.8+0.2s
+[11200/15906]	[L1: 13.4084]	31.7+0.2s
+[12800/15906]	[L1: 13.4322]	32.1+0.3s
+[14400/15906]	[L1: 13.4016]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.484 (Best: 18.084 @epoch 156)
+Forward: 1.68s
+
+Saving...
+Total: 5.00s
+
+[Epoch 208]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.3137]	32.0+1.0s
+[3200/15906]	[L1: 13.4899]	31.6+0.2s
+[4800/15906]	[L1: 13.3328]	32.0+0.2s
+[6400/15906]	[L1: 13.2654]	31.4+0.2s
+[8000/15906]	[L1: 13.2429]	31.6+0.2s
+[9600/15906]	[L1: 13.2728]	31.2+0.2s
+[11200/15906]	[L1: 13.2732]	32.1+0.2s
+[12800/15906]	[L1: 13.3081]	32.6+0.2s
+[14400/15906]	[L1: 13.2847]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.273 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 5.90s
+
+[Epoch 209]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.0160]	32.1+1.0s
+[3200/15906]	[L1: 12.9331]	31.3+0.1s
+[4800/15906]	[L1: 13.0315]	32.0+0.2s
+[6400/15906]	[L1: 13.0667]	32.2+0.2s
+[8000/15906]	[L1: 13.0835]	32.1+0.2s
+[9600/15906]	[L1: 13.1322]	32.2+0.2s
+[11200/15906]	[L1: 13.2020]	31.8+0.2s
+[12800/15906]	[L1: 13.1770]	32.1+0.2s
+[14400/15906]	[L1: 13.2128]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.177 (Best: 18.084 @epoch 156)
+Forward: 1.57s
+
+Saving...
+Total: 5.91s
+
+[Epoch 210]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.5594]	31.5+1.1s
+[3200/15906]	[L1: 13.4772]	32.0+0.2s
+[4800/15906]	[L1: 13.4008]	31.5+0.2s
+[6400/15906]	[L1: 13.3332]	32.0+0.2s
+[8000/15906]	[L1: 13.3623]	32.1+0.2s
+[9600/15906]	[L1: 13.4062]	31.9+0.2s
+[11200/15906]	[L1: 13.4099]	31.7+0.2s
+[12800/15906]	[L1: 13.3703]	32.1+0.2s
+[14400/15906]	[L1: 13.3667]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.144 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 4.85s
+
+[Epoch 211]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.8787]	31.8+0.9s
+[3200/15906]	[L1: 13.1645]	31.7+0.1s
+[4800/15906]	[L1: 13.2193]	31.1+0.2s
+[6400/15906]	[L1: 13.2443]	32.4+0.2s
+[8000/15906]	[L1: 13.3413]	31.5+0.2s
+[9600/15906]	[L1: 13.3221]	31.7+0.2s
+[11200/15906]	[L1: 13.3801]	31.5+0.3s
+[12800/15906]	[L1: 13.3396]	32.7+0.2s
+[14400/15906]	[L1: 13.3079]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.159 (Best: 18.084 @epoch 156)
+Forward: 1.59s
+
+Saving...
+Total: 4.89s
+
+[Epoch 212]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.2219]	31.6+1.0s
+[3200/15906]	[L1: 13.2864]	31.4+0.2s
+[4800/15906]	[L1: 13.3446]	31.8+0.2s
+[6400/15906]	[L1: 13.2946]	32.8+0.1s
+[8000/15906]	[L1: 13.2657]	31.5+0.2s
+[9600/15906]	[L1: 13.2566]	31.5+0.2s
+[11200/15906]	[L1: 13.2594]	31.7+0.2s
+[12800/15906]	[L1: 13.2297]	32.1+0.2s
+[14400/15906]	[L1: 13.2502]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.129 (Best: 18.084 @epoch 156)
+Forward: 1.67s
+
+Saving...
+Total: 6.00s
+
+[Epoch 213]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.3220]	31.8+0.9s
+[3200/15906]	[L1: 13.4908]	32.1+0.2s
+[4800/15906]	[L1: 13.4499]	31.5+0.2s
+[6400/15906]	[L1: 13.4979]	32.0+0.2s
+[8000/15906]	[L1: 13.4038]	32.0+0.2s
+[9600/15906]	[L1: 13.2695]	32.1+0.2s
+[11200/15906]	[L1: 13.3079]	31.9+0.2s
+[12800/15906]	[L1: 13.3446]	31.4+0.2s
+[14400/15906]	[L1: 13.3352]	31.8+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.066 (Best: 18.084 @epoch 156)
+Forward: 1.71s
+
+Saving...
+Total: 6.02s
+
+[Epoch 214]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.3757]	32.8+1.0s
+[3200/15906]	[L1: 13.6771]	31.8+0.2s
+[4800/15906]	[L1: 13.4025]	32.2+0.2s
+[6400/15906]	[L1: 13.3192]	31.8+0.2s
+[8000/15906]	[L1: 13.3431]	32.2+0.2s
+[9600/15906]	[L1: 13.3425]	32.3+0.2s
+[11200/15906]	[L1: 13.3018]	32.1+0.2s
+[12800/15906]	[L1: 13.2719]	31.9+0.2s
+[14400/15906]	[L1: 13.3273]	31.5+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.230 (Best: 18.084 @epoch 156)
+Forward: 1.63s
+
+Saving...
+Total: 4.95s
+
+[Epoch 215]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.1918]	31.9+1.0s
+[3200/15906]	[L1: 13.2459]	31.9+0.2s
+[4800/15906]	[L1: 13.2537]	31.8+0.2s
+[6400/15906]	[L1: 13.2461]	31.6+0.2s
+[8000/15906]	[L1: 13.3071]	31.8+0.2s
+[9600/15906]	[L1: 13.2944]	32.0+0.2s
+[11200/15906]	[L1: 13.2556]	32.4+0.3s
+[12800/15906]	[L1: 13.2945]	31.8+0.2s
+[14400/15906]	[L1: 13.2976]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.164 (Best: 18.084 @epoch 156)
+Forward: 1.57s
+
+Saving...
+Total: 4.88s
+
+[Epoch 216]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.5045]	32.0+1.0s
+[3200/15906]	[L1: 13.5627]	31.6+0.2s
+[4800/15906]	[L1: 13.5581]	32.0+0.2s
+[6400/15906]	[L1: 13.3496]	31.8+0.3s
+[8000/15906]	[L1: 13.3253]	32.4+0.3s
+[9600/15906]	[L1: 13.3663]	31.7+0.2s
+[11200/15906]	[L1: 13.3349]	32.0+0.2s
+[12800/15906]	[L1: 13.2762]	32.1+0.2s
+[14400/15906]	[L1: 13.2395]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.211 (Best: 18.084 @epoch 156)
+Forward: 1.66s
+
+Saving...
+Total: 5.04s
+
+[Epoch 217]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.1212]	31.3+0.9s
+[3200/15906]	[L1: 13.1484]	32.0+0.2s
+[4800/15906]	[L1: 13.2183]	31.9+0.2s
+[6400/15906]	[L1: 13.4214]	31.8+0.2s
+[8000/15906]	[L1: 13.4052]	32.5+0.2s
+[9600/15906]	[L1: 13.3119]	32.2+0.2s
+[11200/15906]	[L1: 13.2931]	32.4+0.2s
+[12800/15906]	[L1: 13.2877]	32.2+0.2s
+[14400/15906]	[L1: 13.3207]	32.2+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.271 (Best: 18.084 @epoch 156)
+Forward: 1.49s
+
+Saving...
+Total: 4.82s
+
+[Epoch 218]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.7295]	32.1+1.1s
+[3200/15906]	[L1: 12.9932]	31.9+0.2s
+[4800/15906]	[L1: 13.0159]	31.5+0.2s
+[6400/15906]	[L1: 13.1453]	31.6+0.3s
+[8000/15906]	[L1: 13.2160]	32.2+0.2s
+[9600/15906]	[L1: 13.1675]	32.0+0.2s
+[11200/15906]	[L1: 13.2064]	32.2+0.3s
+[12800/15906]	[L1: 13.1910]	31.9+0.2s
+[14400/15906]	[L1: 13.1469]	32.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.185 (Best: 18.084 @epoch 156)
+Forward: 1.56s
+
+Saving...
+Total: 4.86s
+
+[Epoch 219]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.9627]	32.5+0.9s
+[3200/15906]	[L1: 13.1609]	31.8+0.2s
+[4800/15906]	[L1: 13.2683]	32.2+0.3s
+[6400/15906]	[L1: 13.2325]	31.5+0.2s
+[8000/15906]	[L1: 13.1865]	32.0+0.2s
+[9600/15906]	[L1: 13.2095]	32.6+0.2s
+[11200/15906]	[L1: 13.2262]	32.0+0.2s
+[12800/15906]	[L1: 13.2090]	31.9+0.2s
+[14400/15906]	[L1: 13.2312]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.431 (Best: 18.084 @epoch 156)
+Forward: 1.50s
+
+Saving...
+Total: 4.81s
+
+[Epoch 220]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.2869]	32.2+1.2s
+[3200/15906]	[L1: 13.2842]	32.2+0.2s
+[4800/15906]	[L1: 13.3115]	31.8+0.2s
+[6400/15906]	[L1: 13.2696]	32.1+0.2s
+[8000/15906]	[L1: 13.2430]	31.9+0.2s
+[9600/15906]	[L1: 13.2184]	32.9+0.2s
+[11200/15906]	[L1: 13.1711]	31.9+0.2s
+[12800/15906]	[L1: 13.1637]	31.8+0.2s
+[14400/15906]	[L1: 13.1938]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.081 (Best: 18.084 @epoch 156)
+Forward: 1.57s
+
+Saving...
+Total: 5.91s
+
+[Epoch 221]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.9195]	31.9+0.9s
+[3200/15906]	[L1: 13.1212]	32.0+0.2s
+[4800/15906]	[L1: 13.0901]	31.9+0.2s
+[6400/15906]	[L1: 13.2370]	31.6+0.2s
+[8000/15906]	[L1: 13.2290]	31.8+0.2s
+[9600/15906]	[L1: 13.1773]	31.5+0.2s
+[11200/15906]	[L1: 13.2169]	32.0+0.1s
+[12800/15906]	[L1: 13.2350]	32.3+0.2s
+[14400/15906]	[L1: 13.2296]	32.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.186 (Best: 18.084 @epoch 156)
+Forward: 1.75s
+
+Saving...
+Total: 5.06s
+
+[Epoch 222]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.5260]	32.9+1.0s
+[3200/15906]	[L1: 13.3049]	31.9+0.2s
+[4800/15906]	[L1: 13.1587]	31.6+0.2s
+[6400/15906]	[L1: 13.1133]	31.4+0.1s
+[8000/15906]	[L1: 13.1738]	32.1+0.2s
+[9600/15906]	[L1: 13.2529]	31.2+0.2s
+[11200/15906]	[L1: 13.2475]	32.2+0.2s
+[12800/15906]	[L1: 13.2512]	31.7+0.2s
+[14400/15906]	[L1: 13.2884]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.193 (Best: 18.084 @epoch 156)
+Forward: 1.60s
+
+Saving...
+Total: 4.90s
+
+[Epoch 223]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.3013]	32.2+1.1s
+[3200/15906]	[L1: 13.3033]	32.8+0.2s
+[4800/15906]	[L1: 13.3097]	32.3+0.2s
+[6400/15906]	[L1: 13.3734]	32.0+0.2s
+[8000/15906]	[L1: 13.3046]	31.2+0.2s
+[9600/15906]	[L1: 13.2585]	31.9+0.2s
+[11200/15906]	[L1: 13.2714]	31.8+0.3s
+[12800/15906]	[L1: 13.2419]	32.3+0.2s
+[14400/15906]	[L1: 13.2321]	32.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.014 (Best: 18.084 @epoch 156)
+Forward: 1.59s
+
+Saving...
+Total: 4.93s
+
+[Epoch 224]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.1800]	31.7+1.1s
+[3200/15906]	[L1: 13.3146]	32.3+0.2s
+[4800/15906]	[L1: 13.4124]	31.3+0.2s
+[6400/15906]	[L1: 13.4528]	32.0+0.2s
+[8000/15906]	[L1: 13.3085]	32.2+0.2s
+[9600/15906]	[L1: 13.2733]	31.8+0.2s
+[11200/15906]	[L1: 13.2379]	32.2+0.2s
+[12800/15906]	[L1: 13.2226]	31.9+0.2s
+[14400/15906]	[L1: 13.2220]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.171 (Best: 18.084 @epoch 156)
+Forward: 1.79s
+
+Saving...
+Total: 5.14s
+
+[Epoch 225]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.1913]	31.6+1.0s
+[3200/15906]	[L1: 13.1745]	32.4+0.2s
+[4800/15906]	[L1: 13.1415]	32.1+0.2s
+[6400/15906]	[L1: 13.1975]	32.4+0.2s
+[8000/15906]	[L1: 13.2094]	31.8+0.2s
+[9600/15906]	[L1: 13.2027]	32.2+0.2s
+[11200/15906]	[L1: 13.1989]	32.2+0.2s
+[12800/15906]	[L1: 13.1610]	32.9+0.2s
+[14400/15906]	[L1: 13.1533]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.097 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 4.90s
+
+[Epoch 226]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.4311]	31.7+1.1s
+[3200/15906]	[L1: 13.2031]	31.8+0.2s
+[4800/15906]	[L1: 13.2639]	32.5+0.2s
+[6400/15906]	[L1: 13.3098]	32.7+0.2s
+[8000/15906]	[L1: 13.2748]	32.4+0.2s
+[9600/15906]	[L1: 13.2835]	32.2+0.3s
+[11200/15906]	[L1: 13.2338]	31.7+0.2s
+[12800/15906]	[L1: 13.2181]	31.7+0.2s
+[14400/15906]	[L1: 13.2132]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.305 (Best: 18.084 @epoch 156)
+Forward: 1.51s
+
+Saving...
+Total: 4.82s
+
+[Epoch 227]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.2710]	32.3+1.0s
+[3200/15906]	[L1: 13.1358]	31.8+0.2s
+[4800/15906]	[L1: 13.2160]	32.4+0.2s
+[6400/15906]	[L1: 13.1806]	32.2+0.3s
+[8000/15906]	[L1: 13.2435]	31.7+0.2s
+[9600/15906]	[L1: 13.2756]	32.7+0.2s
+[11200/15906]	[L1: 13.2710]	32.0+0.2s
+[12800/15906]	[L1: 13.2477]	32.1+0.2s
+[14400/15906]	[L1: 13.2392]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.226 (Best: 18.084 @epoch 156)
+Forward: 1.58s
+
+Saving...
+Total: 4.89s
+
+[Epoch 228]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.8062]	32.0+1.3s
+[3200/15906]	[L1: 13.0077]	31.6+0.2s
+[4800/15906]	[L1: 12.9959]	31.7+0.2s
+[6400/15906]	[L1: 13.0900]	31.7+0.3s
+[8000/15906]	[L1: 13.0980]	31.9+0.2s
+[9600/15906]	[L1: 13.0517]	32.1+0.3s
+[11200/15906]	[L1: 13.0947]	32.0+0.3s
+[12800/15906]	[L1: 13.0201]	31.5+0.2s
+[14400/15906]	[L1: 12.9959]	32.0+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.294 (Best: 18.084 @epoch 156)
+Forward: 1.51s
+
+Saving...
+Total: 4.84s
+
+[Epoch 229]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.1257]	31.5+1.0s
+[3200/15906]	[L1: 13.1916]	32.2+0.1s
+[4800/15906]	[L1: 13.1323]	32.9+0.2s
+[6400/15906]	[L1: 13.1888]	31.8+0.2s
+[8000/15906]	[L1: 13.1591]	31.9+0.2s
+[9600/15906]	[L1: 13.1996]	32.3+0.2s
+[11200/15906]	[L1: 13.1893]	31.7+0.2s
+[12800/15906]	[L1: 13.1854]	32.1+0.2s
+[14400/15906]	[L1: 13.1592]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.311 (Best: 18.084 @epoch 156)
+Forward: 1.47s
+
+Saving...
+Total: 5.77s
+
+[Epoch 230]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.6174]	31.1+1.1s
+[3200/15906]	[L1: 12.6404]	32.0+0.2s
+[4800/15906]	[L1: 12.7808]	31.7+0.2s
+[6400/15906]	[L1: 12.9166]	31.9+0.2s
+[8000/15906]	[L1: 12.8834]	32.6+0.2s
+[9600/15906]	[L1: 13.0090]	31.9+0.2s
+[11200/15906]	[L1: 13.0288]	32.4+0.3s
+[12800/15906]	[L1: 13.0375]	31.9+0.2s
+[14400/15906]	[L1: 13.0564]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.145 (Best: 18.084 @epoch 156)
+Forward: 1.60s
+
+Saving...
+Total: 4.90s
+
+[Epoch 231]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.4603]	32.5+1.2s
+[3200/15906]	[L1: 13.2516]	32.0+0.2s
+[4800/15906]	[L1: 13.1783]	31.6+0.2s
+[6400/15906]	[L1: 13.1455]	31.8+0.2s
+[8000/15906]	[L1: 13.2394]	32.7+0.2s
+[9600/15906]	[L1: 13.1503]	31.7+0.3s
+[11200/15906]	[L1: 13.1427]	31.6+0.3s
+[12800/15906]	[L1: 13.1585]	31.9+0.3s
+[14400/15906]	[L1: 13.1400]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.250 (Best: 18.084 @epoch 156)
+Forward: 1.67s
+
+Saving...
+Total: 4.97s
+
+[Epoch 232]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.2062]	32.4+0.8s
+[3200/15906]	[L1: 13.4384]	32.0+0.2s
+[4800/15906]	[L1: 13.3844]	31.9+0.2s
+[6400/15906]	[L1: 13.2844]	31.9+0.2s
+[8000/15906]	[L1: 13.3374]	31.6+0.2s
+[9600/15906]	[L1: 13.3471]	32.6+0.3s
+[11200/15906]	[L1: 13.3329]	31.4+0.2s
+[12800/15906]	[L1: 13.3311]	32.1+0.2s
+[14400/15906]	[L1: 13.3225]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.307 (Best: 18.084 @epoch 156)
+Forward: 1.81s
+
+Saving...
+Total: 6.14s
+
+[Epoch 233]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.1198]	32.2+1.1s
+[3200/15906]	[L1: 13.2177]	31.8+0.2s
+[4800/15906]	[L1: 13.2698]	32.5+0.2s
+[6400/15906]	[L1: 13.2755]	31.4+0.2s
+[8000/15906]	[L1: 13.2904]	32.4+0.2s
+[9600/15906]	[L1: 13.2654]	32.4+0.2s
+[11200/15906]	[L1: 13.2579]	32.2+0.2s
+[12800/15906]	[L1: 13.2451]	31.9+0.2s
+[14400/15906]	[L1: 13.2156]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.290 (Best: 18.084 @epoch 156)
+Forward: 1.53s
+
+Saving...
+Total: 4.83s
+
+[Epoch 234]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.4040]	31.8+0.9s
+[3200/15906]	[L1: 13.2407]	32.2+0.2s
+[4800/15906]	[L1: 13.1278]	31.6+0.2s
+[6400/15906]	[L1: 13.1741]	31.9+0.2s
+[8000/15906]	[L1: 13.1331]	32.0+0.2s
+[9600/15906]	[L1: 13.1160]	31.6+0.2s
+[11200/15906]	[L1: 13.1395]	32.1+0.2s
+[12800/15906]	[L1: 13.1072]	32.6+0.2s
+[14400/15906]	[L1: 13.1359]	32.5+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.541 (Best: 18.084 @epoch 156)
+Forward: 1.57s
+
+Saving...
+Total: 4.91s
+
+[Epoch 235]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.5909]	32.0+1.1s
+[3200/15906]	[L1: 13.5390]	32.2+0.2s
+[4800/15906]	[L1: 13.3069]	31.7+0.2s
+[6400/15906]	[L1: 13.3105]	31.7+0.2s
+[8000/15906]	[L1: 13.2262]	31.8+0.2s
+[9600/15906]	[L1: 13.2583]	32.3+0.2s
+[11200/15906]	[L1: 13.2037]	32.0+0.3s
+[12800/15906]	[L1: 13.1640]	32.7+0.2s
+[14400/15906]	[L1: 13.1430]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.333 (Best: 18.084 @epoch 156)
+Forward: 1.66s
+
+Saving...
+Total: 4.97s
+
+[Epoch 236]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.2249]	32.4+1.2s
+[3200/15906]	[L1: 13.1683]	31.6+0.2s
+[4800/15906]	[L1: 13.2760]	32.4+0.3s
+[6400/15906]	[L1: 13.1351]	32.1+0.2s
+[8000/15906]	[L1: 13.1150]	32.0+0.2s
+[9600/15906]	[L1: 13.1053]	32.2+0.1s
+[11200/15906]	[L1: 13.1212]	32.1+0.2s
+[12800/15906]	[L1: 13.1644]	31.7+0.2s
+[14400/15906]	[L1: 13.1135]	31.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.358 (Best: 18.084 @epoch 156)
+Forward: 1.54s
+
+Saving...
+Total: 4.87s
+
+[Epoch 237]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.8423]	32.3+1.1s
+[3200/15906]	[L1: 12.8914]	32.0+0.3s
+[4800/15906]	[L1: 13.0500]	31.6+0.2s
+[6400/15906]	[L1: 13.2193]	32.3+0.2s
+[8000/15906]	[L1: 13.2464]	32.4+0.2s
+[9600/15906]	[L1: 13.1708]	32.0+0.2s
+[11200/15906]	[L1: 13.1495]	32.0+0.2s
+[12800/15906]	[L1: 13.1152]	32.4+0.2s
+[14400/15906]	[L1: 13.1111]	31.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.286 (Best: 18.084 @epoch 156)
+Forward: 1.74s
+
+Saving...
+Total: 5.10s
+
+[Epoch 238]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.0945]	31.7+1.1s
+[3200/15906]	[L1: 12.9880]	31.3+0.2s
+[4800/15906]	[L1: 12.9589]	32.3+0.2s
+[6400/15906]	[L1: 12.9709]	32.1+0.2s
+[8000/15906]	[L1: 13.0244]	31.9+0.2s
+[9600/15906]	[L1: 12.9958]	32.2+0.2s
+[11200/15906]	[L1: 13.0124]	32.2+0.2s
+[12800/15906]	[L1: 13.0273]	31.8+0.2s
+[14400/15906]	[L1: 12.9878]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.259 (Best: 18.084 @epoch 156)
+Forward: 1.76s
+
+Saving...
+Total: 5.06s
+
+[Epoch 239]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.2417]	32.4+1.0s
+[3200/15906]	[L1: 13.2227]	31.5+0.2s
+[4800/15906]	[L1: 13.1867]	31.7+0.2s
+[6400/15906]	[L1: 13.1494]	31.8+0.2s
+[8000/15906]	[L1: 13.1119]	32.9+0.2s
+[9600/15906]	[L1: 13.1195]	31.9+0.2s
+[11200/15906]	[L1: 13.0982]	31.5+0.2s
+[12800/15906]	[L1: 13.1296]	31.9+0.2s
+[14400/15906]	[L1: 13.1108]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.216 (Best: 18.084 @epoch 156)
+Forward: 1.69s
+
+Saving...
+Total: 5.00s
+
+[Epoch 240]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.0036]	31.5+0.9s
+[3200/15906]	[L1: 13.2046]	31.8+0.1s
+[4800/15906]	[L1: 13.0831]	32.1+0.2s
+[6400/15906]	[L1: 13.1495]	32.0+0.2s
+[8000/15906]	[L1: 13.0827]	32.0+0.3s
+[9600/15906]	[L1: 13.1564]	31.5+0.1s
+[11200/15906]	[L1: 13.1381]	31.4+0.2s
+[12800/15906]	[L1: 13.1338]	32.2+0.2s
+[14400/15906]	[L1: 13.1299]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.281 (Best: 18.084 @epoch 156)
+Forward: 1.51s
+
+Saving...
+Total: 4.88s
+
+[Epoch 241]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.5808]	33.2+1.0s
+[3200/15906]	[L1: 13.2174]	32.0+0.2s
+[4800/15906]	[L1: 13.1824]	32.0+0.2s
+[6400/15906]	[L1: 13.1339]	31.7+0.2s
+[8000/15906]	[L1: 13.1267]	32.4+0.2s
+[9600/15906]	[L1: 13.1382]	31.8+0.2s
+[11200/15906]	[L1: 13.1835]	32.5+0.2s
+[12800/15906]	[L1: 13.2272]	31.9+0.2s
+[14400/15906]	[L1: 13.1474]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.254 (Best: 18.084 @epoch 156)
+Forward: 1.61s
+
+Saving...
+Total: 4.92s
+
+[Epoch 242]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.3954]	32.1+1.1s
+[3200/15906]	[L1: 13.3170]	31.8+0.2s
+[4800/15906]	[L1: 13.2625]	31.8+0.2s
+[6400/15906]	[L1: 13.2300]	32.3+0.2s
+[8000/15906]	[L1: 13.2196]	32.4+0.2s
+[9600/15906]	[L1: 13.2199]	31.8+0.2s
+[11200/15906]	[L1: 13.1997]	32.0+0.2s
+[12800/15906]	[L1: 13.1854]	32.2+0.2s
+[14400/15906]	[L1: 13.1825]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.138 (Best: 18.084 @epoch 156)
+Forward: 1.62s
+
+Saving...
+Total: 5.93s
+
+[Epoch 243]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.2703]	32.8+1.1s
+[3200/15906]	[L1: 12.9736]	31.8+0.3s
+[4800/15906]	[L1: 12.8877]	31.5+0.2s
+[6400/15906]	[L1: 12.9532]	32.1+0.3s
+[8000/15906]	[L1: 12.9791]	32.3+0.2s
+[9600/15906]	[L1: 12.9701]	32.0+0.2s
+[11200/15906]	[L1: 13.0055]	32.1+0.2s
+[12800/15906]	[L1: 13.0724]	31.7+0.2s
+[14400/15906]	[L1: 13.0916]	32.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.176 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 5.88s
+
+[Epoch 244]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.9798]	32.0+1.0s
+[3200/15906]	[L1: 13.0126]	32.1+0.2s
+[4800/15906]	[L1: 13.1180]	32.6+0.2s
+[6400/15906]	[L1: 13.0615]	32.7+0.1s
+[8000/15906]	[L1: 13.0838]	32.0+0.3s
+[9600/15906]	[L1: 13.0546]	31.7+0.2s
+[11200/15906]	[L1: 13.0510]	31.6+0.2s
+[12800/15906]	[L1: 13.0824]	31.4+0.2s
+[14400/15906]	[L1: 13.0655]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.190 (Best: 18.084 @epoch 156)
+Forward: 1.52s
+
+Saving...
+Total: 4.87s
+
+[Epoch 245]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.1882]	32.1+0.9s
+[3200/15906]	[L1: 13.1100]	31.8+0.2s
+[4800/15906]	[L1: 13.0433]	32.2+0.3s
+[6400/15906]	[L1: 13.1022]	32.0+0.2s
+[8000/15906]	[L1: 13.1574]	32.0+0.2s
+[9600/15906]	[L1: 13.1861]	31.6+0.3s
+[11200/15906]	[L1: 13.1866]	31.8+0.2s
+[12800/15906]	[L1: 13.1543]	31.7+0.2s
+[14400/15906]	[L1: 13.1283]	31.9+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.334 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 4.86s
+
+[Epoch 246]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.0770]	31.4+1.1s
+[3200/15906]	[L1: 13.1622]	32.0+0.2s
+[4800/15906]	[L1: 13.1087]	32.5+0.2s
+[6400/15906]	[L1: 13.1664]	32.0+0.2s
+[8000/15906]	[L1: 13.1316]	32.2+0.2s
+[9600/15906]	[L1: 13.0803]	31.8+0.2s
+[11200/15906]	[L1: 13.1458]	32.4+0.2s
+[12800/15906]	[L1: 13.1497]	32.3+0.2s
+[14400/15906]	[L1: 13.1360]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.449 (Best: 18.084 @epoch 156)
+Forward: 1.70s
+
+Saving...
+Total: 5.03s
+
+[Epoch 247]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.9898]	31.7+1.1s
+[3200/15906]	[L1: 12.8041]	31.8+0.2s
+[4800/15906]	[L1: 12.9552]	31.9+0.2s
+[6400/15906]	[L1: 12.9121]	31.8+0.3s
+[8000/15906]	[L1: 12.9580]	31.7+0.2s
+[9600/15906]	[L1: 12.9915]	31.5+0.2s
+[11200/15906]	[L1: 13.0617]	32.0+0.2s
+[12800/15906]	[L1: 13.0348]	31.5+0.3s
+[14400/15906]	[L1: 13.0531]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.412 (Best: 18.084 @epoch 156)
+Forward: 1.74s
+
+Saving...
+Total: 5.04s
+
+[Epoch 248]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 12.8329]	31.7+1.0s
+[3200/15906]	[L1: 12.9389]	32.0+0.3s
+[4800/15906]	[L1: 12.9605]	31.4+0.1s
+[6400/15906]	[L1: 12.9519]	32.9+0.2s
+[8000/15906]	[L1: 12.9918]	31.7+0.2s
+[9600/15906]	[L1: 13.0037]	31.7+0.2s
+[11200/15906]	[L1: 13.0446]	32.4+0.2s
+[12800/15906]	[L1: 13.0531]	32.0+0.2s
+[14400/15906]	[L1: 13.0493]	31.8+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.448 (Best: 18.084 @epoch 156)
+Forward: 1.51s
+
+Saving...
+Total: 4.86s
+
+[Epoch 249]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.2376]	31.8+1.0s
+[3200/15906]	[L1: 13.1801]	31.5+0.2s
+[4800/15906]	[L1: 13.1926]	32.0+0.3s
+[6400/15906]	[L1: 13.1277]	31.8+0.2s
+[8000/15906]	[L1: 13.1096]	32.0+0.2s
+[9600/15906]	[L1: 13.0633]	31.7+0.2s
+[11200/15906]	[L1: 13.0502]	32.0+0.2s
+[12800/15906]	[L1: 13.0371]	31.3+0.2s
+[14400/15906]	[L1: 13.0278]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.477 (Best: 18.084 @epoch 156)
+Forward: 1.70s
+
+Saving...
+Total: 5.04s
+
+[Epoch 250]	Learning rate: 6.25e-6
+[1600/15906]	[L1: 13.4468]	31.9+1.1s
+[3200/15906]	[L1: 13.3758]	32.2+0.2s
+[4800/15906]	[L1: 13.2115]	31.6+0.2s
+[6400/15906]	[L1: 13.2060]	32.4+0.2s
+[8000/15906]	[L1: 13.1689]	31.8+0.2s
+[9600/15906]	[L1: 13.1207]	32.3+0.2s
+[11200/15906]	[L1: 13.0822]	31.7+0.2s
+[12800/15906]	[L1: 13.0846]	31.6+0.3s
+[14400/15906]	[L1: 13.1145]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.512 (Best: 18.084 @epoch 156)
+Forward: 1.51s
+
+Saving...
+Total: 4.85s
+
+[Epoch 251]	Learning rate: 1.56e-6
+[1600/15906]	[L1: 13.2733]	32.0+1.0s
+[3200/15906]	[L1: 13.1093]	32.1+0.2s
+[4800/15906]	[L1: 13.1080]	32.2+0.2s
+[6400/15906]	[L1: 12.9993]	32.0+0.2s
+[8000/15906]	[L1: 13.0939]	31.8+0.2s
+[9600/15906]	[L1: 13.0407]	32.9+0.2s
+[11200/15906]	[L1: 13.0207]	31.5+0.2s
+[12800/15906]	[L1: 12.9990]	31.5+0.2s
+[14400/15906]	[L1: 13.0020]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.332 (Best: 18.084 @epoch 156)
+Forward: 1.68s
+
+Saving...
+Total: 5.00s
+
+[Epoch 252]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.8422]	31.4+1.1s
+[3200/15906]	[L1: 12.7705]	31.6+0.2s
+[4800/15906]	[L1: 12.8697]	31.7+0.2s
+[6400/15906]	[L1: 12.9015]	32.4+0.2s
+[8000/15906]	[L1: 12.9382]	31.8+0.2s
+[9600/15906]	[L1: 12.9325]	32.3+0.2s
+[11200/15906]	[L1: 12.9135]	31.8+0.2s
+[12800/15906]	[L1: 12.9379]	31.8+0.2s
+[14400/15906]	[L1: 12.9391]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.485 (Best: 18.084 @epoch 156)
+Forward: 1.64s
+
+Saving...
+Total: 4.97s
+
+[Epoch 253]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.2182]	32.4+1.2s
+[3200/15906]	[L1: 12.9764]	32.3+0.2s
+[4800/15906]	[L1: 12.9983]	32.3+0.3s
+[6400/15906]	[L1: 12.9456]	31.4+0.2s
+[8000/15906]	[L1: 12.9100]	32.2+0.2s
+[9600/15906]	[L1: 12.9732]	31.8+0.2s
+[11200/15906]	[L1: 12.9179]	32.1+0.2s
+[12800/15906]	[L1: 12.9299]	32.5+0.3s
+[14400/15906]	[L1: 12.9024]	32.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.485 (Best: 18.084 @epoch 156)
+Forward: 1.66s
+
+Saving...
+Total: 4.96s
+
+[Epoch 254]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.9676]	31.9+1.0s
+[3200/15906]	[L1: 12.9481]	32.1+0.2s
+[4800/15906]	[L1: 12.9135]	31.6+0.2s
+[6400/15906]	[L1: 12.8391]	31.7+0.2s
+[8000/15906]	[L1: 12.8672]	32.1+0.2s
+[9600/15906]	[L1: 12.9044]	32.0+0.2s
+[11200/15906]	[L1: 12.9088]	32.2+0.2s
+[12800/15906]	[L1: 12.9188]	31.8+0.2s
+[14400/15906]	[L1: 12.9454]	33.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.445 (Best: 18.084 @epoch 156)
+Forward: 1.69s
+
+Saving...
+Total: 5.01s
+
+[Epoch 255]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.5485]	32.0+0.9s
+[3200/15906]	[L1: 13.0983]	31.9+0.2s
+[4800/15906]	[L1: 13.1717]	32.6+0.2s
+[6400/15906]	[L1: 13.0243]	32.4+0.2s
+[8000/15906]	[L1: 12.9782]	32.1+0.2s
+[9600/15906]	[L1: 13.0133]	32.6+0.2s
+[11200/15906]	[L1: 12.9930]	31.9+0.2s
+[12800/15906]	[L1: 13.0100]	31.6+0.2s
+[14400/15906]	[L1: 12.9896]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.518 (Best: 18.084 @epoch 156)
+Forward: 1.50s
+
+Saving...
+Total: 4.82s
+
+[Epoch 256]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.1042]	32.5+1.0s
+[3200/15906]	[L1: 13.2579]	32.0+0.2s
+[4800/15906]	[L1: 13.0644]	32.2+0.2s
+[6400/15906]	[L1: 13.0906]	31.6+0.2s
+[8000/15906]	[L1: 13.0721]	32.0+0.2s
+[9600/15906]	[L1: 13.0340]	32.3+0.2s
+[11200/15906]	[L1: 13.0295]	31.6+0.2s
+[12800/15906]	[L1: 13.0227]	31.6+0.2s
+[14400/15906]	[L1: 12.9947]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.504 (Best: 18.084 @epoch 156)
+Forward: 1.59s
+
+Saving...
+Total: 5.94s
+
+[Epoch 257]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.9420]	32.3+0.9s
+[3200/15906]	[L1: 12.9427]	32.2+0.2s
+[4800/15906]	[L1: 13.0170]	31.9+0.2s
+[6400/15906]	[L1: 12.9344]	32.0+0.2s
+[8000/15906]	[L1: 12.9322]	31.7+0.2s
+[9600/15906]	[L1: 12.9717]	31.7+0.2s
+[11200/15906]	[L1: 12.9576]	32.4+0.2s
+[12800/15906]	[L1: 12.9594]	32.7+0.3s
+[14400/15906]	[L1: 12.9607]	32.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.268 (Best: 18.084 @epoch 156)
+Forward: 1.71s
+
+Saving...
+Total: 5.05s
+
+[Epoch 258]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.5310]	31.0+1.0s
+[3200/15906]	[L1: 12.8144]	32.5+0.2s
+[4800/15906]	[L1: 12.9275]	31.6+0.2s
+[6400/15906]	[L1: 12.9527]	32.4+0.2s
+[8000/15906]	[L1: 12.9309]	31.9+0.2s
+[9600/15906]	[L1: 12.9574]	31.9+0.2s
+[11200/15906]	[L1: 12.9570]	32.0+0.2s
+[12800/15906]	[L1: 12.9846]	32.7+0.3s
+[14400/15906]	[L1: 12.9521]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.307 (Best: 18.084 @epoch 156)
+Forward: 1.56s
+
+Saving...
+Total: 4.86s
+
+[Epoch 259]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.7385]	31.8+1.0s
+[3200/15906]	[L1: 12.8134]	32.1+0.3s
+[4800/15906]	[L1: 12.7794]	32.4+0.2s
+[6400/15906]	[L1: 12.7643]	32.3+0.2s
+[8000/15906]	[L1: 12.8271]	32.5+0.1s
+[9600/15906]	[L1: 12.8079]	32.0+0.2s
+[11200/15906]	[L1: 12.8366]	32.4+0.2s
+[12800/15906]	[L1: 12.8372]	32.0+0.2s
+[14400/15906]	[L1: 12.8369]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.325 (Best: 18.084 @epoch 156)
+Forward: 1.53s
+
+Saving...
+Total: 4.87s
+
+[Epoch 260]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.7639]	31.9+0.9s
+[3200/15906]	[L1: 12.8134]	31.8+0.1s
+[4800/15906]	[L1: 12.9305]	31.7+0.2s
+[6400/15906]	[L1: 12.9346]	32.3+0.2s
+[8000/15906]	[L1: 12.9256]	31.8+0.2s
+[9600/15906]	[L1: 12.9411]	31.5+0.2s
+[11200/15906]	[L1: 12.9655]	32.1+0.2s
+[12800/15906]	[L1: 12.9038]	32.8+0.2s
+[14400/15906]	[L1: 12.9217]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.356 (Best: 18.084 @epoch 156)
+Forward: 1.79s
+
+Saving...
+Total: 5.14s
+
+[Epoch 261]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.1651]	31.7+1.0s
+[3200/15906]	[L1: 13.0853]	31.8+0.2s
+[4800/15906]	[L1: 13.0918]	32.4+0.2s
+[6400/15906]	[L1: 13.0078]	32.6+0.2s
+[8000/15906]	[L1: 12.9314]	32.4+0.2s
+[9600/15906]	[L1: 12.9021]	31.6+0.2s
+[11200/15906]	[L1: 12.8741]	32.5+0.2s
+[12800/15906]	[L1: 12.8072]	32.7+0.1s
+[14400/15906]	[L1: 12.8271]	31.9+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.378 (Best: 18.084 @epoch 156)
+Forward: 1.69s
+
+Saving...
+Total: 5.00s
+
+[Epoch 262]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.1006]	32.1+1.0s
+[3200/15906]	[L1: 12.9827]	31.9+0.2s
+[4800/15906]	[L1: 12.9962]	32.5+0.3s
+[6400/15906]	[L1: 12.9607]	31.6+0.2s
+[8000/15906]	[L1: 13.0752]	31.9+0.2s
+[9600/15906]	[L1: 13.0239]	32.0+0.3s
+[11200/15906]	[L1: 12.9859]	31.7+0.3s
+[12800/15906]	[L1: 12.9674]	32.5+0.2s
+[14400/15906]	[L1: 13.0131]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.299 (Best: 18.084 @epoch 156)
+Forward: 1.47s
+
+Saving...
+Total: 4.78s
+
+[Epoch 263]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.8456]	32.3+1.1s
+[3200/15906]	[L1: 12.9220]	32.3+0.2s
+[4800/15906]	[L1: 12.8225]	32.3+0.2s
+[6400/15906]	[L1: 12.8480]	32.1+0.2s
+[8000/15906]	[L1: 12.7313]	32.6+0.2s
+[9600/15906]	[L1: 12.7542]	32.4+0.2s
+[11200/15906]	[L1: 12.7727]	31.7+0.2s
+[12800/15906]	[L1: 12.7553]	32.1+0.3s
+[14400/15906]	[L1: 12.7676]	32.1+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.249 (Best: 18.084 @epoch 156)
+Forward: 1.68s
+
+Saving...
+Total: 5.02s
+
+[Epoch 264]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.8130]	32.5+1.1s
+[3200/15906]	[L1: 12.7662]	31.9+0.2s
+[4800/15906]	[L1: 12.7009]	31.3+0.2s
+[6400/15906]	[L1: 12.7405]	32.1+0.2s
+[8000/15906]	[L1: 12.7790]	32.0+0.3s
+[9600/15906]	[L1: 12.8297]	32.3+0.2s
+[11200/15906]	[L1: 12.8129]	32.2+0.2s
+[12800/15906]	[L1: 12.7862]	31.8+0.3s
+[14400/15906]	[L1: 12.8477]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.282 (Best: 18.084 @epoch 156)
+Forward: 1.59s
+
+Saving...
+Total: 5.96s
+
+[Epoch 265]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.6560]	32.7+1.0s
+[3200/15906]	[L1: 12.7401]	32.2+0.2s
+[4800/15906]	[L1: 12.6923]	32.4+0.2s
+[6400/15906]	[L1: 12.7400]	32.5+0.1s
+[8000/15906]	[L1: 12.8516]	32.5+0.3s
+[9600/15906]	[L1: 12.8780]	32.0+0.2s
+[11200/15906]	[L1: 12.8198]	32.2+0.2s
+[12800/15906]	[L1: 12.8489]	31.0+0.2s
+[14400/15906]	[L1: 12.8651]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.260 (Best: 18.084 @epoch 156)
+Forward: 1.60s
+
+Saving...
+Total: 4.94s
+
+[Epoch 266]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.2242]	32.4+0.8s
+[3200/15906]	[L1: 13.1236]	31.7+0.2s
+[4800/15906]	[L1: 13.1058]	32.3+0.2s
+[6400/15906]	[L1: 13.0488]	32.1+0.2s
+[8000/15906]	[L1: 12.9586]	32.3+0.2s
+[9600/15906]	[L1: 12.9277]	32.2+0.2s
+[11200/15906]	[L1: 12.9011]	31.8+0.2s
+[12800/15906]	[L1: 12.8867]	32.2+0.2s
+[14400/15906]	[L1: 12.8966]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.264 (Best: 18.084 @epoch 156)
+Forward: 1.67s
+
+Saving...
+Total: 4.97s
+
+[Epoch 267]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.7312]	31.6+1.0s
+[3200/15906]	[L1: 12.8469]	31.6+0.2s
+[4800/15906]	[L1: 12.9379]	32.5+0.3s
+[6400/15906]	[L1: 12.9080]	32.1+0.2s
+[8000/15906]	[L1: 12.9034]	32.4+0.2s
+[9600/15906]	[L1: 12.8578]	31.9+0.2s
+[11200/15906]	[L1: 12.8425]	32.2+0.2s
+[12800/15906]	[L1: 12.8262]	32.1+0.3s
+[14400/15906]	[L1: 12.8199]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.391 (Best: 18.084 @epoch 156)
+Forward: 1.71s
+
+Saving...
+Total: 5.02s
+
+[Epoch 268]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.8378]	32.1+0.9s
+[3200/15906]	[L1: 12.7528]	31.9+0.2s
+[4800/15906]	[L1: 12.8539]	31.7+0.2s
+[6400/15906]	[L1: 12.8723]	32.2+0.2s
+[8000/15906]	[L1: 12.9049]	32.7+0.2s
+[9600/15906]	[L1: 12.9352]	31.9+0.2s
+[11200/15906]	[L1: 12.9803]	32.2+0.2s
+[12800/15906]	[L1: 12.9491]	31.9+0.2s
+[14400/15906]	[L1: 12.9664]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.387 (Best: 18.084 @epoch 156)
+Forward: 1.69s
+
+Saving...
+Total: 5.03s
+
+[Epoch 269]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.0303]	31.9+1.0s
+[3200/15906]	[L1: 12.9840]	31.4+0.2s
+[4800/15906]	[L1: 12.8483]	32.2+0.2s
+[6400/15906]	[L1: 12.7897]	31.5+0.3s
+[8000/15906]	[L1: 12.8333]	32.1+0.3s
+[9600/15906]	[L1: 12.8697]	32.2+0.2s
+[11200/15906]	[L1: 12.8740]	32.4+0.2s
+[12800/15906]	[L1: 12.8752]	31.9+0.3s
+[14400/15906]	[L1: 12.9046]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.299 (Best: 18.084 @epoch 156)
+Forward: 1.67s
+
+Saving...
+Total: 5.01s
+
+[Epoch 270]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.7002]	32.1+1.1s
+[3200/15906]	[L1: 12.5949]	32.7+0.3s
+[4800/15906]	[L1: 12.7268]	32.3+0.3s
+[6400/15906]	[L1: 12.7795]	31.9+0.2s
+[8000/15906]	[L1: 12.7638]	31.4+0.2s
+[9600/15906]	[L1: 12.7323]	31.8+0.2s
+[11200/15906]	[L1: 12.7396]	32.2+0.2s
+[12800/15906]	[L1: 12.7751]	32.5+0.2s
+[14400/15906]	[L1: 12.7339]	32.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.268 (Best: 18.084 @epoch 156)
+Forward: 1.63s
+
+Saving...
+Total: 4.94s
+
+[Epoch 271]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.1990]	31.7+1.0s
+[3200/15906]	[L1: 13.1734]	31.9+0.2s
+[4800/15906]	[L1: 12.8981]	32.7+0.2s
+[6400/15906]	[L1: 12.9474]	32.5+0.2s
+[8000/15906]	[L1: 12.9652]	32.0+0.2s
+[9600/15906]	[L1: 12.9581]	32.0+0.2s
+[11200/15906]	[L1: 12.8963]	32.2+0.2s
+[12800/15906]	[L1: 12.9102]	31.7+0.2s
+[14400/15906]	[L1: 12.8785]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.226 (Best: 18.084 @epoch 156)
+Forward: 1.58s
+
+Saving...
+Total: 4.88s
+
+[Epoch 272]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.9055]	32.2+0.8s
+[3200/15906]	[L1: 12.9014]	32.6+0.2s
+[4800/15906]	[L1: 12.8657]	31.4+0.2s
+[6400/15906]	[L1: 12.9252]	32.3+0.2s
+[8000/15906]	[L1: 12.8853]	32.1+0.2s
+[9600/15906]	[L1: 12.9327]	31.8+0.2s
+[11200/15906]	[L1: 12.8958]	32.7+0.2s
+[12800/15906]	[L1: 12.8942]	31.6+0.2s
+[14400/15906]	[L1: 12.8898]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.391 (Best: 18.084 @epoch 156)
+Forward: 1.67s
+
+Saving...
+Total: 5.03s
+
+[Epoch 273]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.4435]	32.3+1.0s
+[3200/15906]	[L1: 12.6605]	31.9+0.2s
+[4800/15906]	[L1: 12.8349]	32.4+0.3s
+[6400/15906]	[L1: 12.8756]	32.0+0.2s
+[8000/15906]	[L1: 12.7956]	32.1+0.2s
+[9600/15906]	[L1: 12.8312]	32.0+0.2s
+[11200/15906]	[L1: 12.8203]	32.1+0.3s
+[12800/15906]	[L1: 12.8404]	32.0+0.2s
+[14400/15906]	[L1: 12.7802]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.249 (Best: 18.084 @epoch 156)
+Forward: 1.61s
+
+Saving...
+Total: 4.95s
+
+[Epoch 274]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.9133]	32.2+1.0s
+[3200/15906]	[L1: 12.8999]	31.7+0.2s
+[4800/15906]	[L1: 12.8813]	32.3+0.2s
+[6400/15906]	[L1: 12.8296]	32.6+0.2s
+[8000/15906]	[L1: 12.7912]	31.8+0.2s
+[9600/15906]	[L1: 12.7199]	32.2+0.2s
+[11200/15906]	[L1: 12.7287]	32.4+0.2s
+[12800/15906]	[L1: 12.7248]	32.5+0.2s
+[14400/15906]	[L1: 12.7840]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.180 (Best: 18.084 @epoch 156)
+Forward: 1.81s
+
+Saving...
+Total: 5.11s
+
+[Epoch 275]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.7574]	32.4+0.9s
+[3200/15906]	[L1: 12.9000]	32.3+0.2s
+[4800/15906]	[L1: 12.7918]	31.7+0.2s
+[6400/15906]	[L1: 12.8469]	32.2+0.2s
+[8000/15906]	[L1: 12.8157]	31.9+0.2s
+[9600/15906]	[L1: 12.8146]	32.0+0.2s
+[11200/15906]	[L1: 12.7878]	32.0+0.3s
+[12800/15906]	[L1: 12.8411]	31.9+0.2s
+[14400/15906]	[L1: 12.8478]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.295 (Best: 18.084 @epoch 156)
+Forward: 1.52s
+
+Saving...
+Total: 4.82s
+
+[Epoch 276]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.7453]	32.3+1.0s
+[3200/15906]	[L1: 12.5746]	31.9+0.2s
+[4800/15906]	[L1: 12.6738]	31.7+0.2s
+[6400/15906]	[L1: 12.8287]	32.2+0.1s
+[8000/15906]	[L1: 12.8249]	32.4+0.2s
+[9600/15906]	[L1: 12.8344]	32.2+0.2s
+[11200/15906]	[L1: 12.8292]	31.9+0.2s
+[12800/15906]	[L1: 12.8617]	31.9+0.2s
+[14400/15906]	[L1: 12.8628]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.556 (Best: 18.084 @epoch 156)
+Forward: 1.70s
+
+Saving...
+Total: 5.04s
+
+[Epoch 277]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.1162]	32.8+0.9s
+[3200/15906]	[L1: 12.9227]	31.7+0.2s
+[4800/15906]	[L1: 12.8233]	32.2+0.2s
+[6400/15906]	[L1: 12.7838]	32.6+0.2s
+[8000/15906]	[L1: 12.7207]	32.1+0.2s
+[9600/15906]	[L1: 12.7940]	32.2+0.2s
+[11200/15906]	[L1: 12.7824]	31.6+0.2s
+[12800/15906]	[L1: 12.8121]	32.3+0.2s
+[14400/15906]	[L1: 12.8292]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.389 (Best: 18.084 @epoch 156)
+Forward: 1.65s
+
+Saving...
+Total: 4.99s
+
+[Epoch 278]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.1478]	31.8+1.1s
+[3200/15906]	[L1: 13.0446]	32.1+0.2s
+[4800/15906]	[L1: 12.9997]	32.2+0.2s
+[6400/15906]	[L1: 13.1275]	31.2+0.2s
+[8000/15906]	[L1: 13.0691]	31.9+0.3s
+[9600/15906]	[L1: 12.9824]	32.5+0.3s
+[11200/15906]	[L1: 12.9513]	31.7+0.2s
+[12800/15906]	[L1: 12.9468]	32.6+0.2s
+[14400/15906]	[L1: 12.8831]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.148 (Best: 18.084 @epoch 156)
+Forward: 1.68s
+
+Saving...
+Total: 5.01s
+
+[Epoch 279]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.9675]	32.3+1.0s
+[3200/15906]	[L1: 13.0775]	31.9+0.2s
+[4800/15906]	[L1: 12.9685]	32.5+0.2s
+[6400/15906]	[L1: 12.9544]	32.2+0.2s
+[8000/15906]	[L1: 12.8218]	32.5+0.2s
+[9600/15906]	[L1: 12.8350]	32.5+0.2s
+[11200/15906]	[L1: 12.7763]	32.0+0.2s
+[12800/15906]	[L1: 12.7997]	32.4+0.2s
+[14400/15906]	[L1: 12.8474]	32.3+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.205 (Best: 18.084 @epoch 156)
+Forward: 1.49s
+
+Saving...
+Total: 4.80s
+
+[Epoch 280]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.6732]	31.9+1.0s
+[3200/15906]	[L1: 12.8856]	32.0+0.2s
+[4800/15906]	[L1: 12.9013]	31.7+0.2s
+[6400/15906]	[L1: 12.8803]	31.2+0.1s
+[8000/15906]	[L1: 12.8745]	32.3+0.3s
+[9600/15906]	[L1: 12.8186]	32.7+0.3s
+[11200/15906]	[L1: 12.8193]	31.9+0.1s
+[12800/15906]	[L1: 12.7864]	31.8+0.2s
+[14400/15906]	[L1: 12.8202]	32.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.184 (Best: 18.084 @epoch 156)
+Forward: 1.61s
+
+Saving...
+Total: 4.94s
+
+[Epoch 281]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.1216]	32.4+1.0s
+[3200/15906]	[L1: 12.9392]	32.1+0.2s
+[4800/15906]	[L1: 12.9034]	31.7+0.2s
+[6400/15906]	[L1: 12.9415]	32.0+0.2s
+[8000/15906]	[L1: 12.9158]	32.0+0.2s
+[9600/15906]	[L1: 12.8908]	31.8+0.2s
+[11200/15906]	[L1: 12.8710]	31.3+0.2s
+[12800/15906]	[L1: 12.8776]	31.8+0.1s
+[14400/15906]	[L1: 12.8758]	31.5+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.232 (Best: 18.084 @epoch 156)
+Forward: 1.68s
+
+Saving...
+Total: 4.99s
+
+[Epoch 282]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.1884]	32.2+1.4s
+[3200/15906]	[L1: 13.0043]	32.0+0.2s
+[4800/15906]	[L1: 12.7776]	31.9+0.2s
+[6400/15906]	[L1: 12.7471]	31.7+0.1s
+[8000/15906]	[L1: 12.7295]	32.3+0.2s
+[9600/15906]	[L1: 12.7260]	32.2+0.2s
+[11200/15906]	[L1: 12.7721]	31.7+0.2s
+[12800/15906]	[L1: 12.7378]	32.6+0.2s
+[14400/15906]	[L1: 12.7570]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.251 (Best: 18.084 @epoch 156)
+Forward: 1.79s
+
+Saving...
+Total: 5.11s
+
+[Epoch 283]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.8280]	32.6+0.9s
+[3200/15906]	[L1: 13.0535]	32.2+0.2s
+[4800/15906]	[L1: 13.0222]	32.8+0.2s
+[6400/15906]	[L1: 13.0394]	32.1+0.1s
+[8000/15906]	[L1: 13.0242]	32.0+0.2s
+[9600/15906]	[L1: 12.9577]	32.2+0.3s
+[11200/15906]	[L1: 12.9092]	31.5+0.2s
+[12800/15906]	[L1: 12.8648]	31.5+0.2s
+[14400/15906]	[L1: 12.8488]	32.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.407 (Best: 18.084 @epoch 156)
+Forward: 1.46s
+
+Saving...
+Total: 4.81s
+
+[Epoch 284]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.7547]	32.4+1.0s
+[3200/15906]	[L1: 12.8077]	32.1+0.2s
+[4800/15906]	[L1: 12.9357]	31.8+0.2s
+[6400/15906]	[L1: 12.8869]	32.6+0.2s
+[8000/15906]	[L1: 12.8950]	32.1+0.2s
+[9600/15906]	[L1: 12.8884]	32.1+0.2s
+[11200/15906]	[L1: 12.8089]	32.9+0.2s
+[12800/15906]	[L1: 12.8007]	32.4+0.2s
+[14400/15906]	[L1: 12.7977]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.407 (Best: 18.084 @epoch 156)
+Forward: 1.60s
+
+Saving...
+Total: 4.94s
+
+[Epoch 285]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.8672]	31.9+1.0s
+[3200/15906]	[L1: 12.9891]	31.7+0.2s
+[4800/15906]	[L1: 12.9438]	32.1+0.2s
+[6400/15906]	[L1: 12.8904]	31.8+0.2s
+[8000/15906]	[L1: 12.9366]	33.1+0.3s
+[9600/15906]	[L1: 12.8729]	32.3+0.2s
+[11200/15906]	[L1: 12.7880]	31.5+0.2s
+[12800/15906]	[L1: 12.8454]	31.8+0.2s
+[14400/15906]	[L1: 12.8449]	31.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.241 (Best: 18.084 @epoch 156)
+Forward: 1.76s
+
+Saving...
+Total: 5.07s
+
+[Epoch 286]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.7843]	31.7+1.1s
+[3200/15906]	[L1: 12.8527]	31.9+0.2s
+[4800/15906]	[L1: 12.8697]	31.7+0.2s
+[6400/15906]	[L1: 12.9563]	32.4+0.2s
+[8000/15906]	[L1: 12.9034]	32.2+0.2s
+[9600/15906]	[L1: 12.8998]	32.3+0.2s
+[11200/15906]	[L1: 12.8931]	32.4+0.2s
+[12800/15906]	[L1: 12.8715]	31.5+0.2s
+[14400/15906]	[L1: 12.8543]	32.3+0.1s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.236 (Best: 18.084 @epoch 156)
+Forward: 1.77s
+
+Saving...
+Total: 5.08s
+
+[Epoch 287]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.4536]	32.1+1.1s
+[3200/15906]	[L1: 12.6096]	31.5+0.2s
+[4800/15906]	[L1: 12.5455]	32.4+0.1s
+[6400/15906]	[L1: 12.6101]	32.1+0.1s
+[8000/15906]	[L1: 12.6386]	31.6+0.3s
+[9600/15906]	[L1: 12.7305]	32.0+0.2s
+[11200/15906]	[L1: 12.7290]	31.8+0.2s
+[12800/15906]	[L1: 12.7889]	31.9+0.2s
+[14400/15906]	[L1: 12.7843]	31.7+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.197 (Best: 18.084 @epoch 156)
+Forward: 1.74s
+
+Saving...
+Total: 5.06s
+
+[Epoch 288]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.9972]	32.6+0.8s
+[3200/15906]	[L1: 13.0352]	31.7+0.2s
+[4800/15906]	[L1: 12.9382]	32.3+0.2s
+[6400/15906]	[L1: 12.8867]	31.8+0.1s
+[8000/15906]	[L1: 12.8962]	31.8+0.2s
+[9600/15906]	[L1: 12.8517]	31.7+0.2s
+[11200/15906]	[L1: 12.8339]	31.9+0.2s
+[12800/15906]	[L1: 12.8182]	31.8+0.2s
+[14400/15906]	[L1: 12.8333]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.198 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 4.97s
+
+[Epoch 289]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.6508]	31.7+0.8s
+[3200/15906]	[L1: 12.8058]	32.4+0.2s
+[4800/15906]	[L1: 12.8214]	32.3+0.3s
+[6400/15906]	[L1: 12.7661]	31.9+0.2s
+[8000/15906]	[L1: 12.7977]	32.3+0.2s
+[9600/15906]	[L1: 12.8175]	32.0+0.2s
+[11200/15906]	[L1: 12.7823]	32.1+0.2s
+[12800/15906]	[L1: 12.7838]	32.1+0.2s
+[14400/15906]	[L1: 12.7919]	31.9+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.140 (Best: 18.084 @epoch 156)
+Forward: 1.71s
+
+Saving...
+Total: 5.03s
+
+[Epoch 290]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.8179]	32.1+1.1s
+[3200/15906]	[L1: 12.7118]	32.4+0.2s
+[4800/15906]	[L1: 12.7886]	31.8+0.2s
+[6400/15906]	[L1: 12.7700]	32.2+0.2s
+[8000/15906]	[L1: 12.8277]	31.6+0.2s
+[9600/15906]	[L1: 12.8006]	32.2+0.2s
+[11200/15906]	[L1: 12.7867]	32.5+0.2s
+[12800/15906]	[L1: 12.8009]	31.8+0.2s
+[14400/15906]	[L1: 12.8314]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.061 (Best: 18.084 @epoch 156)
+Forward: 1.55s
+
+Saving...
+Total: 4.87s
+
+[Epoch 291]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.1195]	32.3+0.9s
+[3200/15906]	[L1: 12.8835]	32.3+0.2s
+[4800/15906]	[L1: 12.8130]	32.3+0.2s
+[6400/15906]	[L1: 12.8108]	32.1+0.2s
+[8000/15906]	[L1: 12.7355]	32.3+0.3s
+[9600/15906]	[L1: 12.7868]	32.1+0.2s
+[11200/15906]	[L1: 12.7610]	32.1+0.3s
+[12800/15906]	[L1: 12.7811]	31.4+0.2s
+[14400/15906]	[L1: 12.7770]	32.1+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.112 (Best: 18.084 @epoch 156)
+Forward: 1.69s
+
+Saving...
+Total: 5.02s
+
+[Epoch 292]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.7943]	32.8+0.9s
+[3200/15906]	[L1: 12.8244]	32.5+0.2s
+[4800/15906]	[L1: 12.9820]	32.2+0.2s
+[6400/15906]	[L1: 12.8499]	32.2+0.2s
+[8000/15906]	[L1: 12.7916]	31.8+0.2s
+[9600/15906]	[L1: 12.8273]	32.6+0.2s
+[11200/15906]	[L1: 12.8425]	32.0+0.2s
+[12800/15906]	[L1: 12.8085]	32.5+0.2s
+[14400/15906]	[L1: 12.7922]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.120 (Best: 18.084 @epoch 156)
+Forward: 1.63s
+
+Saving...
+Total: 6.00s
+
+[Epoch 293]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.8323]	32.2+1.0s
+[3200/15906]	[L1: 12.7435]	32.0+0.2s
+[4800/15906]	[L1: 12.6867]	31.6+0.2s
+[6400/15906]	[L1: 12.7763]	31.9+0.2s
+[8000/15906]	[L1: 12.7710]	32.1+0.1s
+[9600/15906]	[L1: 12.8171]	31.7+0.2s
+[11200/15906]	[L1: 12.8415]	32.3+0.2s
+[12800/15906]	[L1: 12.8444]	32.0+0.2s
+[14400/15906]	[L1: 12.8511]	32.4+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.040 (Best: 18.084 @epoch 156)
+Forward: 1.50s
+
+Saving...
+Total: 4.85s
+
+[Epoch 294]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.6985]	32.3+1.0s
+[3200/15906]	[L1: 12.7333]	32.2+0.2s
+[4800/15906]	[L1: 12.8770]	32.1+0.2s
+[6400/15906]	[L1: 12.8457]	32.3+0.2s
+[8000/15906]	[L1: 12.9104]	32.1+0.2s
+[9600/15906]	[L1: 12.8355]	32.5+0.2s
+[11200/15906]	[L1: 12.8384]	32.0+0.2s
+[12800/15906]	[L1: 12.7865]	32.6+0.2s
+[14400/15906]	[L1: 12.7769]	31.6+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.056 (Best: 18.084 @epoch 156)
+Forward: 1.59s
+
+Saving...
+Total: 4.90s
+
+[Epoch 295]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.9687]	32.1+0.9s
+[3200/15906]	[L1: 12.9281]	32.4+0.2s
+[4800/15906]	[L1: 12.7643]	31.9+0.3s
+[6400/15906]	[L1: 12.7792]	32.2+0.2s
+[8000/15906]	[L1: 12.7943]	32.8+0.3s
+[9600/15906]	[L1: 12.9036]	32.2+0.2s
+[11200/15906]	[L1: 12.8918]	32.1+0.2s
+[12800/15906]	[L1: 12.8886]	32.1+0.2s
+[14400/15906]	[L1: 12.8403]	32.9+0.3s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.064 (Best: 18.084 @epoch 156)
+Forward: 1.58s
+
+Saving...
+Total: 5.91s
+
+[Epoch 296]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.8656]	32.5+1.0s
+[3200/15906]	[L1: 12.8866]	32.0+0.2s
+[4800/15906]	[L1: 12.9221]	32.0+0.2s
+[6400/15906]	[L1: 12.8917]	32.0+0.2s
+[8000/15906]	[L1: 12.8697]	32.9+0.2s
+[9600/15906]	[L1: 12.8211]	32.2+0.2s
+[11200/15906]	[L1: 12.7763]	32.7+0.2s
+[12800/15906]	[L1: 12.7530]	32.2+0.2s
+[14400/15906]	[L1: 12.7541]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.069 (Best: 18.084 @epoch 156)
+Forward: 1.73s
+
+Saving...
+Total: 5.07s
+
+[Epoch 297]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.6346]	32.2+1.1s
+[3200/15906]	[L1: 12.6720]	32.4+0.3s
+[4800/15906]	[L1: 12.7509]	32.5+0.2s
+[6400/15906]	[L1: 12.7343]	32.4+0.2s
+[8000/15906]	[L1: 12.6461]	32.4+0.2s
+[9600/15906]	[L1: 12.7056]	32.4+0.2s
+[11200/15906]	[L1: 12.7179]	32.1+0.2s
+[12800/15906]	[L1: 12.7690]	32.1+0.2s
+[14400/15906]	[L1: 12.7829]	32.0+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.246 (Best: 18.084 @epoch 156)
+Forward: 1.86s
+
+Saving...
+Total: 5.17s
+
+[Epoch 298]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 12.6102]	31.8+1.0s
+[3200/15906]	[L1: 12.7631]	31.8+0.2s
+[4800/15906]	[L1: 12.7980]	31.6+0.2s
+[6400/15906]	[L1: 12.7758]	31.7+0.1s
+[8000/15906]	[L1: 12.7996]	31.5+0.2s
+[9600/15906]	[L1: 12.8410]	32.2+0.2s
+[11200/15906]	[L1: 12.8094]	32.1+0.1s
+[12800/15906]	[L1: 12.7941]	32.2+0.2s
+[14400/15906]	[L1: 12.8026]	32.2+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.204 (Best: 18.084 @epoch 156)
+Forward: 1.60s
+
+Saving...
+Total: 4.91s
+
+[Epoch 299]	Learning rate: 3.13e-6
+[1600/15906]	[L1: 13.3122]	32.6+0.9s
+[3200/15906]	[L1: 12.9324]	32.4+0.2s
+[4800/15906]	[L1: 12.8252]	32.1+0.2s
+[6400/15906]	[L1: 12.7717]	32.2+0.2s
+[8000/15906]	[L1: 12.7793]	31.7+0.2s
+[9600/15906]	[L1: 12.7328]	32.4+0.1s
+[11200/15906]	[L1: 12.7008]	32.0+0.2s
+[12800/15906]	[L1: 12.7208]	32.4+0.2s
+[14400/15906]	[L1: 12.7130]	31.8+0.2s
+
+Evaluation:
+[SRRAW x8]	PSNR: 17.318 (Best: 18.084 @epoch 156)
+Forward: 1.48s
+
+Saving...
+Total: 4.82s
+
