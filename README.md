@@ -1,20 +1,19 @@
 # SRNet for digital zoom
 
-Code for paper: Self-supervised Residual-aware Network for Digital Zoom
+Code for paper: "Residual Aware: Learning to Zoom via Self-supervised Auxiliary Task"
+
 This paper proposes SRNet for digital zoom which takes advantage of self-supervised learning (SSL) and multi-task learning (MTL)
 
-This code is based on:
-
-Python 3.7.3
-
-Pytorch 1.1.0
-
+This code is based on:  
+Python 3.7.3  
+Pytorch 1.1.0  
 Ubuntu16.04 LTS
+
+with EDSR-Pytorch Format
 
 ## Data Processing
 
-1). Download and Extract Dataset
-
+1). [Download]((https://drive.google.com/drive/folders/1UHKEUp77tiCZ9y05JtP6S9Tfo2RftK8m) and Extract Dataset  
 Problems in origin Image:
 1. train/00004 unable to align with the align code
 2. train/00560 data 00006.RAW copy to  train/00561 Rename to 00001.RAW
