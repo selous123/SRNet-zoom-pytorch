@@ -125,9 +125,14 @@ python main.py --label HR+Diff --model SSL --scale 4 --pre_train [model_path][/s
 
 We have also release all training log file in this git repository. [Ablation study](./experiment_ablation) and [x8 zoom ratio](./experiment)
 
+Note that:  **PSNR values in these curves are calculated on RGB channels instead of the reported values on Y channel only.** 
+
+
 ![Train curve for EDSR baseline](./img/train_curve1.png)
 ![Train curve for RCAN baseline](./img/train_curve2.png)
 ![Train curve for SOTA models](./img/train_curve3.png)
+
+
 
 ## Citation
 Anonymous
