@@ -1,6 +1,6 @@
 # SRNet for digital zoom
 
-Code for paper: "Residual Aware: Learning to Zoom via Self-supervised Auxiliary Task"
+Code for paper: "Self-supervised Residual-aware Network for Digital Zoom"
 
 This paper proposes SRNet for digital zoom which takes advantage of self-supervised learning (SSL) and multi-task learning (MTL)
 
